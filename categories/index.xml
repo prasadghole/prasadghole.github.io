@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Musing on daily development activities</title>
-    <link>/categories.html</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on Musing on daily development activities</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2008 - 2014, Steve Francia; all rights reserved.</copyright>
@@ -13,19 +13,19 @@
     
     <item>
       <title>Development</title>
-      <link>/categories/development.html</link>
+      <link>/categories/development/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/categories/development.html</guid>
+      <guid>/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>golang</title>
-      <link>/categories/golang.html</link>
+      <link>/categories/golang/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/categories/golang.html</guid>
+      <guid>/categories/golang/</guid>
       <description></description>
     </item>
     
