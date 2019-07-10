@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Musing on daily development activities</title>
-    <link>prasadghole.github.io/tags.html</link>
+    <link>/tags.html</link>
     <description>Recent content in Tags on Musing on daily development activities</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2008 - 2014, Steve Francia; all rights reserved.</copyright>
     <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="prasadghole.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>development</title>
-      <link>prasadghole.github.io/tags/development.html</link>
+      <link>/tags/development.html</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>prasadghole.github.io/tags/development.html</guid>
+      <guid>/tags/development.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>go</title>
-      <link>prasadghole.github.io/tags/go.html</link>
+      <link>/tags/go.html</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>prasadghole.github.io/tags/go.html</guid>
+      <guid>/tags/go.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>golang</title>
-      <link>prasadghole.github.io/tags/golang.html</link>
+      <link>/tags/golang.html</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>prasadghole.github.io/tags/golang.html</guid>
+      <guid>/tags/golang.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>prasadghole.github.io/tags/hugo.html</link>
+      <link>/tags/hugo.html</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>prasadghole.github.io/tags/hugo.html</guid>
+      <guid>/tags/hugo.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>templates</title>
-      <link>prasadghole.github.io/tags/templates.html</link>
+      <link>/tags/templates.html</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>prasadghole.github.io/tags/templates.html</guid>
+      <guid>/tags/templates.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>themes</title>
-      <link>prasadghole.github.io/tags/themes.html</link>
+      <link>/tags/themes.html</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>prasadghole.github.io/tags/themes.html</guid>
+      <guid>/tags/themes.html</guid>
       <description></description>
     </item>
     

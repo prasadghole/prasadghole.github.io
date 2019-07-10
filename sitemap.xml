@@ -3,98 +3,98 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>prasadghole.github.io/post/creating-a-new-theme.html</loc>
+    <loc>/post/creating-a-new-theme.html</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>prasadghole.github.io/post/migrate-from-jekyll.html</loc>
+    <loc>/post/migrate-from-jekyll.html</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>prasadghole.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>prasadghole.github.io/post.html</loc>
+    <loc>/post.html</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>prasadghole.github.io/about.html</loc>
+    <loc>/about.html</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>prasadghole.github.io/post/goisforlovers.html</loc>
+    <loc>/post/goisforlovers.html</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>prasadghole.github.io/categories.html</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>prasadghole.github.io/categories/development.html</loc>
+    <loc>/categories.html</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>prasadghole.github.io/post/hugoisforlovers.html</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>prasadghole.github.io/tags.html</loc>
+    <loc>/categories/development.html</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>prasadghole.github.io/tags/development.html</loc>
+    <loc>/post/hugoisforlovers.html</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags.html</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>prasadghole.github.io/tags/go.html</loc>
+    <loc>/tags/development.html</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>prasadghole.github.io/categories/golang.html</loc>
+    <loc>/tags/go.html</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>prasadghole.github.io/tags/golang.html</loc>
+    <loc>/categories/golang.html</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>prasadghole.github.io/tags/hugo.html</loc>
+    <loc>/tags/golang.html</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>prasadghole.github.io/tags/templates.html</loc>
+    <loc>/tags/hugo.html</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>prasadghole.github.io/tags/themes.html</loc>
+    <loc>/tags/templates.html</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/themes.html</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
