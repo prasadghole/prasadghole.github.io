@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Hugo Themes</title>
-    <link>http://hugo.spf13.com/categories/</link>
-    <description>Recent content in Categories on Hugo Themes</description>
+    <title>Categories on Musing on daily development activities</title>
+    <link>prasadghole.github.io/categories.html</link>
+    <description>Recent content in Categories on Musing on daily development activities</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2008 - 2014, Steve Francia; all rights reserved.</copyright>
     <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://hugo.spf13.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="prasadghole.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Development</title>
-      <link>http://hugo.spf13.com/categories/development/</link>
+      <link>prasadghole.github.io/categories/development.html</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://hugo.spf13.com/categories/development/</guid>
+      <guid>prasadghole.github.io/categories/development.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>golang</title>
-      <link>http://hugo.spf13.com/categories/golang/</link>
+      <link>prasadghole.github.io/categories/golang.html</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://hugo.spf13.com/categories/golang/</guid>
+      <guid>prasadghole.github.io/categories/golang.html</guid>
       <description></description>
     </item>
     
