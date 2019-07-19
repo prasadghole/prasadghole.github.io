@@ -1,111 +1,72 @@
-<!doctype html>
-<html>
-<head>
-    <base href="https://prasadghole.github.io/">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="author" content="John Doe">
-
-<meta name="description" content="">
-
-<title>(Hu)go Template Primer</title>
-<meta name="generator" content="Hugo 0.55.6" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/pojoaque.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
-<link  href="https://prasadghole.github.io/css/theme.min.css" rel="stylesheet" type="text/css">
-
-</head>
-<body>
-<div class="page-container container-fluid">
-<div class="col-md-3 menu">
-    <nav class="col-md-3">
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <h3 class="home-link"><a href="https://prasadghole.github.io">Root</a></h3>
-    <div id="last-posts" class="open">
-        <h3 data-open="last-posts">Musing on daily development activities - Most recent posts</h3>
-        <ul>
-            
-            <li><a href="https://prasadghole.github.io/post/creating-a-new-theme/">Creating a New Theme</a></li>
-            
-            <li><a href="https://prasadghole.github.io/post/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a></li>
-            
-            <li><a href="https://prasadghole.github.io/about/">About Hugo</a></li>
-            
-            <li><a href="https://prasadghole.github.io/post/goisforlovers/">(Hu)go Template Primer</a></li>
-            
-            <li><a href="https://prasadghole.github.io/post/hugoisforlovers/">Getting Started with Hugo</a></li>
-            
-        </ul>
-    </div>
+    <title>(Hu)go Template Primer - Musing on daily development activities</title>
     
-
+    <meta name="description" content="Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
+This document is a brief primer on using go templates.">
+    <meta name="author" content="John Doe">
     
-    <div id="tags" class="open">
-        <h3 data-open="tags">Tags</h3>
-        <ul class="tags">
-            
-            <li><a href="https://prasadghole.github.io/tags/development">development</a></li>
-            
-            <li><a href="https://prasadghole.github.io/tags/go">go</a></li>
-            
-            <li><a href="https://prasadghole.github.io/tags/golang">golang</a></li>
-            
-            <li><a href="https://prasadghole.github.io/tags/hugo">hugo</a></li>
-            
-            <li><a href="https://prasadghole.github.io/tags/templates">templates</a></li>
-            
-            <li><a href="https://prasadghole.github.io/tags/themes">themes</a></li>
-            
-        </ul>
-    </div>
+    <link href="https://prasadghole.github.io/css/github-gist.min.css" rel="stylesheet">
+    <link href="https://prasadghole.github.io/css/style.css" rel="stylesheet">
     
-
+    <link rel="apple-touch-icon" href="https://prasadghole.github.io/img/apple-touch-icon.png">
+    <link rel="icon" href="https://prasadghole.github.io/img/favicon.ico">
     
-    <div id="categories" class="open">
-        <h3 data-open="categories">Categories</h3>
-        <ul class="categories">
-            
-            <li><a href="https://prasadghole.github.io/categories/development">development</a></li>
-            
-            <li><a href="https://prasadghole.github.io/categories/golang">golang</a></li>
-            
-        </ul>
-    </div>
+    <meta name="generator" content="Hugo 0.55.6" />
     
-</nav>
-
-</div>
-<div class="col-md-9 content">
-
-<h1>(Hu)go Template Primer</h1>
-<h4>Published 04-02-2014 00:00:00</h4>
-
-<a href="https://twitter.com/share" class="twitter-share-button" data-via="kendo5731"></a>
-<script>!function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-    if (!d.getElementById(id)) {
-        js = d.createElement(s);
-        js.id = id;
-        js.src = p + '://platform.twitter.com/widgets.js';
-        fjs.parentNode.insertBefore(js, fjs);
-    }
-}(document, 'script', 'twitter-wjs');</script>
-
-<div class="fb-share-button" data-href="https://prasadghole.github.io/post/goisforlovers/" data-layout="button"></div>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en-US/sdk.js#xfbml=1&version=v2.5";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<article>
+    <link rel="alternate" type="application/atom+xml" href="https://prasadghole.github.io/index.xml" title="Musing on daily development activities">
     
+    
+    
+  </head>
+  <body class="single">
+    <header class="header">
+      <div class="wrap">
+        
+        <p class="logo"><a href="https://prasadghole.github.io">Musing on daily development activities</a></p>
+        
+        
+        <button class="menu-toggle" type="button"></button>
+        
+      </div>
+    </header>
+    
+    <nav class="nav">
+      <ul class="menu">
+        
+        <li>
+          <a href="https://prasadghole.github.io/post/goisforlovers/">(Hu)go Template Primer</a>
+        </li>
+        
+        <li>
+          <a href="https://prasadghole.github.io/about/">About Hugo</a>
+        </li>
+        
+        <li>
+          <a href="https://prasadghole.github.io/post/hugoisforlovers/">Getting Started with Hugo</a>
+        </li>
+        
+        <li>
+          <a href="">tutorials</a>
+        </li>
+        
+      </ul>
+    </nav>
+    
+    <main class="main">
+
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">(Hu)go Template Primer</h1>
+    <div class="post-meta">John Doe · 2014.4.2</div>
+  </header>
+  <div class="post-content">
 
 <p>Hugo uses the excellent <a href="http://golang.org/&gt;">go</a> <a href="http://golang.org/pkg/html/template/&gt;">html/template</a> library for
 its template engine. It is an extremely lightweight engine that provides a very
@@ -442,16 +403,63 @@ so, such as in this example:</p>
   {{end}}&lt;/ul&gt;
 &lt;/nav&gt;
 </code></pre>
-
+</div>
+  <footer class="post-footer">
+    
+    <ul class="post-tags">
+      
+      <li><a href="https://prasadghole.github.io/tags/go/">go</a></li>
+      
+      <li><a href="https://prasadghole.github.io/tags/golang/">golang</a></li>
+      
+      <li><a href="https://prasadghole.github.io/tags/templates/">templates</a></li>
+      
+      <li><a href="https://prasadghole.github.io/tags/themes/">themes</a></li>
+      
+      <li><a href="https://prasadghole.github.io/tags/development/">development</a></li>
+      
+    </ul>
+    
+  </footer>
+  
+  
+  
+  
 </article>
 
+</main>
+<footer class="footer">
+  <span>&copy; 2019 <a href="https://prasadghole.github.io">Musing on daily development activities</a></span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span>Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+</footer>
+<script src="https://prasadghole.github.io/js/instantclick.min.js" data-no-instant></script>
+<script data-no-instant>InstantClick.init();</script>
+<script src="https://prasadghole.github.io/js/highlight.min.js" data-no-instant></script>
+<script data-no-instant>
+  let body;
+  function menuToggleListener() {
+    body.classList.toggle('blur');
+  }
+  function setMenuToggleListener() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    if (!menuToggle) return;
+    body = document.querySelector('body');
+    menuToggle.addEventListener('click', menuToggleListener);
+  }
 
+  hljs.initHighlightingOnLoad();
+  setMenuToggleListener();
 
-</div>
-</div>
-<script src="https://prasadghole.github.io/js/theme.min.js" type="text/javascript"></script>
-
-
+  InstantClick.on('change', function () {
+    document.querySelectorAll('pre code').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
+    setMenuToggleListener();
+  });
+</script>
 </body>
 </html>
 
