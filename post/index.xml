@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Musing on daily development activities</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2008 - 2014, Steve Francia; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://prasadghole.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vim Tips</title>
+      <link>https://prasadghole.github.io/post/vimtips/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/vimtips/</guid>
+      <description> Search in visual mode Follow the steps:
+ Select visual mode by V or select block or column by using CTRL_V Press escape to exit visual mode Search / as you do for regular search  </description>
+    </item>
     
     <item>
       <title>Creating a New Theme</title>
