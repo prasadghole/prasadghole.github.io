@@ -39,15 +39,7 @@
       <ul class="menu">
         
         <li>
-          <a href="https://prasadghole.github.io/post/goisforlovers/">(Hu)go Template Primer</a>
-        </li>
-        
-        <li>
           <a href="https://prasadghole.github.io/about/">About Hugo</a>
-        </li>
-        
-        <li>
-          <a href="https://prasadghole.github.io/post/hugoisforlovers/">Getting Started with Hugo</a>
         </li>
         
         <li>
@@ -74,15 +66,30 @@
 
 <article class="post-entry">
   <header class="entry-header">
-    <h2>Firmware Development</h2>
+    <h2>Git in a box</h2>
   </header>
   <section class="entry-content">
-   <p>...</p>
+   <p>Git in a box Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some secret project thing it would be much better to have git repository as portable copy.This is where git bare repository helps.
+bare repository A bare repository is one without working copy. We can push or pull our changes to/from this repo. We can keep this repository portable and handy....</p>
   </section>
   <footer class="entry-footer">
     <time>2019.7.29</time>
   </footer>
-  <a class="entry-link" href="https://prasadghole.github.io/post/firmware/"></a>
+  <a class="entry-link" href="https://prasadghole.github.io/post/gitbare/"></a>
+</article>
+
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>SingleTon class</h2>
+  </header>
+  <section class="entry-content">
+   <p>SingleTon pattern is used to create only single instance of class object system wide. There are many possible implementation ways to implemente it.
+ class SingleTon { public: static SingleTon &amp; GetInstance { static SingleTon instance; return instance; } private: SingleTon() { /*Default constructor */ } }  In above implementation why can’t we simply create static function instead of create class objects. We need instance semantics in case we need to pass this object as callback....</p>
+  </section>
+  <footer class="entry-footer">
+    <time>2019.7.29</time>
+  </footer>
+  <a class="entry-link" href="https://prasadghole.github.io/post/singleton/"></a>
 </article>
 
 <article class="post-entry">
@@ -99,31 +106,8 @@
   <a class="entry-link" href="https://prasadghole.github.io/post/vimtips/"></a>
 </article>
 
-<article class="post-entry">
-  <header class="entry-header">
-    <h2>Creating a New Theme</h2>
-  </header>
-  <section class="entry-content">
-   <p>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I’ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won’t cover using CSS to style your theme.
-We’ll start with creating a new site with a very basic template....</p>
-  </section>
-  <footer class="entry-footer">
-    <time>2014.9.28</time>
-  </footer>
-  <a class="entry-link" href="https://prasadghole.github.io/post/creating-a-new-theme/"></a>
-</article>
 
 
-
-
-<footer class="page-footer">
-  <nav class="pagination">
-    
-    
-    <a class="next" href="https://prasadghole.github.io/post/page/2/">Next Page →</a>
-    
-  </nav>
-</footer>
 
 
 </main>
