@@ -5,11 +5,20 @@
     <link>https://prasadghole.github.io/post/</link>
     <description>Recent content in Posts on Musing on daily development activities</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright (c) 2008 - 2014, Steve Francia; all rights reserved.</copyright>
+    <copyright>Copyright (c) 2008 - 2018, Prasad Ghole</copyright>
     <lastBuildDate>Mon, 29 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://prasadghole.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Firmware Development</title>
+      <link>https://prasadghole.github.io/post/firmware/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/firmware/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Vim Tips</title>

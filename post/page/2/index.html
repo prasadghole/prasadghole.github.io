@@ -74,6 +74,21 @@
 
 <article class="post-entry">
   <header class="entry-header">
+    <h2>Migrate to Hugo from Jekyll</h2>
+  </header>
+  <section class="entry-content">
+   <p>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &lt;root&gt;/ ▾ images/ logo.png  should become
+▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you’ll want any files that should reside at the root (such as CNAME) to be moved to static....</p>
+  </section>
+  <footer class="entry-footer">
+    <time>2014.3.10</time>
+  </footer>
+  <a class="entry-link" href="https://prasadghole.github.io/post/migrate-from-jekyll/"></a>
+</article>
+
+<article class="post-entry">
+  <header class="entry-header">
     <h2>(Hu)go Template Primer</h2>
   </header>
   <section class="entry-content">
