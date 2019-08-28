@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <title>Musing on daily development activities</title>
+    <title> - Musing on daily development activities</title>
     
-    <meta name="description" content="">
+    <meta name="description" content="OTG USB OTG is a dual core device which can act as both device and host. HS (High speed) FS (Full speed) 1. 1.25 Kbytes of dedicated RAM for advance FIFO control 2. Maximum USB bandwidth of one frame (1 ms ) without system intervention.
+Clock It receives the 48 MHz clock from RCC.
+Writing in peripheral mode CPU write 32 bit word to OTG push register. This data then directly transferred to Tx data configured within USB data RAM.">
     <meta name="author" content="John Doe">
     
     <link href="https://prasadghole.github.io/css/github-gist.min.css" rel="stylesheet">
@@ -23,11 +25,11 @@
     
     
   </head>
-  <body class="list home">
+  <body class="single">
     <header class="header">
       <div class="wrap">
         
-        <h1 class="logo"><a href="https://prasadghole.github.io">Musing on daily development activities</a></h1>
+        <p class="logo"><a href="https://prasadghole.github.io">Musing on daily development activities</a></p>
         
         
         <button class="menu-toggle" type="button"></button>
@@ -52,56 +54,56 @@
     <main class="main">
 
 
-
-
-
-
-
-
-<article class="post-entry">
-  <header class="entry-header">
-    <h2>About Hugo</h2>
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title"></h1>
+    <div class="post-meta">John Doe · 0001.1.1</div>
   </header>
-  <section class="entry-content">
-   <p>Hugo is a static site engine written in Go.
-It makes use of a variety of open source projects including:
- Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.
-Setup Some fun facts about Hugo:
- Built in Go Loosely inspired by Jekyll Primarily developed by spf13 on the train while commuting to and from Manhattan. Coded in Vim using spf13-vim  Have questions or suggestions?...</p>
-  </section>
-  <footer class="entry-footer">
-    <time>2014.4.9</time>
+  <div class="post-content">
+
+<h1 id="otg">OTG</h1>
+
+<p>USB OTG is a dual core device which can act as both device and host.
+HS (High speed)
+FS (Full speed)
+1. 1.25 Kbytes of dedicated RAM for advance FIFO control
+2. Maximum USB bandwidth of one frame (1 ms ) without system intervention.</p>
+
+<h2 id="clock">Clock</h2>
+
+<p>It receives the 48 MHz clock from RCC.</p>
+
+<h2 id="writing-in-peripheral-mode">Writing in peripheral mode</h2>
+
+<p>CPU write 32 bit word to OTG push register. This data then directly transferred to
+Tx data configured within USB data RAM.</p>
+
+<h2 id="reading-in-peripheral-mode">Reading in peripheral mode</h2>
+
+<p>CPU receives the data from USB by reading 32 bit pop register. This data is
+retrieved from a shared Rx FIFO.</p>
+
+<h2 id="interrupt-reception">Interrupt reception</h2>
+
+<p>Application will keep on receiving the Rx FIFO non-empty interrupt as long
+as there is one packet available to download.</p>
+
+<h2 id="performance">Performance</h2>
+
+<ol>
+<li>RAM Size</li>
+<li>FIFO size</li>
+<li>Quick access to AHB push/pop registers.</li>
+</ol>
+</div>
+  <footer class="post-footer">
+    
   </footer>
-  <a class="entry-link" href="https://prasadghole.github.io/about/"></a>
+  
+  
+  
+  
 </article>
-
-<article class="post-entry">
-  <header class="entry-header">
-    <h2></h2>
-  </header>
-  <section class="entry-content">
-   <p>OTG USB OTG is a dual core device which can act as both device and host. HS (High speed) FS (Full speed) 1. 1.25 Kbytes of dedicated RAM for advance FIFO control 2. Maximum USB bandwidth of one frame (1 ms ) without system intervention.
-Clock It receives the 48 MHz clock from RCC.
-Writing in peripheral mode CPU write 32 bit word to OTG push register. This data then directly transferred to Tx data configured within USB data RAM....</p>
-  </section>
-  <footer class="entry-footer">
-    <time>0001.1.1</time>
-  </footer>
-  <a class="entry-link" href="https://prasadghole.github.io/post/usbstm32/"></a>
-</article>
-
-
-
-
-<footer class="page-footer">
-  <nav class="pagination">
-    
-    <a class="prev" href="https://prasadghole.github.io/">← Prev Page</a>
-    
-    
-  </nav>
-</footer>
-
 
 </main>
 <footer class="footer">

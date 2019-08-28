@@ -35,6 +35,11 @@
   </url>
   
   <url>
+    <loc>https://prasadghole.github.io/post/usbstm32/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://prasadghole.github.io/categories/</loc>
     <priority>0</priority>
   </url>

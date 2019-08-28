@@ -17,7 +17,7 @@
       <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://prasadghole.github.io/post/gitbare/</guid>
-      <description>Git in a box Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some secret project thing it would be much better to have git repository as portable copy.This is where git bare repository helps.
+      <description>Git in a box Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some scenario project thing it would be much better to have git repository as portable copy.This is where git bare repository helps.
 bare repository A bare repository is one without working copy. We can push or pull our changes to/from this repo. We can keep this repository portable and handy.</description>
     </item>
     
@@ -39,6 +39,17 @@ bare repository A bare repository is one without working copy. We can push or pu
       <guid>https://prasadghole.github.io/post/vimtips/</guid>
       <description> Search in visual mode Follow the steps:
  Select visual mode by V or select block or column by using CTRL_V Press escape to exit visual mode Search / as you do for regular search  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://prasadghole.github.io/post/usbstm32/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/usbstm32/</guid>
+      <description>OTG USB OTG is a dual core device which can act as both device and host. HS (High speed) FS (Full speed) 1. 1.25 Kbytes of dedicated RAM for advance FIFO control 2. Maximum USB bandwidth of one frame (1 ms ) without system intervention.
+Clock It receives the 48 MHz clock from RCC.
+Writing in peripheral mode CPU write 32 bit word to OTG push register. This data then directly transferred to Tx data configured within USB data RAM.</description>
     </item>
     
   </channel>

@@ -7,7 +7,7 @@
     
     <title>Git in a box - Musing on daily development activities</title>
     
-    <meta name="description" content="Git in a box Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some secret project thing it would be much better to have git repository as portable copy.This is where git bare repository helps.
+    <meta name="description" content="Git in a box Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some scenario project thing it would be much better to have git repository as portable copy.This is where git bare repository helps.
 bare repository A bare repository is one without working copy. We can push or pull our changes to/from this repo. We can keep this repository portable and handy.">
     <meta name="author" content="Prasad Ghole">
     
@@ -63,7 +63,7 @@ bare repository A bare repository is one without working copy. We can push or pu
 <h1 id="git-in-a-box">Git in a box</h1>
 
 <p>Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some
-secret project thing it would be much better to have git repository as portable copy.This is where
+scenario project thing it would be much better to have git repository as portable copy.This is where
 git bare repository helps.</p>
 
 <h2 id="bare-repository">bare repository</h2>
@@ -75,6 +75,16 @@ can keep this repository portable and handy. Can be mount on shared drive and yo
 </code></pre>
 
 <h2 id="using-bare-repository">Using bare repository</h2>
+
+<p>We can push existing repo to this file based repository similar to remote repository.</p>
+
+<pre><code>git push &lt;path of bare repo&gt; master
+</code></pre>
+
+<p>We can clone this bare repository similar to our github repo</p>
+
+<pre><code>git clone &lt;path of bar repository&gt; &lt;clone directory&gt;
+</code></pre>
 </div>
   <footer class="post-footer">
     
