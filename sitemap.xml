@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://prasadghole.github.io/post/gitbare/</loc>
-    <lastmod>2019-07-29T00:00:00+00:00</lastmod>
+    <loc>https://prasadghole.github.io/post/vimbindings/</loc>
+    <lastmod>2019-10-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://prasadghole.github.io/post/singleton/</loc>
+    <loc>https://prasadghole.github.io/post/pointers_mistakes/</loc>
+    <lastmod>2019-09-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://prasadghole.github.io/post/gitbare/</loc>
     <lastmod>2019-07-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -19,13 +24,13 @@
   
   <url>
     <loc>https://prasadghole.github.io/</loc>
-    <lastmod>2019-07-29T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://prasadghole.github.io/post/</loc>
-    <lastmod>2019-07-29T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

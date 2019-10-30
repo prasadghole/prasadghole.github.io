@@ -6,10 +6,30 @@
     <description>Recent content in Posts on Musing on daily development activities</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2008 - 2018, Prasad Ghole</copyright>
-    <lastBuildDate>Mon, 29 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://prasadghole.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>I love vim (bindings)</title>
+      <link>https://prasadghole.github.io/post/vimbindings/</link>
+      <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/vimbindings/</guid>
+      <description> Even though you know vim is my first choice as editor in some situation we can&amp;rsquo;t use vim as standalone application. But not to worry vim keybindings are now available In this post I am listing all the vim bindings I am using.
+Vrapper for Eclipse Vim for Visual Studio code FakeVim for QT Creator Evil for emacs Online code editors </description>
+    </item>
+    
+    <item>
+      <title>Be careful with pointers</title>
+      <link>https://prasadghole.github.io/post/pointers_mistakes/</link>
+      <pubDate>Wed, 11 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/pointers_mistakes/</guid>
+      <description>Pointers in C/C++ are dual edge swords provide low level control over memory and hardware. This call for very careful usage which may lead to following problems.
+Memory leak When pointer is made invalid without releasing actual memory pointed by memory pointer on heap. This cause memory not getting reused even though its available.</description>
+    </item>
     
     <item>
       <title>Git in a box</title>
@@ -19,16 +39,6 @@
       <guid>https://prasadghole.github.io/post/gitbare/</guid>
       <description>Git in a box Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some scenario project thing it would be much better to have git repository as portable copy.This is where git bare repository helps.
 bare repository A bare repository is one without working copy. We can push or pull our changes to/from this repo. We can keep this repository portable and handy.</description>
-    </item>
-    
-    <item>
-      <title>SingleTon class</title>
-      <link>https://prasadghole.github.io/post/singleton/</link>
-      <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://prasadghole.github.io/post/singleton/</guid>
-      <description>SingleTon pattern is used to create only single instance of class object system wide. There are many possible implementation ways to implemente it.
- class SingleTon { public: static SingleTon &amp;amp; GetInstance { static SingleTon instance; return instance; } private: SingleTon() { /*Default constructor */ } }  In above implementation why can&amp;rsquo;t we simply create static function instead of create class objects. We need instance semantics in case we need to pass this object as callback.</description>
     </item>
     
     <item>
