@@ -85,31 +85,6 @@ Integrity Or...
 				
 			</description>
 		</item>
-		<item>
-			<title></title>
-			<link>https://prasadghole.github.io/post/qnxraspberry/</link>
-			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-			
-			<guid>https://prasadghole.github.io/post/qnxraspberry/</guid>
-			<description>
-				
-				** TTL to USB Com converter not working on Windows 10 after update https://vk3tbs.home.blog/2019/10/11/usb-device-error/...
-				
-			</description>
-		</item>
-		<item>
-			<title></title>
-			<link>https://prasadghole.github.io/post/usbstm32/</link>
-			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-			
-			<guid>https://prasadghole.github.io/post/usbstm32/</guid>
-			<description>
-				
-				OTG USB OTG is a dual core device which can act as both device and host. HS (High speed) FS (Full speed)
- 1.25 Kbytes of...
-				
-			</description>
-		</item>
 		
 	</channel>
 </rss>
