@@ -1,14 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on Musing on daily development activities</title>
-    <link>https://prasadghole.github.io/tags/</link>
-    <description>Recent content in Tags on Musing on daily development activities</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright (c) 2008 - 2018, Prasad Ghole</copyright>
-    
-	<atom:link href="https://prasadghole.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-  </channel>
+	<channel>
+		<title>Tags on Prasad Ghole</title>
+		<link>https://prasadghole.github.io/tags/</link>
+		<description>Recent content in Tags on prasadghole.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright notice | Vitae theme for Hugo</copyright>
+		
+		<atom:link href="https://prasadghole.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+		
+		
+	</channel>
 </rss>

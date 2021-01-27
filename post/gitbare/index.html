@@ -1,133 +1,130 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <title>Git in a box - Musing on daily development activities</title>
-    
-    <meta name="description" content="Git in a box Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some scenario project thing it would be much better to have git repository as portable copy.This is where git bare repository helps.
-bare repository A bare repository is one without working copy. We can push or pull our changes to/from this repo. We can keep this repository portable and handy.">
-    <meta name="author" content="Prasad Ghole">
-    
-    <link href="https://prasadghole.github.io/css/github-gist.min.css" rel="stylesheet">
-    <link href="https://prasadghole.github.io/css/style.css" rel="stylesheet">
-    
-    <link rel="apple-touch-icon" href="https://prasadghole.github.io/img/apple-touch-icon.png">
-    <link rel="icon" href="https://prasadghole.github.io/img/favicon.ico">
-    
-    <meta name="generator" content="Hugo 0.55.6" />
-    
-    <link rel="alternate" type="application/atom+xml" href="https://prasadghole.github.io/index.xml" title="Musing on daily development activities">
-    
-    
-    
-  </head>
-  <body class="single">
-    <header class="header">
-      <div class="wrap">
-        
-        <p class="logo"><a href="https://prasadghole.github.io">Musing on daily development activities</a></p>
-        
-        
-        <button class="menu-toggle" type="button"></button>
-        
-      </div>
-    </header>
-    
-    <nav class="nav">
-      <ul class="menu">
-        
-        <li>
-          <a href="https://prasadghole.github.io/about/">About Hugo</a>
-        </li>
-        
-        <li>
-          <a href="">tutorials</a>
-        </li>
-        
-      </ul>
-    </nav>
-    
-    <main class="main">
+<html lang="en"><head>
+	
+	<meta name="generator" content="Hugo 0.75.1" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta property="og:title" content="Git in a box">
+	
+	
+	<meta name="author" content="Prasad Ghole"><meta name="keywords" content="hugo,vitae,theme,static"><meta name="description" content=""><meta property="og:title" content="Git in a box" />
+<meta property="og:description" content="Git in a box Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some scenario project thing it would be much better to have git repository as portable copy.This is where git bare repository helps.
+bare repository A bare repository is one without working copy. We can push or pull our changes to/from this repo. We can keep this repository portable and handy." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://prasadghole.github.io/post/gitbare/" />
+<meta property="article:published_time" content="2019-07-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-07-29T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Git in a box"/>
+<meta name="twitter:description" content="Git in a box Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some scenario project thing it would be much better to have git repository as portable copy.This is where git bare repository helps.
+bare repository A bare repository is one without working copy. We can push or pull our changes to/from this repo. We can keep this repository portable and handy."/>
 
-
-<article class="post-single">
-  <header class="post-header">
-    <h1 class="post-title">Git in a box</h1>
-    <div class="post-meta">Prasad Ghole · 2019.7.29</div>
-  </header>
-  <div class="post-content">
-
-<h1 id="git-in-a-box">Git in a box</h1>
-
-<p>Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some
-scenario project thing it would be much better to have git repository as portable copy.This is where
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/all.css" />
+	<link rel="stylesheet" href="/css/katex.min.css" crossorigin="anonymous">
+	<script defer src="/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+	<script defer src="/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>Git in a box | Prasad Ghole</title></head>
+<body><header>
+	
+	<div id="avatar">
+		<a href="https://prasadghole.github.io">
+		  <img src="/img/vitae.jpg" alt="Prasad Ghole">
+		</a>
+	</div>
+	
+	<div id="titletext"><h2 id="title"><a href="https://prasadghole.github.io">Prasad Ghole</a></h2></div>
+	<div id="title-description"><p id="subtitle">My daily musing</p><div id="social">
+			<nav>
+				<ul>
+					<li><a href="https://github.com/dataCobra/hugo-vitae"><i title="Github" class="icons fab fa-github"></i></a></li>
+					<li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li></ul>
+			</nav>
+		</div>
+	</div>
+	
+	<div id="mainmenu">
+		<nav>
+			<ul>
+				
+				<li><a href="/">Home</a></li>
+				
+				<li><a href="/post">All Posts</a></li>
+				
+				<li><a href="/about">About</a></li>
+				
+				<li><a href="/tags">Tags</a></li>
+				
+				<li><a href="/categories">Categories</a></li>
+				
+				<li><a href="/about/">About Hugo</a></li>
+				
+				<li><a href="">tutorials</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+	
+</header>
+<main><div class="post">
+	
+	<div class="author">
+	
+	</div>
+	<div class="post-header">
+	
+		<div class="meta">
+			
+			<div class="date">
+				<span class="day">29</span>
+				<span class="rest">Jul 2019</span>
+			</div>
+			
+		</div>
+		
+		<div class="matter">
+			<h1 class="title">Git in a box</h1>
+		</div>
+	</div>
+	<div class="markdown">
+		<h1 id="git-in-a-box">Git in a box</h1>
+<p>Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some 
+scenario project thing it would be much better to have git repository as portable copy.This is where 
 git bare repository helps.</p>
-
 <h2 id="bare-repository">bare repository</h2>
-
 <p>A bare repository is one without working copy. We can push or pull our changes to/from this repo. We
 can keep this repository portable and handy. Can be mount on shared drive and your github is done.</p>
-
-<pre><code>git init --bare 
-</code></pre>
-
-<h2 id="using-bare-repository">Using bare repository</h2>
-
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">git init --bare 
+</code></pre></div><h2 id="using-bare-repository">Using bare repository</h2>
 <p>We can push existing repo to this file based repository similar to remote repository.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">git push &lt;path of bare repo&gt; master
+</code></pre></div><p>We can clone this bare repository similar to our github repo</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">git clone &lt;path of bar repository&gt; &lt;clone directory&gt;
+</code></pre></div>
+	</div>
+	
+	
+	
+	
+	
+		
+	
+		
+	
+		
+		
+	</div></div>
 
-<pre><code>git push &lt;path of bare repo&gt; master
-</code></pre>
-
-<p>We can clone this bare repository similar to our github repo</p>
-
-<pre><code>git clone &lt;path of bar repository&gt; &lt;clone directory&gt;
-</code></pre>
-</div>
-  <footer class="post-footer">
-    
-  </footer>
-  
-  
-  
-  
-</article>
-
-</main>
-<footer class="footer">
-  <span>&copy; 2019 <a href="https://prasadghole.github.io">Musing on daily development activities</a></span>
-  <span>&middot;</span>
-  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
-  <span>&middot;</span>
-  <span>Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+  </main>
+<footer>
+	 © Copyright notice | <a href="https://github.com/dataCobra/hugo-vitae">Vitae</a> theme for <a href="https://gohugo.io">Hugo</a> 
+	
+	
+	
 </footer>
-<script src="https://prasadghole.github.io/js/instantclick.min.js" data-no-instant></script>
-<script data-no-instant>InstantClick.init();</script>
-<script src="https://prasadghole.github.io/js/highlight.min.js" data-no-instant></script>
-<script data-no-instant>
-  let body;
-  function menuToggleListener() {
-    body.classList.toggle('blur');
-  }
-  function setMenuToggleListener() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    if (!menuToggle) return;
-    body = document.querySelector('body');
-    menuToggle.addEventListener('click', menuToggleListener);
-  }
 
-  hljs.initHighlightingOnLoad();
-  setMenuToggleListener();
 
-  InstantClick.on('change', function () {
-    document.querySelectorAll('pre code').forEach((block) => {
-      hljs.highlightBlock(block);
-    });
-    setMenuToggleListener();
-  });
-</script>
 </body>
 </html>
-
