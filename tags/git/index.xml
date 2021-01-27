@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>git on Prasad Ghole</title>
+		<link>https://prasadghole.github.io/tags/git/</link>
+		<description>Recent content in git on prasadghole.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright notice | Vitae theme for Hugo</copyright>
+		<lastBuildDate>Wed, 29 Jul 2020 00:00:00 +0530</lastBuildDate>
+		
+		<atom:link href="https://prasadghole.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Git in a box</title>
+			<link>https://prasadghole.github.io/post/gitbare/</link>
+			<pubDate>Wed, 29 Jul 2020 00:00:00 +0530</pubDate>
+			
+			<guid>https://prasadghole.github.io/post/gitbare/</guid>
+			<description>
+				
+				Git in a box Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some scena...
+				
+			</description>
+		</item>
+		
+	</channel>
+</rss>

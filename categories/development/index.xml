@@ -1,39 +1,90 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Development on Musing on daily development activities</title>
-    <link>https://prasadghole.github.io/categories/development/</link>
-    <description>Recent content in Development on Musing on daily development activities</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright (c) 2008 - 2018, Prasad Ghole</copyright>
-    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://prasadghole.github.io/categories/development/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>https://prasadghole.github.io/post/goisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://prasadghole.github.io/post/goisforlovers/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://prasadghole.github.io/post/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://prasadghole.github.io/post/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>development on Prasad Ghole</title>
+		<link>https://prasadghole.github.io/categories/development/</link>
+		<description>Recent content in development on prasadghole.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright notice | Vitae theme for Hugo</copyright>
+		<lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0530</lastBuildDate>
+		
+		<atom:link href="https://prasadghole.github.io/categories/development/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Vim Tips</title>
+			<link>https://prasadghole.github.io/post/vimtips/</link>
+			<pubDate>Fri, 22 Jan 2021 00:00:00 +0530</pubDate>
+			
+			<guid>https://prasadghole.github.io/post/vimtips/</guid>
+			<description>
+				
+				Search in visual mode Follow the steps:
+ Select visual mode by V or select block or column by using CTRL_V Press escape ...
+				
+			</description>
+		</item>
+		<item>
+			<title>Be careful with pointers</title>
+			<link>https://prasadghole.github.io/post/pointers_mistakes/</link>
+			<pubDate>Tue, 25 Aug 2020 00:00:00 +0530</pubDate>
+			
+			<guid>https://prasadghole.github.io/post/pointers_mistakes/</guid>
+			<description>
+				
+				Pointers in C/C&#43;&#43; are dual edge swords provide low level control over memory and hardware. This call for very careful us...
+				
+			</description>
+		</item>
+		<item>
+			<title>Git in a box</title>
+			<link>https://prasadghole.github.io/post/gitbare/</link>
+			<pubDate>Wed, 29 Jul 2020 00:00:00 +0530</pubDate>
+			
+			<guid>https://prasadghole.github.io/post/gitbare/</guid>
+			<description>
+				
+				Git in a box Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some scena...
+				
+			</description>
+		</item>
+		<item>
+			<title>Security principals</title>
+			<link>https://prasadghole.github.io/post/security/</link>
+			<pubDate>Wed, 29 Apr 2020 00:00:00 +0530</pubDate>
+			
+			<guid>https://prasadghole.github.io/post/security/</guid>
+			<description>
+				
+				Five Principals for of embedded security Message Off course this is what you want to protect from intruder.
+Integrity Or...
+				
+			</description>
+		</item>
+		<item>
+			<title>I love vim (bindings)</title>
+			<link>https://prasadghole.github.io/post/vimbindings/</link>
+			<pubDate>Mon, 29 Jul 2019 00:00:00 +0530</pubDate>
+			
+			<guid>https://prasadghole.github.io/post/vimbindings/</guid>
+			<description>
+				
+				Even though you know vim is my first choice as editor in some situation we can’t use vim as standalone application...
+				
+			</description>
+		</item>
+		<item>
+			<title>Vim Plug in</title>
+			<link>https://prasadghole.github.io/post/vimplug/</link>
+			<pubDate>Mon, 29 Jul 2019 00:00:00 +0530</pubDate>
+			
+			<guid>https://prasadghole.github.io/post/vimplug/</guid>
+			<description>
+				
+				Well time has come to install vim plugins for using more advance features of vim. There are lots many options available ...
+				
+			</description>
+		</item>
+		
+	</channel>
 </rss>

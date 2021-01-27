@@ -7,38 +7,27 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>© Copyright notice | Vitae theme for Hugo</copyright>
-		<lastBuildDate>Sun, 03 Nov 2019 00:00:00 +0000</lastBuildDate>
+		<lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0530</lastBuildDate>
 		
 		<atom:link href="https://prasadghole.github.io/index.xml" rel="self" type="application/rss+xml" />
 		
 		<item>
-			<title>Vim Plug in</title>
-			<link>https://prasadghole.github.io/post/vimplug/</link>
-			<pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
+			<title>Vim Tips</title>
+			<link>https://prasadghole.github.io/post/vimtips/</link>
+			<pubDate>Fri, 22 Jan 2021 00:00:00 +0530</pubDate>
 			
-			<guid>https://prasadghole.github.io/post/vimplug/</guid>
+			<guid>https://prasadghole.github.io/post/vimtips/</guid>
 			<description>
 				
-				Well time has come to install vim plugins for using more advance features of vim. There are lots many options available ...
-				
-			</description>
-		</item>
-		<item>
-			<title>I love vim (bindings)</title>
-			<link>https://prasadghole.github.io/post/vimbindings/</link>
-			<pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
-			
-			<guid>https://prasadghole.github.io/post/vimbindings/</guid>
-			<description>
-				
-				Even though you know vim is my first choice as editor in some situation we can’t use vim as standalone application...
+				Search in visual mode Follow the steps:
+ Select visual mode by V or select block or column by using CTRL_V Press escape ...
 				
 			</description>
 		</item>
 		<item>
 			<title>Be careful with pointers</title>
 			<link>https://prasadghole.github.io/post/pointers_mistakes/</link>
-			<pubDate>Wed, 11 Sep 2019 00:00:00 +0000</pubDate>
+			<pubDate>Tue, 25 Aug 2020 00:00:00 +0530</pubDate>
 			
 			<guid>https://prasadghole.github.io/post/pointers_mistakes/</guid>
 			<description>
@@ -50,7 +39,7 @@
 		<item>
 			<title>Git in a box</title>
 			<link>https://prasadghole.github.io/post/gitbare/</link>
-			<pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
+			<pubDate>Wed, 29 Jul 2020 00:00:00 +0530</pubDate>
 			
 			<guid>https://prasadghole.github.io/post/gitbare/</guid>
 			<description>
@@ -60,28 +49,39 @@
 			</description>
 		</item>
 		<item>
-			<title>Vim Tips</title>
-			<link>https://prasadghole.github.io/post/vimtips/</link>
-			<pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
-			
-			<guid>https://prasadghole.github.io/post/vimtips/</guid>
-			<description>
-				
-				Search in visual mode Follow the steps:
- Select visual mode by V or select block or column by using CTRL_V Press escape ...
-				
-			</description>
-		</item>
-		<item>
 			<title>Security principals</title>
 			<link>https://prasadghole.github.io/post/security/</link>
-			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+			<pubDate>Wed, 29 Apr 2020 00:00:00 +0530</pubDate>
 			
 			<guid>https://prasadghole.github.io/post/security/</guid>
 			<description>
 				
 				Five Principals for of embedded security Message Off course this is what you want to protect from intruder.
 Integrity Or...
+				
+			</description>
+		</item>
+		<item>
+			<title>I love vim (bindings)</title>
+			<link>https://prasadghole.github.io/post/vimbindings/</link>
+			<pubDate>Mon, 29 Jul 2019 00:00:00 +0530</pubDate>
+			
+			<guid>https://prasadghole.github.io/post/vimbindings/</guid>
+			<description>
+				
+				Even though you know vim is my first choice as editor in some situation we can’t use vim as standalone application...
+				
+			</description>
+		</item>
+		<item>
+			<title>Vim Plug in</title>
+			<link>https://prasadghole.github.io/post/vimplug/</link>
+			<pubDate>Mon, 29 Jul 2019 00:00:00 +0530</pubDate>
+			
+			<guid>https://prasadghole.github.io/post/vimplug/</guid>
+			<description>
+				
+				Well time has come to install vim plugins for using more advance features of vim. There are lots many options available ...
 				
 			</description>
 		</item>

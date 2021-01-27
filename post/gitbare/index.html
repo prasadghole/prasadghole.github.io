@@ -9,17 +9,17 @@
 	<meta property="og:title" content="Git in a box">
 	
 	
-	<meta name="author" content="Prasad Ghole"><meta name="keywords" content="hugo,vitae,theme,static"><meta name="description" content=""><meta property="og:title" content="Git in a box" />
+	<meta name="author" content="Prasad Ghole"><meta name="keywords" content="git"><meta name="description" content=""><meta property="og:title" content="Git in a box" />
 <meta property="og:description" content="Git in a box Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some scenario project thing it would be much better to have git repository as portable copy.This is where git bare repository helps.
-bare repository A bare repository is one without working copy. We can push or pull our changes to/from this repo. We can keep this repository portable and handy." />
+Bare repository A bare repository is one without working copy. We can push or pull our changes to/from this repo. We can keep this repository portable and handy." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://prasadghole.github.io/post/gitbare/" />
-<meta property="article:published_time" content="2019-07-29T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-07-29T00:00:00+00:00" />
+<meta property="article:published_time" content="2020-07-29T00:00:00+05:30" />
+<meta property="article:modified_time" content="2020-07-29T00:00:00+05:30" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Git in a box"/>
 <meta name="twitter:description" content="Git in a box Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some scenario project thing it would be much better to have git repository as portable copy.This is where git bare repository helps.
-bare repository A bare repository is one without working copy. We can push or pull our changes to/from this repo. We can keep this repository portable and handy."/>
+Bare repository A bare repository is one without working copy. We can push or pull our changes to/from this repo. We can keep this repository portable and handy."/>
 
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
@@ -62,8 +62,6 @@ bare repository A bare repository is one without working copy. We can push or pu
 				
 				<li><a href="/about/">About Hugo</a></li>
 				
-				<li><a href="">tutorials</a></li>
-				
 			</ul>
 		</nav>
 	</div>
@@ -73,6 +71,14 @@ bare repository A bare repository is one without working copy. We can push or pu
 	
 	<div class="author">
 	
+	
+		<p>
+		
+		Written by Prasad Ghole
+		
+		</p>
+	
+	
 	</div>
 	<div class="post-header">
 	
@@ -80,7 +86,7 @@ bare repository A bare repository is one without working copy. We can push or pu
 			
 			<div class="date">
 				<span class="day">29</span>
-				<span class="rest">Jul 2019</span>
+				<span class="rest">Jul 2020</span>
 			</div>
 			
 		</div>
@@ -94,26 +100,94 @@ bare repository A bare repository is one without working copy. We can push or pu
 <p>Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some 
 scenario project thing it would be much better to have git repository as portable copy.This is where 
 git bare repository helps.</p>
-<h2 id="bare-repository">bare repository</h2>
+<h2 id="bare-repository">Bare repository</h2>
 <p>A bare repository is one without working copy. We can push or pull our changes to/from this repo. We
-can keep this repository portable and handy. Can be mount on shared drive and your github is done.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">git init --bare 
-</code></pre></div><h2 id="using-bare-repository">Using bare repository</h2>
+can keep this repository portable and handy. Can be mount on shared drive and your github is done.
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="display:block;width:100%;background-color:#e5e5e5">git init <span style="color:#333">--</span>bare </span></code></pre></div></p>
+<h2 id="using-bare-repository">Using bare repository</h2>
 <p>We can push existing repo to this file based repository similar to remote repository.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">git push &lt;path of bare repo&gt; master
-</code></pre></div><p>We can clone this bare repository similar to our github repo</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">git clone &lt;path of bar repository&gt; &lt;clone directory&gt;
-</code></pre></div>
+<p><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="display:block;width:100%;background-color:#e5e5e5">git push <span style="color:#333">&lt;</span>path of bare repo<span style="color:#333">&gt;</span> master</span></code></pre></div>
+We can clone this bare repository similar to our github repo
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="display:block;width:100%;background-color:#e5e5e5">git clone <span style="color:#333">&lt;</span>path of bar repository<span style="color:#333">&gt;</span> <span style="color:#333">&lt;</span>clone directory<span style="color:#333">&gt;</span></span></code></pre></div></p>
+
 	</div>
 	
 	
 	
 	
 	
+	
+	
+	<div class="tags">
+		<div class="taxosfloating_left">
+			<p>Categories</p>
+		</div>
+		<div class="termsfloating_right">
+			<p>
+			
+			
+			
+			
+			
+			
+			
+			<a href="/categories/development/"> development </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</p>
+		</div>
+		<div class="clearit"></div>
+		
+		
+		
 		
 	
 		
 	
+	
+	
+	<div class="tags">
+		<div class="taxosfloating_left">
+			<p>Tags</p>
+		</div>
+		<div class="termsfloating_right">
+			<p>
+			
+			
+			
+			
+			
+			
+			
+			<a href="/tags/git/"> git </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</p>
+		</div>
+		<div class="clearit"></div>
+		
+		
+		
 		
 		
 	</div></div>
