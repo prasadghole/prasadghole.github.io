@@ -1,56 +1,65 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>vim on Prasad Ghole</title>
-    <link>https://prasadghole.github.io/tags/vim/</link>
-    <description>Recent content in vim on Prasad Ghole</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© Copyright notice | [Vitae](https://github.com/dataCobra/hugo-vitae) theme for [Hugo](https://gohugo.io)</copyright>
-    <lastBuildDate>Tue, 26 Jan 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://prasadghole.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Installing spacemacs on windows</title>
-      <link>https://prasadghole.github.io/post/installemacsonwindows/</link>
-      <pubDate>Tue, 26 Jan 2021 00:00:00 +0530</pubDate>
-      
-      <guid>https://prasadghole.github.io/post/installemacsonwindows/</guid>
-      <description>Installing spacemacs on windows Once we install vanilla emacs from gnu website we want to do little twick for running emacs configuration when we run runemacs.exe command.
-We need to find out where is emacs startup home directory path.
-Finding startup directory Check user emacs directory CTRL-H v  Enter variable name user-emacs-directory
-Cloning spacemacs configuration When ever emacs starts it looks for startup directory in user emacs directory found above.</description>
-    </item>
-    
-    <item>
-      <title>Vim Tips</title>
-      <link>https://prasadghole.github.io/post/vimtips/</link>
-      <pubDate>Fri, 22 Jan 2021 00:00:00 +0530</pubDate>
-      
-      <guid>https://prasadghole.github.io/post/vimtips/</guid>
-      <description>Search in visual mode Follow the steps:
- Select visual mode by V or select block or column by using CTRL_V Press escape to exit visual mode Search / as you do for regular search  </description>
-    </item>
-    
-    <item>
-      <title>I love vim (bindings)</title>
-      <link>https://prasadghole.github.io/post/vimbindings/</link>
-      <pubDate>Mon, 29 Jul 2019 00:00:00 +0530</pubDate>
-      
-      <guid>https://prasadghole.github.io/post/vimbindings/</guid>
-      <description>Even though you know vim is my first choice as editor in some situation we can&amp;rsquo;t use vim as standalone application. But not to worry vim keybindings are now available In this post I am listing all the vim bindings I am using.
-Vrapper for Eclipse Vim for Visual Studio code FakeVim for QT Creator Evil for emacs Online code editors </description>
-    </item>
-    
-    <item>
-      <title>Vim Plug in</title>
-      <link>https://prasadghole.github.io/post/vimplug/</link>
-      <pubDate>Mon, 29 Jul 2019 00:00:00 +0530</pubDate>
-      
-      <guid>https://prasadghole.github.io/post/vimplug/</guid>
-      <description>Well time has come to install vim plugins for using more advance features of vim. There are lots many options available but I choose vim plug being simple and easy to use.
-Installation Github repo has all necessary details for installing so I won&amp;rsquo;t repeat here.
-Plugins I use fzf Fuzzy finder
-vim surround vim multiple cursor vim git gutter vim airline vim nerdcommenter emmet vim slumlord cvim </description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>vim on Prasad Ghole</title>
+		<link>https://prasadghole.github.io/tags/vim/</link>
+		<description>Recent content in vim on prasadghole.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright notice | Vitae theme for Hugo</copyright>
+		<lastBuildDate>Tue, 26 Jan 2021 00:00:00 +0530</lastBuildDate>
+		
+		<atom:link href="https://prasadghole.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Installing spacemacs on windows</title>
+			<link>https://prasadghole.github.io/post/installemacsonwindows/</link>
+			<pubDate>Tue, 26 Jan 2021 00:00:00 +0530</pubDate>
+			
+			<guid>https://prasadghole.github.io/post/installemacsonwindows/</guid>
+			<description>
+				
+				Installing spacemacs on windows Once we install vanilla emacs from gnu website we want to do little twick for running em...
+				
+			</description>
+		</item>
+		<item>
+			<title>Vim Tips</title>
+			<link>https://prasadghole.github.io/post/vimtips/</link>
+			<pubDate>Fri, 22 Jan 2021 00:00:00 +0530</pubDate>
+			
+			<guid>https://prasadghole.github.io/post/vimtips/</guid>
+			<description>
+				
+				Search in visual mode Follow the steps:
+ Select visual mode by V or select block or column by using CTRL_V Press escape ...
+				
+			</description>
+		</item>
+		<item>
+			<title>I love vim (bindings)</title>
+			<link>https://prasadghole.github.io/post/vimbindings/</link>
+			<pubDate>Mon, 29 Jul 2019 00:00:00 +0530</pubDate>
+			
+			<guid>https://prasadghole.github.io/post/vimbindings/</guid>
+			<description>
+				
+				Even though you know vim is my first choice as editor in some situation we can’t use vim as standalone application...
+				
+			</description>
+		</item>
+		<item>
+			<title>Vim Plug in</title>
+			<link>https://prasadghole.github.io/post/vimplug/</link>
+			<pubDate>Mon, 29 Jul 2019 00:00:00 +0530</pubDate>
+			
+			<guid>https://prasadghole.github.io/post/vimplug/</guid>
+			<description>
+				
+				Well time has come to install vim plugins for using more advance features of vim. There are lots many options available ...
+				
+			</description>
+		</item>
+		
+	</channel>
 </rss>

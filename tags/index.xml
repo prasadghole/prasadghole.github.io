@@ -1,48 +1,64 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on Prasad Ghole</title>
-    <link>https://prasadghole.github.io/tags/</link>
-    <description>Recent content in Tags on Prasad Ghole</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© Copyright notice | [Vitae](https://github.com/dataCobra/hugo-vitae) theme for [Hugo](https://gohugo.io)</copyright>
-    <lastBuildDate>Tue, 26 Jan 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://prasadghole.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>vim</title>
-      <link>https://prasadghole.github.io/tags/vim/</link>
-      <pubDate>Tue, 26 Jan 2021 00:00:00 +0530</pubDate>
-      
-      <guid>https://prasadghole.github.io/tags/vim/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>C</title>
-      <link>https://prasadghole.github.io/tags/c/</link>
-      <pubDate>Tue, 25 Aug 2020 00:00:00 +0530</pubDate>
-      
-      <guid>https://prasadghole.github.io/tags/c/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>https://prasadghole.github.io/tags/git/</link>
-      <pubDate>Wed, 29 Jul 2020 00:00:00 +0530</pubDate>
-      
-      <guid>https://prasadghole.github.io/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>security</title>
-      <link>https://prasadghole.github.io/tags/security/</link>
-      <pubDate>Wed, 29 Apr 2020 00:00:00 +0530</pubDate>
-      
-      <guid>https://prasadghole.github.io/tags/security/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>Tags on Prasad Ghole</title>
+		<link>https://prasadghole.github.io/tags/</link>
+		<description>Recent content in Tags on prasadghole.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright notice | Vitae theme for Hugo</copyright>
+		<lastBuildDate>Tue, 26 Jan 2021 00:00:00 +0530</lastBuildDate>
+		
+		<atom:link href="https://prasadghole.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>vim</title>
+			<link>https://prasadghole.github.io/tags/vim/</link>
+			<pubDate>Tue, 26 Jan 2021 00:00:00 +0530</pubDate>
+			
+			<guid>https://prasadghole.github.io/tags/vim/</guid>
+			<description>
+				
+				
+				
+			</description>
+		</item>
+		<item>
+			<title>C</title>
+			<link>https://prasadghole.github.io/tags/c/</link>
+			<pubDate>Tue, 25 Aug 2020 00:00:00 +0530</pubDate>
+			
+			<guid>https://prasadghole.github.io/tags/c/</guid>
+			<description>
+				
+				
+				
+			</description>
+		</item>
+		<item>
+			<title>git</title>
+			<link>https://prasadghole.github.io/tags/git/</link>
+			<pubDate>Wed, 29 Jul 2020 00:00:00 +0530</pubDate>
+			
+			<guid>https://prasadghole.github.io/tags/git/</guid>
+			<description>
+				
+				
+				
+			</description>
+		</item>
+		<item>
+			<title>security</title>
+			<link>https://prasadghole.github.io/tags/security/</link>
+			<pubDate>Wed, 29 Apr 2020 00:00:00 +0530</pubDate>
+			
+			<guid>https://prasadghole.github.io/tags/security/</guid>
+			<description>
+				
+				
+				
+			</description>
+		</item>
+		
+	</channel>
 </rss>
