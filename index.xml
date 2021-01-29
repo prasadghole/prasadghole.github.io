@@ -1,116 +1,101 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Prasad Ghole</title>
-		<link>https://prasadghole.github.io/</link>
-		<description>Recent content on prasadghole.github.io</description>
-		<generator>Hugo -- gohugo.io</generator>
-		<language>en-us</language>
-		<copyright>© Copyright notice | Vitae theme for Hugo</copyright>
-		<lastBuildDate>Tue, 26 Jan 2021 00:00:00 +0530</lastBuildDate>
-		
-		<atom:link href="https://prasadghole.github.io/index.xml" rel="self" type="application/rss+xml" />
-		
-		<item>
-			<title>Installing spacemacs on windows</title>
-			<link>https://prasadghole.github.io/post/installemacsonwindows/</link>
-			<pubDate>Tue, 26 Jan 2021 00:00:00 +0530</pubDate>
-			
-			<guid>https://prasadghole.github.io/post/installemacsonwindows/</guid>
-			<description>
-				
-				Installing spacemacs on windows Once we install vanilla emacs from gnu website we want to do little twick for running em...
-				
-			</description>
-		</item>
-		<item>
-			<title>Vim Tips</title>
-			<link>https://prasadghole.github.io/post/vimtips/</link>
-			<pubDate>Fri, 22 Jan 2021 00:00:00 +0530</pubDate>
-			
-			<guid>https://prasadghole.github.io/post/vimtips/</guid>
-			<description>
-				
-				Search in visual mode Follow the steps:
- Select visual mode by V or select block or column by using CTRL_V Press escape ...
-				
-			</description>
-		</item>
-		<item>
-			<title>Be careful with pointers</title>
-			<link>https://prasadghole.github.io/post/pointers_mistakes/</link>
-			<pubDate>Tue, 25 Aug 2020 00:00:00 +0530</pubDate>
-			
-			<guid>https://prasadghole.github.io/post/pointers_mistakes/</guid>
-			<description>
-				
-				Pointers in C/C&#43;&#43; are dual edge swords provide low level control over memory and hardware. This call for very careful us...
-				
-			</description>
-		</item>
-		<item>
-			<title>Git in a box</title>
-			<link>https://prasadghole.github.io/post/gitbare/</link>
-			<pubDate>Wed, 29 Jul 2020 00:00:00 +0530</pubDate>
-			
-			<guid>https://prasadghole.github.io/post/gitbare/</guid>
-			<description>
-				
-				Git in a box Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some scena...
-				
-			</description>
-		</item>
-		<item>
-			<title>Security principals</title>
-			<link>https://prasadghole.github.io/post/security/</link>
-			<pubDate>Wed, 29 Apr 2020 00:00:00 +0530</pubDate>
-			
-			<guid>https://prasadghole.github.io/post/security/</guid>
-			<description>
-				
-				Five Principals for of embedded security Message Off course this is what you want to protect from intruder.
-Integrity Or...
-				
-			</description>
-		</item>
-		<item>
-			<title>I love vim (bindings)</title>
-			<link>https://prasadghole.github.io/post/vimbindings/</link>
-			<pubDate>Mon, 29 Jul 2019 00:00:00 +0530</pubDate>
-			
-			<guid>https://prasadghole.github.io/post/vimbindings/</guid>
-			<description>
-				
-				Even though you know vim is my first choice as editor in some situation we can’t use vim as standalone application...
-				
-			</description>
-		</item>
-		<item>
-			<title>Vim Plug in</title>
-			<link>https://prasadghole.github.io/post/vimplug/</link>
-			<pubDate>Mon, 29 Jul 2019 00:00:00 +0530</pubDate>
-			
-			<guid>https://prasadghole.github.io/post/vimplug/</guid>
-			<description>
-				
-				Well time has come to install vim plugins for using more advance features of vim. There are lots many options available ...
-				
-			</description>
-		</item>
-		<item>
-			<title>About Hugo</title>
-			<link>https://prasadghole.github.io/about/</link>
-			<pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-			
-			<guid>https://prasadghole.github.io/about/</guid>
-			<description>
-				
-				Hugo is a static site engine written in Go.
+  <channel>
+    <title>Even - A super concise theme for Hugo</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Even - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 26 Jan 2021 00:00:00 +0530</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing spacemacs on windows</title>
+      <link>http://localhost:1313/post/installemacsonwindows/</link>
+      <pubDate>Tue, 26 Jan 2021 00:00:00 +0530</pubDate>
+      
+      <guid>http://localhost:1313/post/installemacsonwindows/</guid>
+      <description>Installing spacemacs on windows Once we install vanilla emacs from gnu website we want to do little twick for running emacs configuration when we run runemacs.exe command.
+We need to find out where is emacs startup home directory path.
+Finding startup directory Check user emacs directory 1  CTRL-H v    Enter variable name 1  user-emacs-directory  
+Cloning spacemacs configuration When ever emacs starts it looks for startup directory in user emacs directory found above.</description>
+    </item>
+    
+    <item>
+      <title>Vim Tips</title>
+      <link>http://localhost:1313/post/vimtips/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0530</pubDate>
+      
+      <guid>http://localhost:1313/post/vimtips/</guid>
+      <description>Search in visual mode Follow the steps:
+ Select visual mode by V or select block or column by using CTRL_V Press escape to exit visual mode Search / as you do for regular search  </description>
+    </item>
+    
+    <item>
+      <title>Be careful with pointers</title>
+      <link>http://localhost:1313/post/pointers_mistakes/</link>
+      <pubDate>Tue, 25 Aug 2020 00:00:00 +0530</pubDate>
+      
+      <guid>http://localhost:1313/post/pointers_mistakes/</guid>
+      <description>Pointers in C/C++ are dual edge swords provide low level control over memory and hardware. This call for very careful usage which may lead to following problems.
+Memory leak When pointer is made invalid without releasing actual memory pointed by memory pointer on heap. This cause memory not getting reused even though its available.</description>
+    </item>
+    
+    <item>
+      <title>Git in a box</title>
+      <link>http://localhost:1313/post/gitbare/</link>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0530</pubDate>
+      
+      <guid>http://localhost:1313/post/gitbare/</guid>
+      <description>Git in a box Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some scenario project thing it would be much better to have git repository as portable copy.This is where git bare repository helps.
+Bare repository A bare repository is one without working copy. We can push or pull our changes to/from this repo. We can keep this repository portable and handy.</description>
+    </item>
+    
+    <item>
+      <title>Security principals</title>
+      <link>http://localhost:1313/post/security/</link>
+      <pubDate>Wed, 29 Apr 2020 00:00:00 +0530</pubDate>
+      
+      <guid>http://localhost:1313/post/security/</guid>
+      <description>Five Principals for of embedded security Message Off course this is what you want to protect from intruder.
+Integrity Original message sent from sender should not altered when received by receiver.
+Authentication Message should be received from intended sender party.
+Authorization Sender of message should have be authorized to execute some action on receptor
+Anti-replay A valid message should not be used again by intruder to carry out malicious activities</description>
+    </item>
+    
+    <item>
+      <title>I love vim (bindings)</title>
+      <link>http://localhost:1313/post/vimbindings/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 +0530</pubDate>
+      
+      <guid>http://localhost:1313/post/vimbindings/</guid>
+      <description>Even though you know vim is my first choice as editor in some situation we can&amp;rsquo;t use vim as standalone application. But not to worry vim keybindings are now available In this post I am listing all the vim bindings I am using.
+Vrapper for Eclipse Vim for Visual Studio code FakeVim for QT Creator Evil for emacs Online code editors </description>
+    </item>
+    
+    <item>
+      <title>Vim Plug in</title>
+      <link>http://localhost:1313/post/vimplug/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 +0530</pubDate>
+      
+      <guid>http://localhost:1313/post/vimplug/</guid>
+      <description>Well time has come to install vim plugins for using more advance features of vim. There are lots many options available but I choose vim plug being simple and easy to use.
+Installation Github repo has all necessary details for installing so I won&amp;rsquo;t repeat here.
+Plugins I use fzf Fuzzy finder
+vim surround vim multiple cursor vim git gutter vim airline vim nerdcommenter emmet vim slumlord cvim </description>
+    </item>
+    
+    <item>
+      <title>About Hugo</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      <description>Hugo is a static site engine written in Go.
 It makes use of a variety of open source projects including:
- Cobra Viper J ...
-				
-			</description>
-		</item>
-		
-	</channel>
+ Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.
+Setup Some fun facts about Hugo:
+ Built in Go Loosely inspired by Jekyll Primarily developed by spf13 on the train while commuting to and from Manhattan. Coded in Vim using spf13-vim  Have questions or suggestions?</description>
+    </item>
+    
+  </channel>
 </rss>

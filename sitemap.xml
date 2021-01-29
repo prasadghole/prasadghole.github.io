@@ -1,94 +1,123 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml-stylesheet type="text/xsl" href="http://localhost:1313/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://prasadghole.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2021-01-26T00:00:00+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://prasadghole.github.io/categories/development/</loc>
+    <loc>http://localhost:1313/categories/development/</loc>
     <lastmod>2021-01-26T00:00:00+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://prasadghole.github.io/post/installemacsonwindows/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2021-01-26T00:00:00+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://prasadghole.github.io/post/</loc>
+    <loc>http://localhost:1313/post/installemacsonwindows/</loc>
     <lastmod>2021-01-26T00:00:00+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://prasadghole.github.io/</loc>
+    <loc>http://localhost:1313/post/</loc>
     <lastmod>2021-01-26T00:00:00+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://prasadghole.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2021-01-26T00:00:00+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://prasadghole.github.io/tags/vim/</loc>
+    <loc>http://localhost:1313/tags/vim/</loc>
     <lastmod>2021-01-26T00:00:00+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://prasadghole.github.io/post/vimtips/</loc>
+    <loc>http://localhost:1313/post/vimtips/</loc>
     <lastmod>2021-01-22T00:00:00+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://prasadghole.github.io/post/pointers_mistakes/</loc>
+    <loc>http://localhost:1313/post/pointers_mistakes/</loc>
     <lastmod>2020-08-25T00:00:00+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://prasadghole.github.io/tags/c/</loc>
+    <loc>http://localhost:1313/tags/c/</loc>
     <lastmod>2020-08-25T00:00:00+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://prasadghole.github.io/tags/git/</loc>
+    <loc>http://localhost:1313/tags/git/</loc>
     <lastmod>2020-07-29T00:00:00+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://prasadghole.github.io/post/gitbare/</loc>
+    <loc>http://localhost:1313/post/gitbare/</loc>
     <lastmod>2020-07-29T00:00:00+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://prasadghole.github.io/tags/security/</loc>
+    <loc>http://localhost:1313/tags/security/</loc>
     <lastmod>2020-04-29T00:00:00+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://prasadghole.github.io/post/security/</loc>
+    <loc>http://localhost:1313/post/security/</loc>
     <lastmod>2020-04-29T00:00:00+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://prasadghole.github.io/post/vimbindings/</loc>
+    <loc>http://localhost:1313/post/vimbindings/</loc>
     <lastmod>2019-07-29T00:00:00+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://prasadghole.github.io/post/vimplug/</loc>
+    <loc>http://localhost:1313/post/vimplug/</loc>
     <lastmod>2019-07-29T00:00:00+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://prasadghole.github.io/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://prasadghole.github.io/series/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
 </urlset>
