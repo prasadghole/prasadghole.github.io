@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>C on Even - A super concise theme for Hugo</title>
-    <link>http://localhost:1313/tags/c/</link>
-    <description>Recent content in C on Even - A super concise theme for Hugo</description>
+    <title>C on My daily musing</title>
+    <link>http://prasadghole.github.io/tags/c/</link>
+    <description>Recent content in C on My daily musing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 25 Aug 2020 00:00:00 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Aug 2020 00:00:00 +0530</lastBuildDate><atom:link href="http://prasadghole.github.io/tags/c/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Be careful with pointers</title>
-      <link>http://localhost:1313/post/pointers_mistakes/</link>
+      <link>http://prasadghole.github.io/post/pointers_mistakes/</link>
       <pubDate>Tue, 25 Aug 2020 00:00:00 +0530</pubDate>
       
-      <guid>http://localhost:1313/post/pointers_mistakes/</guid>
+      <guid>http://prasadghole.github.io/post/pointers_mistakes/</guid>
       <description>Pointers in C/C++ are dual edge swords provide low level control over memory and hardware. This call for very careful usage which may lead to following problems.
 Memory leak When pointer is made invalid without releasing actual memory pointed by memory pointer on heap. This cause memory not getting reused even though its available.</description>
     </item>

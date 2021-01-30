@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>git on Even - A super concise theme for Hugo</title>
-    <link>http://localhost:1313/tags/git/</link>
-    <description>Recent content in git on Even - A super concise theme for Hugo</description>
+    <title>git on My daily musing</title>
+    <link>http://prasadghole.github.io/tags/git/</link>
+    <description>Recent content in git on My daily musing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Jul 2020 00:00:00 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Jul 2020 00:00:00 +0530</lastBuildDate><atom:link href="http://prasadghole.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git in a box</title>
-      <link>http://localhost:1313/post/gitbare/</link>
+      <link>http://prasadghole.github.io/post/gitbare/</link>
       <pubDate>Wed, 29 Jul 2020 00:00:00 +0530</pubDate>
       
-      <guid>http://localhost:1313/post/gitbare/</guid>
+      <guid>http://prasadghole.github.io/post/gitbare/</guid>
       <description>Git in a box Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some scenario project thing it would be much better to have git repository as portable copy.This is where git bare repository helps.
 Bare repository A bare repository is one without working copy. We can push or pull our changes to/from this repo. We can keep this repository portable and handy.</description>
     </item>

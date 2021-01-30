@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>security on Even - A super concise theme for Hugo</title>
-    <link>http://localhost:1313/tags/security/</link>
-    <description>Recent content in security on Even - A super concise theme for Hugo</description>
+    <title>security on My daily musing</title>
+    <link>http://prasadghole.github.io/tags/security/</link>
+    <description>Recent content in security on My daily musing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Apr 2020 00:00:00 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Apr 2020 00:00:00 +0530</lastBuildDate><atom:link href="http://prasadghole.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Security principals</title>
-      <link>http://localhost:1313/post/security/</link>
+      <link>http://prasadghole.github.io/post/security/</link>
       <pubDate>Wed, 29 Apr 2020 00:00:00 +0530</pubDate>
       
-      <guid>http://localhost:1313/post/security/</guid>
+      <guid>http://prasadghole.github.io/post/security/</guid>
       <description>Five Principals for of embedded security Message Off course this is what you want to protect from intruder.
 Integrity Original message sent from sender should not altered when received by receiver.
 Authentication Message should be received from intended sender party.
