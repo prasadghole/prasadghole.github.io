@@ -6,7 +6,21 @@
     <description>Recent content on My daily musing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 26 Jan 2021 00:00:00 +0530</lastBuildDate><atom:link href="http://prasadghole.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Feb 2021 00:48:49 +0530</lastBuildDate><atom:link href="http://prasadghole.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reveal Secrets</title>
+      <link>http://prasadghole.github.io/post/reveal-secrets/</link>
+      <pubDate>Tue, 02 Feb 2021 00:48:49 +0530</pubDate>
+      
+      <guid>http://prasadghole.github.io/post/reveal-secrets/</guid>
+      <description>Reveal js Converting daily notes to beautiful presentations made easy with reveal js integration. Configuration is also very simple but still there are some tit bits to remember. Below are some of the links
+Configuting emacs (spacemacs) https://www.johbo.com/2017/presentations-with-org-mode.html
+http://jr0cket.co.uk/2017/03/org-mode-driven-presentations-with-org-reveal-spacemacs.html
+About org mode http://jr0cket.co.uk/2013/08/manage-dev-life-with-emacs-org-mode.html
+https://orgmode.org/
+Publishing to Internet http://jr0cket.co.uk/2014/01/share-your-revealjs-slides-on-github-pages.html</description>
+    </item>
+    
     <item>
       <title>Installing spacemacs on windows</title>
       <link>http://prasadghole.github.io/post/installemacsonwindows/</link>
