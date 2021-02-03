@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>development · My daily musing</title>
+  <title>CAN Summary - My daily musing</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Prasad Ghole" /><meta name="description" content="My daily musing" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="Prasad Ghole" /><meta name="description" content="CAN protocol summary" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -26,9 +26,7 @@
 <meta name="generator" content="Hugo 0.75.1 with theme even" />
 
 
-<link rel="canonical" href="http://prasadghole.github.io/tags/development/" />
-  <link href="http://prasadghole.github.io/tags/development/index.xml" rel="alternate" type="application/rss+xml" title="My daily musing" />
-  <link href="http://prasadghole.github.io/tags/development/index.xml" rel="feed" type="application/rss+xml" title="My daily musing" />
+<link rel="canonical" href="http://prasadghole.github.io/post/cansummary/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -41,16 +39,24 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="development" />
-<meta property="og:description" content="My daily musing" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://prasadghole.github.io/tags/development/" />
-<meta property="og:updated_time" content="2021-02-03T11:34:54+05:30" />
-<meta itemprop="name" content="development">
-<meta itemprop="description" content="My daily musing">
+<meta property="og:title" content="CAN Summary" />
+<meta property="og:description" content="CAN protocol summary" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://prasadghole.github.io/post/cansummary/" />
+<meta property="article:published_time" content="2021-02-03T11:34:54+05:30" />
+<meta property="article:modified_time" content="2021-02-03T11:34:54+05:30" />
+<meta itemprop="name" content="CAN Summary">
+<meta itemprop="description" content="CAN protocol summary">
+<meta itemprop="datePublished" content="2021-02-03T11:34:54+05:30" />
+<meta itemprop="dateModified" content="2021-02-03T11:34:54+05:30" />
+<meta itemprop="wordCount" content="279">
+
+
+
+<meta itemprop="keywords" content="development," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="development"/>
-<meta name="twitter:description" content="My daily musing"/>
+<meta name="twitter:title" content="CAN Summary"/>
+<meta name="twitter:description" content="CAN protocol summary"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -124,27 +130,113 @@
     <main id="main" class="main">
       <div class="content-wrapper">
         <div id="content" class="content">
-          <section id="archive" class="archive">
-  <div class="archive-title tag">
-        <h2 class="archive-name">development</h2>
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">CAN Summary</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-02-03 </span>
+        
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
+    </header>
 
-  <div class="archive-post">
-      <span class="archive-post-time">
-        2021-02-03
-      </span>
-      <span class="archive-post-title">
-        <a href="/post/cansummary/" class="archive-post-link">
-          CAN Summary
-        </a>
-      </span>
-    </div>
-</section>
-
-<nav class="pagination">
-  
-  
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#controller-area-network-iso-11989-1">Controller Area Network (ISO 11989-1)</a></li>
+    <li><a href="#key-features">Key features</a></li>
+    <li><a href="#singal-logic-levels">Singal logic levels</a>
+      <ul>
+        <li><a href="#bit-stuffing">Bit stuffing</a></li>
+        <li><a href="#data-frame">Data frame</a></li>
+        <li><a href="#remote-frame">Remote frame</a></li>
+        <li><a href="#overload-frame">Overload frame</a></li>
+        <li><a href="#error-frame">Error frame</a></li>
+      </ul>
+    </li>
+    <li><a href="#communication-protocol">Communication Protocol</a>
+      <ul>
+        <li><a href="#canopen">CANopen</a></li>
+        <li><a href="#devicenet">DeviceNet</a></li>
+        <li><a href="#j1939">J1939</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="controller-area-network-iso-11989-1">Controller Area Network (ISO 11989-1)</h1>
+<p>It is a multidroo serial bus providing physical and data link layer specifications
+for connecting mutiple participant nodes.
+On physical layer it uses diffrenrtial electical signal.</p>
+<h1 id="key-features">Key features</h1>
+<ul>
+<li>Excellent noise immunity</li>
+<li>Multi master</li>
+<li>Priority based messageing</li>
+<li>Error checking</li>
+<li>Industrial standard with many suppliers</li>
+<li>Data rate from 5Kb/s to 1Mb/s</li>
+<li>Cable length from 40m (1Mb/s) to 1000m (40Kb/s)</li>
+<li>Multidrop with maximum 127 nodes</li>
+<li>Asynchronus transmission</li>
+</ul>
+<h1 id="singal-logic-levels">Singal logic levels</h1>
+<p>It uses Non return to zero NRX coding.</p>
+<ul>
+<li>Recessive 
+Logic 1</li>
+<li>Dominant 
+Logic 0</li>
+</ul>
+<h2 id="bit-stuffing">Bit stuffing</h2>
+<p>Due to NRZ method a proper continours signal of transmitting same bit may cuase
+recever to think its in error stage. Hence bit stuffing method is used.</p>
+<p>Sender send complement value if it detects five bits with same value to be transmitted
+Receiver will also discard the stuff bit value.t/CANFrame.jpg)</p>
+<h2 id="data-frame">Data frame</h2>
+<h2 id="remote-frame">Remote frame</h2>
+<h2 id="overload-frame">Overload frame</h2>
+<h2 id="error-frame">Error frame</h2>
+<h1 id="communication-protocol">Communication Protocol</h1>
+<p>Access to bus is by using carrier sense multiple access with collision detection
+called bitwise arbitration. Bus normally remain in recessive state. To transmit
+node first checks for inactivity and sends a frame to bus. For simulatanious 
+transmission node with lower arbitration value take the bus.
+Other nodes stops till other high priority nodes complete the transmission.</p>
+<p>As CAN only provide details about physical and data link layer remaianing top
+layers was not standardize in earlier versions. This caused complatibilities 
+issues with diffrent vendores.</p>
+<p>Various top level 3 to 7 standars are</p>
+<h2 id="canopen">CANopen</h2>
+<p>Used for industrial machien control, medical, railways.</p>
+<h2 id="devicenet">DeviceNet</h2>
+<p>Used as fieldbus for factory automation. Maximum 64 nodes can be used till maximum
+500 Kb/s.</p>
+<h2 id="j1939">J1939</h2>
+<p>This is used in heavy trucks and buses. It uses 29 bit identifier.</p>
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/development/">development</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/reveal-secrets/">
+            <span class="next-text nav-default">Reveal Secrets</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
         </div>
         
 

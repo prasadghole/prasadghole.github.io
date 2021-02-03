@@ -6,7 +6,16 @@
     <description>Recent content in Tags on My daily musing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Feb 2021 00:48:49 +0530</lastBuildDate><atom:link href="http://prasadghole.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Feb 2021 11:34:54 +0530</lastBuildDate><atom:link href="http://prasadghole.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>development</title>
+      <link>http://prasadghole.github.io/tags/development/</link>
+      <pubDate>Wed, 03 Feb 2021 11:34:54 +0530</pubDate>
+      
+      <guid>http://prasadghole.github.io/tags/development/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>emacs</title>
       <link>http://prasadghole.github.io/tags/emacs/</link>
