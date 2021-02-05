@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Everthing is Code on My daily musing</title>
+    <link>http://prasadghole.github.io/tags/everthing-is-code/</link>
+    <description>Recent content in Everthing is Code on My daily musing</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 05 Feb 2021 23:38:24 +0530</lastBuildDate><atom:link href="http://prasadghole.github.io/tags/everthing-is-code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Plantuml</title>
+      <link>http://prasadghole.github.io/post/plantuml/</link>
+      <pubDate>Fri, 05 Feb 2021 23:38:24 +0530</pubDate>
+      
+      <guid>http://prasadghole.github.io/post/plantuml/</guid>
+      <description>Plantuml Plantuml is markup language for software diagrams specifically UML. Especially for programmers it natural extension of drawing diagrams as coding.
+Why Plantuml Mouseless I am trying to minimise my mouse uses. With the help of tools we can draw and view diagrams without touching mouse.
+Everything is text Many UML drawing tools (MS visio) store diagrams in internal proprietary binary format. To view and modify we need tools installed. Most of these tools are very expensive.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>development · My daily musing</title>
+  <title>Plantuml - My daily musing</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Prasad Ghole" /><meta name="description" content="My daily musing" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="Prasad Ghole" /><meta name="description" content="Plantuml tool" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -26,9 +26,7 @@
 <meta name="generator" content="Hugo 0.80.0 with theme even" />
 
 
-<link rel="canonical" href="http://prasadghole.github.io/tags/development/" />
-  <link href="http://prasadghole.github.io/tags/development/index.xml" rel="alternate" type="application/rss+xml" title="My daily musing" />
-  <link href="http://prasadghole.github.io/tags/development/index.xml" rel="feed" type="application/rss+xml" title="My daily musing" />
+<link rel="canonical" href="http://prasadghole.github.io/post/plantuml/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -41,16 +39,24 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="development" />
-<meta property="og:description" content="My daily musing" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://prasadghole.github.io/tags/development/" />
-<meta property="og:updated_time" content="2021-02-03T11:34:54+05:30" />
-<meta itemprop="name" content="development">
-<meta itemprop="description" content="My daily musing">
+<meta property="og:title" content="Plantuml" />
+<meta property="og:description" content="Plantuml tool" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://prasadghole.github.io/post/plantuml/" />
+<meta property="article:published_time" content="2021-02-05T23:38:24+05:30" />
+<meta property="article:modified_time" content="2021-02-05T23:38:24+05:30" />
+<meta itemprop="name" content="Plantuml">
+<meta itemprop="description" content="Plantuml tool">
+<meta itemprop="datePublished" content="2021-02-05T23:38:24+05:30" />
+<meta itemprop="dateModified" content="2021-02-05T23:38:24+05:30" />
+<meta itemprop="wordCount" content="161">
+
+
+
+<meta itemprop="keywords" content="Mouseless,Everthing is Code," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="development"/>
-<meta name="twitter:description" content="My daily musing"/>
+<meta name="twitter:title" content="Plantuml"/>
+<meta name="twitter:description" content="Plantuml tool"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -124,27 +130,88 @@
     <main id="main" class="main">
       <div class="content-wrapper">
         <div id="content" class="content">
-          <section id="archive" class="archive">
-  <div class="archive-title tag">
-        <h2 class="archive-name">development</h2>
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Plantuml</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-02-05 </span>
+        
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
+    </header>
 
-  <div class="archive-post">
-      <span class="archive-post-time">
-        2021-02-03
-      </span>
-      <span class="archive-post-title">
-        <a href="/post/cansummary/" class="archive-post-link">
-          CAN Summary
-        </a>
-      </span>
-    </div>
-</section>
-
-<nav class="pagination">
-  
-  
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#plantuml">Plantuml</a>
+      <ul>
+        <li><a href="#why-plantuml">Why Plantuml</a>
+          <ul>
+            <li><a href="#mouseless">Mouseless</a></li>
+            <li><a href="#everything-is-text">Everything is text</a></li>
+            <li><a href="#source-control">Source Control</a></li>
+            <li><a href="#integration-with-other-tools">Integration with other tools</a></li>
+            <li><a href="#lightweight">Lightweight</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
 </nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="plantuml">Plantuml</h1>
+<p>Plantuml is markup language for software diagrams specifically UML. Especially for
+programmers it natural extension of drawing diagrams as coding.</p>
+<p><img src="https://plantuml.com/" alt="Plantuml Website"></p>
+<h2 id="why-plantuml">Why Plantuml</h2>
+<h3 id="mouseless">Mouseless</h3>
+<p>I am trying to minimise my mouse uses. With the help of tools we can draw and view
+diagrams without touching mouse.</p>
+<h3 id="everything-is-text">Everything is text</h3>
+<p>Many UML drawing tools (MS visio) store diagrams in internal proprietary binary
+format.  To view and modify we need tools installed. Most of these tools are
+very expensive.
+Writing Plantuml markup is almost similar to writing C code.</p>
+<h3 id="source-control">Source Control</h3>
+<p>As diagrams are described in text format. I can store them in git and track
+changes easily. In case of drawing tools being binary simple version control
+diffs are not sufficient.</p>
+<h3 id="integration-with-other-tools">Integration with other tools</h3>
+<p>Plantuml library mainly provide backend framework and easily integrate with various
+text editors and IDE. I used it with</p>
+<ul>
+<li>Visual Studio Code</li>
+<li>Eclipse</li>
+<li>Confluence</li>
+<li>Emacs (need to check spacemacs support)</li>
+</ul>
+<h3 id="lightweight">Lightweight</h3>
+<p>It uses simple java libraries graphviz.</p>
+
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/mouseless/">Mouseless</a>
+          <a href="/tags/everthing-is-code/">Everthing is Code</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/cansummary/">
+            <span class="next-text nav-default">CAN Summary</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
         </div>
         
 
