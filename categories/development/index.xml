@@ -63,16 +63,6 @@ Anti-replay A valid message should not be used again by intruder to carry out ma
     </item>
     
     <item>
-      <title>I love vim (bindings)</title>
-      <link>http://prasadghole.github.io/post/vimbindings/</link>
-      <pubDate>Mon, 29 Jul 2019 00:00:00 +0530</pubDate>
-      
-      <guid>http://prasadghole.github.io/post/vimbindings/</guid>
-      <description>Even though you know vim is my first choice as editor in some situation we can&amp;rsquo;t use vim as standalone application. But not to worry vim keybindings are now available In this post I am listing all the vim bindings I am using.
-Vrapper for Eclipse Vim for Visual Studio code FakeVim for QT Creator Evil for emacs Online code editors </description>
-    </item>
-    
-    <item>
       <title>Vim Plug in</title>
       <link>http://prasadghole.github.io/post/vimplug/</link>
       <pubDate>Mon, 29 Jul 2019 00:00:00 +0530</pubDate>

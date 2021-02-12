@@ -30,16 +30,6 @@ Cloning spacemacs configuration When ever emacs starts it looks for startup dire
     </item>
     
     <item>
-      <title>I love vim (bindings)</title>
-      <link>http://prasadghole.github.io/post/vimbindings/</link>
-      <pubDate>Mon, 29 Jul 2019 00:00:00 +0530</pubDate>
-      
-      <guid>http://prasadghole.github.io/post/vimbindings/</guid>
-      <description>Even though you know vim is my first choice as editor in some situation we can&amp;rsquo;t use vim as standalone application. But not to worry vim keybindings are now available In this post I am listing all the vim bindings I am using.
-Vrapper for Eclipse Vim for Visual Studio code FakeVim for QT Creator Evil for emacs Online code editors </description>
-    </item>
-    
-    <item>
       <title>Vim Plug in</title>
       <link>http://prasadghole.github.io/post/vimplug/</link>
       <pubDate>Mon, 29 Jul 2019 00:00:00 +0530</pubDate>
@@ -49,6 +39,15 @@ Vrapper for Eclipse Vim for Visual Studio code FakeVim for QT Creator Evil for e
 Installation Github repo has all necessary details for installing so I won&amp;rsquo;t repeat here.
 Plugins I use fzf Fuzzy finder
 vim surround vim multiple cursor vim git gutter vim airline vim nerdcommenter emmet vim slumlord cvim </description>
+    </item>
+    
+    <item>
+      <title>I love vim (bindings)</title>
+      <link>http://prasadghole.github.io/post/vimbindings/</link>
+      <pubDate>Mon, 11 Feb 2019 00:18:21 +0530</pubDate>
+      
+      <guid>http://prasadghole.github.io/post/vimbindings/</guid>
+      <description></description>
     </item>
     
   </channel>

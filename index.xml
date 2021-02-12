@@ -22,13 +22,13 @@
       <pubDate>Mon, 08 Feb 2021 00:33:13 +0530</pubDate>
       
       <guid>http://prasadghole.github.io/post/toolate/</guid>
-      <description>&lt;p&gt;We are now faced with the fact that tomorrow is today. We are confronted with
+      <description>&lt;p&gt;We are now faced with the fact that tomorrow is today. We are confronted with 
 fierce  urgency of now. In this unfolding conundrum of like and history there
 is a such thing as being too late. Procrastination is still the thief of time.
 Life often leaves us standing bare, naked and dejected with a lost opportunity.
-The tide in the affairs of men does not remain at the flood; it ebbs. We may
+The tide in the affairs of men does not remain at the flood; it ebbs. We may 
 cry out desperately for time to pause in her passage, but time is deaf to every
-plea and rush on. Over the bleached bones and jumbuled residue of numerous
+plea and rush on. Over the bleached bones and jumbuled residue of numerous 
 civilizations are written the pathetic word  &lt;strong&gt;Too Late&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Martin Luther King Jr.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Beyond Vietnam - a time to break silence&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;</description>
@@ -124,16 +124,6 @@ Anti-replay A valid message should not be used again by intruder to carry out ma
     </item>
     
     <item>
-      <title>I love vim (bindings)</title>
-      <link>http://prasadghole.github.io/post/vimbindings/</link>
-      <pubDate>Mon, 29 Jul 2019 00:00:00 +0530</pubDate>
-      
-      <guid>http://prasadghole.github.io/post/vimbindings/</guid>
-      <description>Even though you know vim is my first choice as editor in some situation we can&amp;rsquo;t use vim as standalone application. But not to worry vim keybindings are now available In this post I am listing all the vim bindings I am using.
-Vrapper for Eclipse Vim for Visual Studio code FakeVim for QT Creator Evil for emacs Online code editors </description>
-    </item>
-    
-    <item>
       <title>Vim Plug in</title>
       <link>http://prasadghole.github.io/post/vimplug/</link>
       <pubDate>Mon, 29 Jul 2019 00:00:00 +0530</pubDate>
@@ -143,6 +133,15 @@ Vrapper for Eclipse Vim for Visual Studio code FakeVim for QT Creator Evil for e
 Installation Github repo has all necessary details for installing so I won&amp;rsquo;t repeat here.
 Plugins I use fzf Fuzzy finder
 vim surround vim multiple cursor vim git gutter vim airline vim nerdcommenter emmet vim slumlord cvim </description>
+    </item>
+    
+    <item>
+      <title>I love vim (bindings)</title>
+      <link>http://prasadghole.github.io/post/vimbindings/</link>
+      <pubDate>Mon, 11 Feb 2019 00:18:21 +0530</pubDate>
+      
+      <guid>http://prasadghole.github.io/post/vimbindings/</guid>
+      <description></description>
     </item>
     
     <item>
