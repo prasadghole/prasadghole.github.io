@@ -145,10 +145,10 @@
     
     <div class="post-content">
       <h1 id="c-objects-naming">C Objects Naming</h1>
-<p>Although we know the common resrtictions on naming identifiers like it should not start with number. There ar some substle
+<p>Although we know the common restrictions on naming identifiers like it should not start with number. There are some subtle
 conventions we need to know. In this post I will note down those along with reasons behind these.</p>
 <h1 id="underscore">Underscore</h1>
-<p>C compliler will not complain if we name identifiers starting with underscore, but it can create issues with portability
+<p>C compiler will not complain if we name identifiers starting with underscore, but it can create issues with portability
 as C standard reserve the use of it by for naming new additional C keywords. Like</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -158,7 +158,7 @@ as C standard reserve the use of it by for naming new additional C keywords. Lik
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">_Bool
 </code></pre></td></tr></table>
 </div>
-</div><p>This is a new datatype introduced by C99 standard. Indetifier starting with underscore followed by Capitol letter or another
+</div><p>This is a new datatype introduced by C99 standard. Identifier starting with underscore followed by Capitol letter or another
 underscore can or will be reserved keyword in future.</p>
 <h1 id="_t-underscore-t">_t (Underscore t)</h1>
 <p>When we define our own typedefs generally we follow the conventions of using postfix <strong>underscore t</strong>
