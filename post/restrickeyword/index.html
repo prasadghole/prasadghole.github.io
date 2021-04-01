@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Active Objects - My daily musing</title>
+  <title>Not a Volatile - Restrict - My daily musing</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Prasad Ghole" /><meta name="description" content="" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="Prasad Ghole" /><meta name="description" content=" Restrict keyword in C" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.75.1 with theme even" />
 
 
-<link rel="canonical" href="http://prasadghole.github.io/post/activeobj/" />
+<link rel="canonical" href="http://prasadghole.github.io/post/restrickeyword/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -39,24 +39,24 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Active Objects" />
-<meta property="og:description" content="" />
+<meta property="og:title" content="Not a Volatile - Restrict" />
+<meta property="og:description" content=" Restrict keyword in C" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://prasadghole.github.io/post/activeobj/" />
-<meta property="article:published_time" content="2021-02-11T00:18:21+05:30" />
-<meta property="article:modified_time" content="2021-02-11T00:18:21+05:30" />
-<meta itemprop="name" content="Active Objects">
-<meta itemprop="description" content="">
-<meta itemprop="datePublished" content="2021-02-11T00:18:21+05:30" />
-<meta itemprop="dateModified" content="2021-02-11T00:18:21+05:30" />
-<meta itemprop="wordCount" content="269">
+<meta property="og:url" content="http://prasadghole.github.io/post/restrickeyword/" />
+<meta property="article:published_time" content="2021-03-22T00:11:46+05:30" />
+<meta property="article:modified_time" content="2021-03-22T00:11:46+05:30" />
+<meta itemprop="name" content="Not a Volatile - Restrict">
+<meta itemprop="description" content=" Restrict keyword in C">
+<meta itemprop="datePublished" content="2021-03-22T00:11:46+05:30" />
+<meta itemprop="dateModified" content="2021-03-22T00:11:46+05:30" />
+<meta itemprop="wordCount" content="210">
 
 
 
-<meta itemprop="keywords" content="development," />
+<meta itemprop="keywords" content="Programming," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Active Objects"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Not a Volatile - Restrict"/>
+<meta name="twitter:description" content=" Restrict keyword in C"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -133,10 +133,10 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Active Objects</h1>
+      <h1 class="post-title">Not a Volatile - Restrict</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2021-02-11 </span>
+        <span class="post-time"> 2021-03-22 </span>
         
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
@@ -147,65 +147,89 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#active-objects">Active Objects</a></li>
-    <li><a href="#advantages">Advantages</a></li>
-    <li><a href="#disadvantages">Disadvantages</a></li>
-    <li><a href="#messaging">Messaging</a></li>
-    <li><a href="#implementation">Implementation</a></li>
-    <li><a href="#a-note-on-command-pattern">A note on Command pattern</a></li>
+    <li><a href="#restrict-type-qualifier">restrict type qualifier</a></li>
+    <li><a href="#use-case">Use case</a></li>
+    <li><a href="#demo">Demo</a>
+      <ul>
+        <li><a href="#results">Results</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      <h1 id="active-objects">Active Objects</h1>
-<p>In concurrent system exposing objects methods can create lot of synchronization
-and thread safety issues. Active object pattern provide way to protect
-object state in concurrent system. Instead of exposing objects methods directly
-to client communication happens through well defined structured messages.</p>
-<p>Usually we will have one thread per active objects with its own message receive 
-queue. Due to serialize operation on event processing avoid mutual execution 
-becomes much simpler.</p>
-<p>Each active object communicate with each other using message or event queue.
-Results of operation executed by server active object will be communicated 
-using message or event queue.</p>
-<h1 id="advantages">Advantages</h1>
-<p>Instead of protecting individual objects under thread with mutex per object,
-active object provide serial access using queued message handling. Which provide
-simpler approach to avoid race conditions.</p>
-<h1 id="disadvantages">Disadvantages</h1>
-<p>As communication is asynchronous between active objects there may additional 
-synchronization efforts required if we want to synchronize reply. Client
-active object must maintain state till it get reply and transaction is complete.</p>
-<p>For every encapsulated object a message structured needs to be define. We can
-avoid this by making sure only state less objects can expose methods or services
-to client directly.</p>
-<h1 id="messaging">Messaging</h1>
-<p>As active objects communicate/calls operation indirectly using messages. Object
-method execution and parameter passing is done by enclosing these parameters
-in messages. Similarly return values are communicating using message reply.</p>
-<h1 id="implementation">Implementation</h1>
-<p>In RTOS task with message queue exposing communication messages struct matching
-with expected method parameters can be implemented using task and message queue
-per task.</p>
-<h1 id="a-note-on-command-pattern">A note on Command pattern</h1>
-<p>This pattern is similar to command pattern which generally provide synchronous 
-execution of command.</p>
+      <h1 id="restrict-type-qualifier">restrict type qualifier</h1>
+<p>C99 introduced new C only <strong>restrict</strong> keyword. It does exactly opposite work of 
+<strong>volatile</strong>  keyword but with very few restricted use cases. It applies only to
+pointers to objects.</p>
+<p>Objects indirectly accessed by pointers cannot be optimized 
+by compiler due to potential aliasing, which may occur when more than one pointer
+can point to same object.
+Due to this compiler may or may not optimize the code.</p>
+<h1 id="use-case">Use case</h1>
+<p>As mentioned above by using restrict keyword we can tell compiler to optimize use
+of parameters of function accessing restricated objects via pointers.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">void f(unsigned int n, int * restrict p, int * restrict q) {
+  while (n-- &gt; 0) {
+    *p++ = *q++;
+  }
+
+</code></pre></td></tr></table>
+</div>
+</div><p>Here programmer is telling compiler that obects accessed by pointer p and q are 
+accessing different objects in memory.</p>
+<p>But remember it is the programmers responsibility to make sure above statement is 
+correct else undefined behaviour can happen due to optimization.</p>
+<h1 id="demo">Demo</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+int foo(int *a, int *b)
+{
+    *a = 5;
+    *b = 6;
+    return *a + *b;
+}
+ 
+
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="results">Results</h2>
+<p><img src="/images/post/restrict.png" alt="Optimized functions "></p>
+<p>As we can see function rfoo has optimized the use of pointers and placed
+direct results in register eax.</p>
     </div>
 
     
 <footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/development/">development</a>
+          <a href="/tags/programming/">Programming</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/cname/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Whats in C Object name?</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        <a class="next" href="/post/toolate/">
-            <span class="next-text nav-default">Too late</span>
+        
+        <a class="next" href="/post/cname/">
+            <span class="next-text nav-default">Whats in C Object name?</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>

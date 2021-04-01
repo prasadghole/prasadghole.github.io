@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://prasadghole.github.io/</loc>
+    <lastmod>2021-03-22T00:11:46+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://prasadghole.github.io/post/restrickeyword/</loc>
+    <lastmod>2021-03-22T00:11:46+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://prasadghole.github.io/post/</loc>
+    <lastmod>2021-03-22T00:11:46+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://prasadghole.github.io/tags/programming/</loc>
+    <lastmod>2021-03-22T00:11:46+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://prasadghole.github.io/tags/</loc>
+    <lastmod>2021-03-22T00:11:46+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://prasadghole.github.io/post/cname/</loc>
+    <lastmod>2021-03-21T23:11:48+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://prasadghole.github.io/post/activeobj/</loc>
     <lastmod>2021-02-11T00:18:21+05:30</lastmod>
     <changefreq>weekly</changefreq>
@@ -10,27 +52,6 @@
   
   <url>
     <loc>http://prasadghole.github.io/tags/development/</loc>
-    <lastmod>2021-02-11T00:18:21+05:30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://prasadghole.github.io/</loc>
-    <lastmod>2021-02-11T00:18:21+05:30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://prasadghole.github.io/post/</loc>
-    <lastmod>2021-02-11T00:18:21+05:30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://prasadghole.github.io/tags/</loc>
     <lastmod>2021-02-11T00:18:21+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

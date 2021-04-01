@@ -49,7 +49,7 @@
 <meta itemprop="description" content="CAN protocol summary">
 <meta itemprop="datePublished" content="2021-02-03T11:34:54+05:30" />
 <meta itemprop="dateModified" content="2021-02-03T11:34:54+05:30" />
-<meta itemprop="wordCount" content="279">
+<meta itemprop="wordCount" content="370">
 
 
 
@@ -165,6 +165,8 @@
         <li><a href="#j1939">J1939</a></li>
       </ul>
     </li>
+    <li><a href="#error-handling">Error Handling</a></li>
+    <li><a href="#error-management">Error Management</a></li>
   </ul>
 </nav>
   </div>
@@ -189,9 +191,9 @@ On physical layer it uses diffrenrtial electical signal.</p>
 <h1 id="singal-logic-levels">Singal logic levels</h1>
 <p>It uses Non return to zero NRX coding.</p>
 <ul>
-<li>Recessive 
+<li>Recessive
 Logic 1</li>
-<li>Dominant 
+<li>Dominant
 Logic 0</li>
 </ul>
 <h2 id="bit-stuffing">Bit stuffing</h2>
@@ -207,11 +209,11 @@ Receiver will also discard the stuff bit value.</p>
 <h1 id="communication-protocol">Communication Protocol</h1>
 <p>Access to bus is by using carrier sense multiple access with collision detection
 called bitwise arbitration. Bus normally remain in recessive state. To transmit
-node first checks for inactivity and sends a frame to bus. For simulatanious 
+node first checks for inactivity and sends a frame to bus. For simulatanious
 transmission node with lower arbitration value take the bus.
 Other nodes stops till other high priority nodes complete the transmission.</p>
 <p>As CAN only provide details about physical and data link layer remaianing top
-layers was not standardize in earlier versions. This caused complatibilities 
+layers was not standardize in earlier versions. This caused complatibilities
 issues with diffrent vendores.</p>
 <p>Various top level 3 to 7 standars are</p>
 <h2 id="canopen">CANopen</h2>
@@ -221,6 +223,16 @@ issues with diffrent vendores.</p>
 500 Kb/s.</p>
 <h2 id="j1939">J1939</h2>
 <p>This is used in heavy trucks and buses. It uses 29 bit identifier.</p>
+<h1 id="error-handling">Error Handling</h1>
+<p>A bus error of message can occure because of either transmittor or receciver.
+CAN uses unique method of error detection using positive and negative acknowlegment
+method. All stations on bus receives all the messages and every node will try to
+acknowldge message in perticular time slot (ACK).
+If message is received and positively acknowldged by at least one station. It
+indicates that message is transmitted correctly.
+If negative acknowlegment is received and not a single positive acknowlegment is received
+means it is the fault of messages transmittor.</p>
+<h1 id="error-management">Error Management</h1>
     </div>
 
     
