@@ -6,6 +6,7 @@
     <description>Recent content in development on My daily musing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <copyright>Prasad Ghole</copyright>
     <lastBuildDate>Tue, 26 Jan 2021 00:00:00 +0530</lastBuildDate><atom:link href="http://prasadghole.github.io/categories/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing spacemacs on windows</title>
