@@ -20,7 +20,7 @@
     <item>
       <title>Git in a box</title>
       <link>http://prasadghole.github.io/post/gitbare/</link>
-      <pubDate>Wed, 29 Jul 2020 00:00:00 +0530</pubDate>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>http://prasadghole.github.io/post/gitbare/</guid>
       <description>Git in a box Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some scenario project thing it would be much better to have git repository as portable copy.This is where git bare repository helps.

@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Prasad Ghole</copyright>
-    <lastBuildDate>Tue, 26 Jan 2021 00:00:00 +0530</lastBuildDate><atom:link href="http://prasadghole.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://prasadghole.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing spacemacs on windows</title>
       <link>http://prasadghole.github.io/post/installemacsonwindows/</link>
-      <pubDate>Tue, 26 Jan 2021 00:00:00 +0530</pubDate>
+      <pubDate>Tue, 26 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>http://prasadghole.github.io/post/installemacsonwindows/</guid>
       <description>Installing spacemacs on windows Once we install vanilla emacs from gnu website we want to do little twick for running emacs configuration when we run runemacs.exe command.
@@ -23,7 +23,7 @@ Cloning spacemacs configuration When ever emacs starts it looks for startup dire
     <item>
       <title>Vim Tips</title>
       <link>http://prasadghole.github.io/post/vimtips/</link>
-      <pubDate>Fri, 22 Jan 2021 00:00:00 +0530</pubDate>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>http://prasadghole.github.io/post/vimtips/</guid>
       <description>Search in visual mode Follow the steps:
@@ -33,7 +33,7 @@ Cloning spacemacs configuration When ever emacs starts it looks for startup dire
     <item>
       <title>Vim Plug in</title>
       <link>http://prasadghole.github.io/post/vimplug/</link>
-      <pubDate>Mon, 29 Jul 2019 00:00:00 +0530</pubDate>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>http://prasadghole.github.io/post/vimplug/</guid>
       <description>Well time has come to install vim plugins for using more advance features of vim. There are lots many options available but I choose vim plug being simple and easy to use.

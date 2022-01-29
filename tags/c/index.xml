@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Prasad Ghole</copyright>
-    <lastBuildDate>Tue, 25 Aug 2020 00:00:00 +0530</lastBuildDate><atom:link href="http://prasadghole.github.io/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://prasadghole.github.io/tags/c/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Be careful with pointers</title>
       <link>http://prasadghole.github.io/post/pointers_mistakes/</link>
-      <pubDate>Tue, 25 Aug 2020 00:00:00 +0530</pubDate>
+      <pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>http://prasadghole.github.io/post/pointers_mistakes/</guid>
       <description>Pointers in C/C++ are dual edge swords provide low level control over memory and hardware. This call for very careful usage which may lead to following problems.
