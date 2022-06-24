@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.89.4 with theme even" />
+<meta name="generator" content="Hugo 0.100.2 with theme even" />
 
 
 <link rel="canonical" href="http://prasadghole.github.io/post/activeobj/" />
@@ -161,18 +161,18 @@
 and thread safety issues. Active object pattern provide way to protect
 object state in concurrent system. Instead of exposing objects methods directly
 to client communication happens through well defined structured messages.</p>
-<p>Usually we will have one thread per active objects with its own message receive
-queue. Due to serialize operation on event processing avoid mutual execution
+<p>Usually we will have one thread per active objects with its own message receive 
+queue. Due to serialize operation on event processing avoid mutual execution 
 becomes much simpler.</p>
 <p>Each active object communicate with each other using message or event queue.
-Results of operation executed by server active object will be communicated
+Results of operation executed by server active object will be communicated 
 using message or event queue.</p>
 <h1 id="advantages">Advantages</h1>
 <p>Instead of protecting individual objects under thread with mutex per object,
 active object provide serial access using queued message handling. Which provide
 simpler approach to avoid race conditions.</p>
 <h1 id="disadvantages">Disadvantages</h1>
-<p>As communication is asynchronous between active objects there may additional
+<p>As communication is asynchronous between active objects there may additional 
 synchronization efforts required if we want to synchronize reply. Client
 active object must maintain state till it get reply and transaction is complete.</p>
 <p>For every encapsulated object a message structured needs to be define. We can
@@ -187,7 +187,7 @@ in messages. Similarly return values are communicating using message reply.</p>
 with expected method parameters can be implemented using task and message queue
 per task.</p>
 <h1 id="a-note-on-command-pattern">A note on Command pattern</h1>
-<p>This pattern is similar to command pattern which generally provide synchronous
+<p>This pattern is similar to command pattern which generally provide synchronous 
 execution of command.</p>
     </div>
 
@@ -260,7 +260,7 @@ execution of command.</p>
 
 
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/js/main.min.191509a5c8442abdb6eb5020a332fd59bdd83a7e78a2d2241108df9113504292.js"></script>
 
 
 <script type="application/javascript">

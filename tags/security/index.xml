@@ -10,15 +10,11 @@
     <lastBuildDate>Wed, 29 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://prasadghole.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Security principals</title>
-      <link>http://prasadghole.github.io/post/security/</link>
+      <link>http://prasadghole.github.io/post/security_1/</link>
       <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://prasadghole.github.io/post/security/</guid>
-      <description>Five Principals for of embedded security Message Off course this is what you want to protect from intruder.
-Integrity Original message sent from sender should not altered when received by receiver.
-Authentication Message should be received from intended sender party.
-Authorization Sender of message should have be authorized to execute some action on receptor
-Anti-replay A valid message should not be used again by intruder to carry out malicious activities</description>
+      <guid>http://prasadghole.github.io/post/security_1/</guid>
+      <description></description>
     </item>
     
   </channel>
