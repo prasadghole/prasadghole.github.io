@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Inside Python - My daily musing</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Prasad" /><meta name="description" content="Exploring inner working of python" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.89.4 with theme even" />
+
+
+<link rel="canonical" href="http://prasadghole.github.io/post/pythoninside/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Inside Python" />
+<meta property="og:description" content="Exploring inner working of python" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://prasadghole.github.io/post/pythoninside/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-07-08T18:21:06+05:30" />
+<meta property="article:modified_time" content="2022-07-08T18:21:06+05:30" />
+
+<meta itemprop="name" content="Inside Python">
+<meta itemprop="description" content="Exploring inner working of python"><meta itemprop="datePublished" content="2022-07-08T18:21:06+05:30" />
+<meta itemprop="dateModified" content="2022-07-08T18:21:06+05:30" />
+<meta itemprop="wordCount" content="513">
+<meta itemprop="keywords" content="Python," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Inside Python"/>
+<meta name="twitter:description" content="Exploring inner working of python"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+  
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'G-9RPT3X16Y6');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9RPT3X16Y6"></script>
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">My daily musing</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">My daily musing</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Inside Python</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-07-08 </span>
+        
+          <span class="more-meta"> 513 words </span>
+          <span class="more-meta"> 3 mins read </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#exploring-python">Exploring Python</a>
+      <ul>
+        <li><a href="#python-libraries-and-modules">Python libraries and modules</a>
+          <ul>
+            <li><a href="#ctypes">ctypes</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="exploring-python">Exploring Python</h1>
+<p>Being a embedded programmer and dealing with low level C I want to explore 
+how C and python interact. This will provide inside on how various c and C++
+libraries are used by python to provide dynamic programming environment.</p>
+<p>It helps to understand how we can prototype software in python and convert
+to C once verified and tested.</p>
+<h2 id="python-libraries-and-modules">Python libraries and modules</h2>
+<h3 id="ctypes">ctypes</h3>
+<p>Most of the python bindings are provided by using this module as gateway
+to send receive data from dll in windows or shared library in linux.</p>
+<p>This is most used module when interfacing C api with python. I observed that
+for most of the time python provide dynamic environment around DLL or shared
+libraries. I mean its not pure python code when we python provide some
+kind device driver support.</p>
+<p>Exploring the code for kvaser interface provided by <a href="https://python-can.readthedocs.io">python-can</a>
+and similar modules I observed below pattern</p>
+<ol>
+<li>Load the DLL.</li>
+<li>Get handle to functions or interfaces.</li>
+<li>Using ctypes to create inputs to functions from python data types.</li>
+<li>Call the function</li>
+<li>Convert back return value from c dll functions to python.</li>
+</ol>
+<h4 id="exploring-kvaser-bus-interface">Exploring kvaser bus interface</h4>
+<h5 id="loading-dll-using-loadlibrary">Loading DLL using <em>LoadLibrary</em></h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">try:
+  if sys.platform == &#34;win32&#34;:
+    __canlib = ctypes.windll.LoadLibrary(&#34;canlib32&#34;)
+  else:
+    __canlib = ctypes.cdll.LoadLibrary(&#34;libcanlib.so&#34;)
+   
+  log.info(&#34;Loaded kvaser can library&#34;)
+expect OSError:
+  log.warning(&#34;Kvaser can lib unavialble&#34;)
+  __canlib = None
+
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="get-handle-to-function-interfaces">Get handle to function interfaces</h5>
+<p>Below is a common function defined to get handle to c library function.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">def __get_canlib_function(func_name , argtypes = None, restype=None, errcheck=None):
+  argtypes = [] if argtypes is None else argtypes
+  
+  try:
+    retval = getattr(__canlib, func_name)
+  expect AttributeError:
+    log.warning(&#34;%s function not found in libarary&#34;, func_name)
+    return _unimplemented_function
+  else:
+    retval.argtypes = argtypes
+    retval.restype = restype
+
+    if errcheck:
+      retval.errcheck = errcheck
+
+   return retval
+
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="using-ctype-to-create-input-parameters">Using ctype to create input parameters</h5>
+<p>Above function <em>__get_canlib_function</em> is called like for example <em>canWrite</em></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">canWrite = __get_canlib_function(
+                &#34;canWrite&#34;,
+                argtypes = [
+                c_canHandle,
+                ctypes.c_long,
+                ctypes.c_void_p,
+                ctypes.c_uint,
+                ctypes.c_uint,
+                ],
+                restype=canstat.c_canStatus,
+                errcheck=__check_status_operartion,)
+</code></pre></td></tr></table>
+</div>
+</div><p>Here <em>c_canHandle</em> is empty class like and canstat is simple constant defined in
+constant.py file.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">class c_canHandle(ctypes.c_int):
+  pass
+</code></pre></td></tr></table>
+</div>
+</div><p>Comparing this with kvaser canlib function prototype we see how ctypes
+are used to map data types from python to c.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">canStatus canWrite(const int hnd,
+                  long id,
+                  void * msg,
+                  unsigned int dlc,
+                  unsigned int flag
+                  )
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="call-the-function">Call the function</h5>
+<p><em>Send</em> function uses the canWrite function handle as shown below</p>
+<p>Except int , byte and string all other parameters are converted to
+ctypes.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">def send(self,msg,timeout=None):
+  flags = canstat.canMSG_EXT if msg.is_extended_id else canstat.canMSG_STD
+
+  if msg.is_remote_frame:
+    flags = canstat.canMSG_RTR
+  if msg.is_error_frame:
+    flags = canstat.canMSG_ERROR_FRAME
+  if msg.is_fd:
+    flags = canstat.canFDMSG_FDF
+  if msg.bitrate_switch:
+    flags = canstat.canFDMSG_BRS
+
+  ArrayConstructor = ctypes.c_byte * msg.dlc 
+  buf = ArrayConstructor(*msg.data)
+
+  canWrite(self.c_canHandle,msg.arbitration_id,ctypes.byteref(buf),msg.dlc,flags)
+  
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="convert-back-return-value-from-c-dll-functions-to-python">Convert back return value from c dll functions to python.</h5>
+<p>In this case <em>send</em> function is ignoring return.</p>
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/python/">Python</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/canplayground/">
+            <span class="next-text nav-default">CAN Playground</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:prasad.ghole@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://linkedin.com/in/prasadghole" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://github.com/prasadghole" class="iconfont icon-github" title="github"></a>
+  <a href="http://prasadghole.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> site pv: <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> site uv: <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>Prasad Ghole</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-9RPT3X16Y6', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</body>
+</html>

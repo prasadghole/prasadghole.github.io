@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Prasad Ghole</copyright>
-    <lastBuildDate>Fri, 24 Jun 2022 11:51:05 +0530</lastBuildDate><atom:link href="http://prasadghole.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Jul 2022 18:21:06 +0530</lastBuildDate><atom:link href="http://prasadghole.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inside Python</title>
+      <link>http://prasadghole.github.io/post/pythoninside/</link>
+      <pubDate>Fri, 08 Jul 2022 18:21:06 +0530</pubDate>
+      
+      <guid>http://prasadghole.github.io/post/pythoninside/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CAN Playground</title>
+      <link>http://prasadghole.github.io/post/canplayground/</link>
+      <pubDate>Tue, 05 Jul 2022 20:29:14 +0530</pubDate>
+      
+      <guid>http://prasadghole.github.io/post/canplayground/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>CAN bus on Arduino using MPC2515</title>
       <link>http://prasadghole.github.io/post/mpc2515/</link>
@@ -17,7 +35,7 @@
       <description>In search of working Arduino library There are many CAN libraries available to use with Arduino but very few provide proper feedback based on error code.
 I was able to use successfully provided by corjfowler
 CAN Transmission I used example code from library and make sure
-CS pin for SPI communication is properly mapped. Clock frequency is matched with crystal clock on MPC2515 board. 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 include &amp;lt;mcp_can.</description>
+ CS pin for SPI communication is properly mapped. Clock frequency is matched with crystal clock on MPC2515 board.  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36  include &amp;lt;mcp_can.</description>
     </item>
     
     <item>
@@ -133,7 +151,7 @@ http://jr0cket.co.uk/2017/03/org-mode-driven-presentations-with-org-reveal-space
 About org mode http://jr0cket.co.uk/2013/08/manage-dev-life-with-emacs-org-mode.html
 https://orgmode.org/
 Publishing to Internet http://jr0cket.co.uk/2014/01/share-your-revealjs-slides-on-github-pages.html
-Using Pandoc 1 pandoc --standalone -f org -t revealjs TraingSlides.org -o out.html As I may not use emacs/spacemacs on every machine Pandoc is right option to create revealjs output from org or markdown document.</description>
+Using Pandoc 1  pandoc --standalone -f org -t revealjs TraingSlides.org -o out.html   As I may not use emacs/spacemacs on every machine Pandoc is right option to create revealjs output from org or markdown document.</description>
     </item>
     
     <item>
@@ -144,7 +162,8 @@ Using Pandoc 1 pandoc --standalone -f org -t revealjs TraingSlides.org -o out.ht
       <guid>http://prasadghole.github.io/post/installemacsonwindows/</guid>
       <description>Installing spacemacs on windows Once we install vanilla emacs from gnu website we want to do little twick for running emacs configuration when we run runemacs.exe command.
 We need to find out where is emacs startup home directory path.
-Finding startup directory Check user emacs directory 1 CTRL-H v Enter variable name 1 user-emacs-directory Cloning spacemacs configuration When ever emacs starts it looks for startup directory in user emacs directory found above.</description>
+Finding startup directory Check user emacs directory 1  CTRL-H v    Enter variable name 1  user-emacs-directory  
+Cloning spacemacs configuration When ever emacs starts it looks for startup directory in user emacs directory found above.</description>
     </item>
     
     <item>
@@ -154,8 +173,8 @@ Finding startup directory Check user emacs directory 1 CTRL-H v Enter variable n
       
       <guid>http://prasadghole.github.io/post/vimtips/</guid>
       <description>Search in visual mode Follow the steps:
-Select visual mode by V or select block or column by using CTRL_V Press escape to exit visual mode Search / as you do for regular search Edit multiline together In various case I need to append or insert test at multiple lines like adding semicolon at the end of lines. I followed below steps
-CTRL+V to select block. Press I to insert at start.</description>
+ Select visual mode by V or select block or column by using CTRL_V Press escape to exit visual mode Search / as you do for regular search  Edit multiline together In various case I need to append or insert test at multiple lines like adding semicolon at the end of lines. I followed below steps
+ CTRL+V to select block. Press I to insert at start.</description>
     </item>
     
     <item>
