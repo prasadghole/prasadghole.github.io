@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>CAN Playground - My daily musing</title>
+  <title>Dwinhmi - My daily musing</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Prasad Ghole" /><meta name="description" content="Can bus on PC" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="Prasad Ghole" /><meta name="description" content="Using DWIN HMI Software" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.89.4 with theme even" />
 
 
-<link rel="canonical" href="http://prasadghole.github.io/post/canplayground/" />
+<link rel="canonical" href="http://prasadghole.github.io/post/dwinhmi/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -39,20 +39,20 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="CAN Playground" />
-<meta property="og:description" content="Can bus on PC" />
+<meta property="og:title" content="Dwinhmi" />
+<meta property="og:description" content="Using DWIN HMI Software" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://prasadghole.github.io/post/canplayground/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2022-07-05T20:29:14+05:30" />
-<meta property="article:modified_time" content="2022-07-05T20:29:14+05:30" />
+<meta property="og:url" content="http://prasadghole.github.io/post/dwinhmi/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-07-03T14:06:55+05:30" />
+<meta property="article:modified_time" content="2022-07-03T14:06:55+05:30" />
 
-<meta itemprop="name" content="CAN Playground">
-<meta itemprop="description" content="Can bus on PC"><meta itemprop="datePublished" content="2022-07-05T20:29:14+05:30" />
-<meta itemprop="dateModified" content="2022-07-05T20:29:14+05:30" />
-<meta itemprop="wordCount" content="203">
-<meta itemprop="keywords" content="CAN," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="CAN Playground"/>
-<meta name="twitter:description" content="Can bus on PC"/>
+<meta itemprop="name" content="Dwinhmi">
+<meta itemprop="description" content="Using DWIN HMI Software"><meta itemprop="datePublished" content="2022-07-03T14:06:55+05:30" />
+<meta itemprop="dateModified" content="2022-07-03T14:06:55+05:30" />
+<meta itemprop="wordCount" content="457">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Dwinhmi"/>
+<meta name="twitter:description" content="Using DWIN HMI Software"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -129,13 +129,13 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">CAN Playground</h1>
+      <h1 class="post-title">Dwinhmi</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2022-07-05 </span>
+        <span class="post-time"> 2022-07-03 </span>
         
-          <span class="more-meta"> 203 words </span>
-          <span class="more-meta"> 1 min read </span>
+          <span class="more-meta"> 457 words </span>
+          <span class="more-meta"> 3 mins read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
     </header>
@@ -145,15 +145,26 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#can-playground">CAN Playground</a>
+    <li><a href="#setup">Setup</a></li>
+    <li><a href="#development-tools">Development Tools</a></li>
+    <li><a href="#demo-project">Demo project</a></li>
+    <li><a href="#hello-world">Hello world</a></li>
+    <li><a href="#formatting-sd-card">Formatting SD card</a></li>
+    <li><a href="#dwin-display-memory-layout">DWIN display memory layout</a>
       <ul>
-        <li><a href="#can-remote">CAN Remote</a>
+        <li><a href="#flash">Flash</a></li>
+        <li><a href="#ram">RAM</a></li>
+      </ul>
+    </li>
+    <li><a href="#ui-development">UI development</a>
+      <ul>
+        <li><a href="#interface-objects">Interface objects</a>
           <ul>
-            <li><a href="#start-server">Start server</a></li>
-            <li><a href="#can-send-script">CAN send script</a></li>
-            <li><a href="#can-reception-script">CAN reception script</a></li>
+            <li><a href="#variable-pointers-vp">Variable Pointers (VP)</a></li>
+            <li><a href="#description-pointers-sp">Description Pointers (SP)</a></li>
           </ul>
         </li>
+        <li><a href="#controls">Controls</a></li>
       </ul>
     </li>
   </ul>
@@ -161,119 +172,82 @@
   </div>
 </div>
     <div class="post-content">
-      <h1 id="can-playground">CAN Playground</h1>
-<p>Sometime instead of testing CAN communication on actual hardware interface, we can
-simulate multiple node communication and logic on PC environment. Once tested just
-by changing CAN interface we can test on real hardware.</p>
-<p>python-can modules virtual interface has a limitation that it can communicate only
-in single process <a href="https://python-can.readthedocs.io/en/master/interfaces/virtual.html">link</a>.
-Hence to test we may have to create two threads and have separate UI or console to be manged.</p>
-<h2 id="can-remote">CAN Remote</h2>
-<p><a href="https://github.com/christiansandberg/python-can-remote">Python CAN Remote</a> provide solution
-where we start a central server through which CAN messages are exchanged.</p>
-<h3 id="start-server">Start server</h3>
+      <h1 id="setup">Setup</h1>
+<p><img src="/images/post/dwinsetup.jpeg" alt="setup">
+I bought DWIN COF 4.3 inch display from <a href="https://robu.in/product/dwin-tn-resistive-touch-4-3-inch-cof-display/">robu</a> along with <a href="https://robu.in/product/debugging-hdl662s-adapter-board/">HDL66A</a> adapter board. These 2 connected to PC USB port with male to male USB cable.</p>
+<p>Default HMI interface is in chinease and I want to use my own UI.</p>
+<h1 id="development-tools">Development Tools</h1>
+<h1 id="demo-project">Demo project</h1>
+<p>I downloaded <a href="https://www.electroniclinic.com/dmg80480c043_02wtc-touch-screen-getting-started-tutorial/">Demo GUI</a></p>
+<p>Using tutorial when I tried to download project as is, it was not successful. But then I made sure resolution
+is changed to matching with my COF display (480 * 272) I was able download files and see change in factory 
+programmed UI.</p>
+<p>Next task is to download through SD card.</p>
+<h1 id="hello-world">Hello world</h1>
+<p>After downloading above project. I tried my own hands on hello world program after following 
+many youtube videos and tutorials but not able to run on target HMI. Program was simulating
+properly on DGUS software, but when downloaded on HMI shows static screens which were not
+part of hello world program.</p>
+<p>To fix this I downloaded <a href="https://www.dwin-global.com/factory-demo/">factory demo</a> for my model
+DMG48270F043_01WTR board.</p>
+<p>I observed DWIN_SET files in factory demo do not include <em>32.icl</em> as mentioned in other projects 
+but infact contain 24.icl. Hence after chaning output file name to 24.icl and making changes
+in configuation. I was able to download and run my Hello world program successfully.</p>
+<p><a href="https://github.com/prasadghole/dwin/tree/main/DGM48270F043_01WTR/HelloWorld">Hello World</a> is 
+availble in github for referance.</p>
+<h1 id="formatting-sd-card">Formatting SD card</h1>
+<p>SD card size limitations as per documentation in 1 to 16 GB. For my system
+card was on D drive hence I issued folloing command</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">python -m can_remote --interface=virtual --channel=0 --bitrate=500000
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">FORMAT d:/fs:fat32/a:4096 
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="can-send-script">CAN send script</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">import can
-import time
-
-# Create a connection to server. Any config is passed to server.
-bus = can.Bus(&#39;ws://localhost:54701/&#39;,
-bustype=&#39;remote&#39;,
-bitrate=500000,
-receive_own_messages=True)
-
-# Send messages
-for i in range(10):
-  msg = can.Message(arbitration_id=0x12345, data=[1,2,3,4,5,6,7,8])
-  bus.send(msg)
-  time.sleep(1)
-
-# Disconnect
-bus.shutdown()
-
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="can-reception-script">CAN reception script</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">import can
-
-# Create a connection to server. Any config is passed to server.
-bus = can.Bus(&#39;ws://localhost:54701/&#39;,
-bustype=&#39;remote&#39;,
-bitrate=500000,
-receive_own_messages=True)
-
-while(True):
-  msg2 = bus.recv()
-  print(msg2)
-
-# Disconnect
-bus.shutdown()
-</code></pre></td></tr></table>
-</div>
-</div>
+</div><p>This took almost 10 minutes or more to format 16 GB of card.</p>
+<p>After copying it to SD card, and restarting still no blue boot screen. 
+But previous UI also do not start.</p>
+<p>Till I figure out this I will continue explore using USB download.</p>
+<h1 id="dwin-display-memory-layout">DWIN display memory layout</h1>
+<h2 id="flash">Flash</h2>
+<p>16 MB of flash is divided into 64 sectors of each 256 KB. 
+Each sector index 0 to 63 will have file names accordingly.</p>
+<p><img src="/images/post/dwin_flashspace.PNG" alt="Flash Space"></p>
+<h2 id="ram">RAM</h2>
+<p>128 KB flash is aligned as 2 bytes continuous memory.
+Address 0x0000 to 0x0FFF is reserved for system variable.</p>
+<p><img src="/images/post/dwin_ramspace.PNG" alt="Flash Space"></p>
+<h1 id="ui-development">UI development</h1>
+<h2 id="interface-objects">Interface objects</h2>
+<p>If we assume model view controller (MVC) architecture we can consider
+interface objects as model.</p>
+<h3 id="variable-pointers-vp">Variable Pointers (VP)</h3>
+<p>DGUS uses simple memory map address similar to MODBUS protocol to issue
+read/write commands and read/write data. GUI objects called as interface
+objects values are stored in memory addresses called as Variable Pointers
+(VP). VP values are modified only by user interaction.</p>
+<h3 id="description-pointers-sp">Description Pointers (SP)</h3>
+<p>A description pointer is a VP whose value can be modified by user using
+communication interface.</p>
+<p>Its UI developers responsibility to make sure VP length should be such that 
+there addresses are not overlapped.</p>
+<h2 id="controls">Controls</h2>
+<p>These are view of MVC architecture. Control have minimum 5 properties/parameters</p>
     </div>
 
     
 <footer class="post-footer">
-      <div class="post-tags">
-          <a href="/tags/can/">CAN</a>
-          </div>
+      
       <nav class="post-nav">
-        <a class="prev" href="/post/pythoninside/">
+        <a class="prev" href="/post/canplayground/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Inside Python</span>
+            <span class="prev-text nav-default">CAN Playground</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
-        <a class="next" href="/post/dwinhmi/">
-            <span class="next-text nav-default">Dwinhmi</span>
+        <a class="next" href="/post/mpc2515/">
+            <span class="next-text nav-default">CAN bus on Arduino using MPC2515</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
