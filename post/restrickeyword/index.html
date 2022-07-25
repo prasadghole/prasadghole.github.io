@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.89.4 with theme even" />
+<meta name="generator" content="Hugo 0.100.2 with theme even" />
 
 
 <link rel="canonical" href="http://prasadghole.github.io/post/restrickeyword/" />
@@ -49,7 +49,7 @@
 <meta itemprop="name" content="Not a Volatile - Restrict">
 <meta itemprop="description" content=" Restrict keyword in C"><meta itemprop="datePublished" content="2021-03-22T00:11:46+05:30" />
 <meta itemprop="dateModified" content="2021-03-22T00:11:46+05:30" />
-<meta itemprop="wordCount" content="210">
+<meta itemprop="wordCount" content="208">
 <meta itemprop="keywords" content="Programming," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Not a Volatile - Restrict"/>
 <meta name="twitter:description" content=" Restrict keyword in C"/>
@@ -134,7 +134,7 @@
       <div class="post-meta">
         <span class="post-time"> 2021-03-22 </span>
         
-          <span class="more-meta"> 210 words </span>
+          <span class="more-meta"> 208 words </span>
           <span class="more-meta"> 1 min read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
@@ -174,15 +174,13 @@ of parameters of function accessing restricated objects via pointers.</p>
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
-</span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">void f(unsigned int n, int * restrict p, int * restrict q) {
-  while (n-- &gt; 0) {
-    *p++ = *q++;
-  }
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">void f(unsigned int n, int * restrict p, int * restrict q) {
+</span></span><span class="line"><span class="cl">  while (n-- &gt; 0) {
+</span></span><span class="line"><span class="cl">    *p++ = *q++;
+</span></span><span class="line"><span class="cl">  }
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Here programmer is telling compiler that obects accessed by pointer p and q are 
 accessing different objects in memory.</p>
@@ -199,19 +197,17 @@ correct else undefined behaviour can happen due to optimization.</p>
 </span><span class="lnt">6
 </span><span class="lnt">7
 </span><span class="lnt">8
-</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">
-int foo(int *a, int *b)
-{
-    *a = 5;
-    *b = 6;
-    return *a + *b;
-}
- 
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">int foo(int *a, int *b)
+</span></span><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">    *a = 5;
+</span></span><span class="line"><span class="cl">    *b = 6;
+</span></span><span class="line"><span class="cl">    return *a + *b;
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl"> 
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="results">Results</h2>
 <p><img src="/images/post/restrict.png" alt="Optimized functions "></p>
@@ -288,7 +284,7 @@ direct results in register eax.</p>
 
 
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/js/main.min.191509a5c8442abdb6eb5020a332fd59bdd83a7e78a2d2241108df9113504292.js"></script>
 
 
 <script type="application/javascript">
