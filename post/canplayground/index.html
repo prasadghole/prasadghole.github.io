@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.89.4 with theme even" />
+<meta name="generator" content="Hugo 0.100.2 with theme even" />
 
 
 <link rel="canonical" href="http://prasadghole.github.io/post/canplayground/" />
@@ -134,7 +134,7 @@
       <div class="post-meta">
         <span class="post-time"> 2022-07-05 </span>
         
-          <span class="more-meta"> 203 words </span>
+          <span class="more-meta"> 202 words </span>
           <span class="more-meta"> 1 min read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
@@ -177,8 +177,8 @@ where we start a central server through which CAN messages are exchanged.</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">python -m can_remote --interface=virtual --channel=0 --bitrate=500000
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">python -m can_remote --interface=virtual --channel=0 --bitrate=500000
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="can-send-script">CAN send script</h3>
 <div class="highlight"><div class="chroma">
@@ -200,28 +200,26 @@ where we start a central server through which CAN messages are exchanged.</p>
 </span><span class="lnt">15
 </span><span class="lnt">16
 </span><span class="lnt">17
-</span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">import can
-import time
-
-# Create a connection to server. Any config is passed to server.
-bus = can.Bus(&#39;ws://localhost:54701/&#39;,
-bustype=&#39;remote&#39;,
-bitrate=500000,
-receive_own_messages=True)
-
-# Send messages
-for i in range(10):
-  msg = can.Message(arbitration_id=0x12345, data=[1,2,3,4,5,6,7,8])
-  bus.send(msg)
-  time.sleep(1)
-
-# Disconnect
-bus.shutdown()
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">import can
+</span></span><span class="line"><span class="cl">import time
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># Create a connection to server. Any config is passed to server.
+</span></span><span class="line"><span class="cl">bus = can.Bus(&#39;ws://localhost:54701/&#39;,
+</span></span><span class="line"><span class="cl">bustype=&#39;remote&#39;,
+</span></span><span class="line"><span class="cl">bitrate=500000,
+</span></span><span class="line"><span class="cl">receive_own_messages=True)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># Send messages
+</span></span><span class="line"><span class="cl">for i in range(10):
+</span></span><span class="line"><span class="cl">  msg = can.Message(arbitration_id=0x12345, data=[1,2,3,4,5,6,7,8])
+</span></span><span class="line"><span class="cl">  bus.send(msg)
+</span></span><span class="line"><span class="cl">  time.sleep(1)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># Disconnect
+</span></span><span class="line"><span class="cl">bus.shutdown()
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="can-reception-script">CAN reception script</h3>
 <div class="highlight"><div class="chroma">
@@ -242,21 +240,21 @@ bus.shutdown()
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">import can
-
-# Create a connection to server. Any config is passed to server.
-bus = can.Bus(&#39;ws://localhost:54701/&#39;,
-bustype=&#39;remote&#39;,
-bitrate=500000,
-receive_own_messages=True)
-
-while(True):
-  msg2 = bus.recv()
-  print(msg2)
-
-# Disconnect
-bus.shutdown()
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">import can
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># Create a connection to server. Any config is passed to server.
+</span></span><span class="line"><span class="cl">bus = can.Bus(&#39;ws://localhost:54701/&#39;,
+</span></span><span class="line"><span class="cl">bustype=&#39;remote&#39;,
+</span></span><span class="line"><span class="cl">bitrate=500000,
+</span></span><span class="line"><span class="cl">receive_own_messages=True)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">while(True):
+</span></span><span class="line"><span class="cl">  msg2 = bus.recv()
+</span></span><span class="line"><span class="cl">  print(msg2)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># Disconnect
+</span></span><span class="line"><span class="cl">bus.shutdown()
+</span></span></code></pre></td></tr></table>
 </div>
 </div>
     </div>
@@ -330,7 +328,7 @@ bus.shutdown()
 
 
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/js/main.min.191509a5c8442abdb6eb5020a332fd59bdd83a7e78a2d2241108df9113504292.js"></script>
 
 
 <script type="application/javascript">

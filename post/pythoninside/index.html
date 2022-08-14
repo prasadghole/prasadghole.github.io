@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.89.4 with theme even" />
+<meta name="generator" content="Hugo 0.100.2 with theme even" />
 
 
 <link rel="canonical" href="http://prasadghole.github.io/post/pythoninside/" />
@@ -134,7 +134,7 @@
       <div class="post-meta">
         <span class="post-time"> 2022-07-08 </span>
         
-          <span class="more-meta"> 513 words </span>
+          <span class="more-meta"> 511 words </span>
           <span class="more-meta"> 3 mins read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
@@ -196,21 +196,19 @@ and similar modules I observed below pattern</p>
 </span><span class="lnt"> 8
 </span><span class="lnt"> 9
 </span><span class="lnt">10
-</span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">try:
-  if sys.platform == &#34;win32&#34;:
-    __canlib = ctypes.windll.LoadLibrary(&#34;canlib32&#34;)
-  else:
-    __canlib = ctypes.cdll.LoadLibrary(&#34;libcanlib.so&#34;)
-   
-  log.info(&#34;Loaded kvaser can library&#34;)
-expect OSError:
-  log.warning(&#34;Kvaser can lib unavialble&#34;)
-  __canlib = None
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">try:
+</span></span><span class="line"><span class="cl">  if sys.platform == &#34;win32&#34;:
+</span></span><span class="line"><span class="cl">    __canlib = ctypes.windll.LoadLibrary(&#34;canlib32&#34;)
+</span></span><span class="line"><span class="cl">  else:
+</span></span><span class="line"><span class="cl">    __canlib = ctypes.cdll.LoadLibrary(&#34;libcanlib.so&#34;)
+</span></span><span class="line"><span class="cl">   
+</span></span><span class="line"><span class="cl">  log.info(&#34;Loaded kvaser can library&#34;)
+</span></span><span class="line"><span class="cl">expect OSError:
+</span></span><span class="line"><span class="cl">  log.warning(&#34;Kvaser can lib unavialble&#34;)
+</span></span><span class="line"><span class="cl">  __canlib = None
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h5 id="get-handle-to-function-interfaces">Get handle to function interfaces</h5>
 <p>Below is a common function defined to get handle to c library function.</p>
@@ -232,27 +230,25 @@ expect OSError:
 </span><span class="lnt">14
 </span><span class="lnt">15
 </span><span class="lnt">16
-</span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">def __get_canlib_function(func_name , argtypes = None, restype=None, errcheck=None):
-  argtypes = [] if argtypes is None else argtypes
-  
-  try:
-    retval = getattr(__canlib, func_name)
-  expect AttributeError:
-    log.warning(&#34;%s function not found in libarary&#34;, func_name)
-    return _unimplemented_function
-  else:
-    retval.argtypes = argtypes
-    retval.restype = restype
-
-    if errcheck:
-      retval.errcheck = errcheck
-
-   return retval
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">def __get_canlib_function(func_name , argtypes = None, restype=None, errcheck=None):
+</span></span><span class="line"><span class="cl">  argtypes = [] if argtypes is None else argtypes
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  try:
+</span></span><span class="line"><span class="cl">    retval = getattr(__canlib, func_name)
+</span></span><span class="line"><span class="cl">  expect AttributeError:
+</span></span><span class="line"><span class="cl">    log.warning(&#34;%s function not found in libarary&#34;, func_name)
+</span></span><span class="line"><span class="cl">    return _unimplemented_function
+</span></span><span class="line"><span class="cl">  else:
+</span></span><span class="line"><span class="cl">    retval.argtypes = argtypes
+</span></span><span class="line"><span class="cl">    retval.restype = restype
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    if errcheck:
+</span></span><span class="line"><span class="cl">      retval.errcheck = errcheck
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">   return retval
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h5 id="using-ctype-to-create-input-parameters">Using ctype to create input parameters</h5>
 <p>Above function <em>__get_canlib_function</em> is called like for example <em>canWrite</em></p>
@@ -271,18 +267,18 @@ expect OSError:
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">canWrite = __get_canlib_function(
-                &#34;canWrite&#34;,
-                argtypes = [
-                c_canHandle,
-                ctypes.c_long,
-                ctypes.c_void_p,
-                ctypes.c_uint,
-                ctypes.c_uint,
-                ],
-                restype=canstat.c_canStatus,
-                errcheck=__check_status_operartion,)
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">canWrite = __get_canlib_function(
+</span></span><span class="line"><span class="cl">                &#34;canWrite&#34;,
+</span></span><span class="line"><span class="cl">                argtypes = [
+</span></span><span class="line"><span class="cl">                c_canHandle,
+</span></span><span class="line"><span class="cl">                ctypes.c_long,
+</span></span><span class="line"><span class="cl">                ctypes.c_void_p,
+</span></span><span class="line"><span class="cl">                ctypes.c_uint,
+</span></span><span class="line"><span class="cl">                ctypes.c_uint,
+</span></span><span class="line"><span class="cl">                ],
+</span></span><span class="line"><span class="cl">                restype=canstat.c_canStatus,
+</span></span><span class="line"><span class="cl">                errcheck=__check_status_operartion,)
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Here <em>c_canHandle</em> is empty class like and canstat is simple constant defined in
 constant.py file.</p>
@@ -292,9 +288,9 @@ constant.py file.</p>
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">class c_canHandle(ctypes.c_int):
-  pass
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">class c_canHandle(ctypes.c_int):
+</span></span><span class="line"><span class="cl">  pass
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Comparing this with kvaser canlib function prototype we see how ctypes
 are used to map data types from python to c.</p>
@@ -308,13 +304,13 @@ are used to map data types from python to c.</p>
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">canStatus canWrite(const int hnd,
-                  long id,
-                  void * msg,
-                  unsigned int dlc,
-                  unsigned int flag
-                  )
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">canStatus canWrite(const int hnd,
+</span></span><span class="line"><span class="cl">                  long id,
+</span></span><span class="line"><span class="cl">                  void * msg,
+</span></span><span class="line"><span class="cl">                  unsigned int dlc,
+</span></span><span class="line"><span class="cl">                  unsigned int flag
+</span></span><span class="line"><span class="cl">                  )
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h5 id="call-the-function">Call the function</h5>
 <p><em>Send</em> function uses the canWrite function handle as shown below</p>
@@ -341,24 +337,24 @@ ctypes.</p>
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">def send(self,msg,timeout=None):
-  flags = canstat.canMSG_EXT if msg.is_extended_id else canstat.canMSG_STD
-
-  if msg.is_remote_frame:
-    flags = canstat.canMSG_RTR
-  if msg.is_error_frame:
-    flags = canstat.canMSG_ERROR_FRAME
-  if msg.is_fd:
-    flags = canstat.canFDMSG_FDF
-  if msg.bitrate_switch:
-    flags = canstat.canFDMSG_BRS
-
-  ArrayConstructor = ctypes.c_byte * msg.dlc 
-  buf = ArrayConstructor(*msg.data)
-
-  canWrite(self.c_canHandle,msg.arbitration_id,ctypes.byteref(buf),msg.dlc,flags)
-  
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">def send(self,msg,timeout=None):
+</span></span><span class="line"><span class="cl">  flags = canstat.canMSG_EXT if msg.is_extended_id else canstat.canMSG_STD
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  if msg.is_remote_frame:
+</span></span><span class="line"><span class="cl">    flags = canstat.canMSG_RTR
+</span></span><span class="line"><span class="cl">  if msg.is_error_frame:
+</span></span><span class="line"><span class="cl">    flags = canstat.canMSG_ERROR_FRAME
+</span></span><span class="line"><span class="cl">  if msg.is_fd:
+</span></span><span class="line"><span class="cl">    flags = canstat.canFDMSG_FDF
+</span></span><span class="line"><span class="cl">  if msg.bitrate_switch:
+</span></span><span class="line"><span class="cl">    flags = canstat.canFDMSG_BRS
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  ArrayConstructor = ctypes.c_byte * msg.dlc 
+</span></span><span class="line"><span class="cl">  buf = ArrayConstructor(*msg.data)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  canWrite(self.c_canHandle,msg.arbitration_id,ctypes.byteref(buf),msg.dlc,flags)
+</span></span><span class="line"><span class="cl">  
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h5 id="convert-back-return-value-from-c-dll-functions-to-python">Convert back return value from c dll functions to python.</h5>
 <p>In this case <em>send</em> function is ignoring return.</p>
@@ -433,7 +429,7 @@ ctypes.</p>
 
 
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/js/main.min.191509a5c8442abdb6eb5020a332fd59bdd83a7e78a2d2241108df9113504292.js"></script>
 
 
 <script type="application/javascript">
