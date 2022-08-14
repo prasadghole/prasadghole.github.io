@@ -7,13 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Prasad Ghole</copyright>
-    <lastBuildDate>Fri, 08 Jul 2022 18:21:06 +0530</lastBuildDate><atom:link href="http://prasadghole.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Jul 2022 14:14:57 +0530</lastBuildDate><atom:link href="http://prasadghole.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python snippets</title>
+      <link>http://prasadghole.github.io/post/pysnippets/</link>
+      <pubDate>Tue, 26 Jul 2022 14:14:57 +0530</pubDate>
+      
+      <guid>http://prasadghole.github.io/post/pysnippets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VPS setup</title>
+      <link>http://prasadghole.github.io/post/vpssetup/</link>
+      <pubDate>Tue, 12 Jul 2022 01:08:58 +0530</pubDate>
+      
+      <guid>http://prasadghole.github.io/post/vpssetup/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Inside Python</title>
       <link>http://prasadghole.github.io/post/pythoninside/</link>
       <pubDate>Fri, 08 Jul 2022 18:21:06 +0530</pubDate>
       
       <guid>http://prasadghole.github.io/post/pythoninside/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python for embedded software modelling</title>
+      <link>http://prasadghole.github.io/post/pythonforembedded/</link>
+      <pubDate>Wed, 06 Jul 2022 14:56:38 +0530</pubDate>
+      
+      <guid>http://prasadghole.github.io/post/pythonforembedded/</guid>
       <description></description>
     </item>
     
@@ -62,15 +89,6 @@ CAN Transmission I used example code from library and make sure
       <pubDate>Wed, 22 Jun 2022 14:57:27 +0530</pubDate>
       
       <guid>http://prasadghole.github.io/post/canviewer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reactive Design patterns</title>
-      <link>http://prasadghole.github.io/post/reactivedp/</link>
-      <pubDate>Wed, 12 Jan 2022 01:00:05 +0530</pubDate>
-      
-      <guid>http://prasadghole.github.io/post/reactivedp/</guid>
       <description></description>
     </item>
     

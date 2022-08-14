@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Security - My daily musing</title>
+  <title>Python for embedded software modelling - My daily musing</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.89.4 with theme even" />
 
 
-<link rel="canonical" href="http://prasadghole.github.io/post/security/" />
+<link rel="canonical" href="http://prasadghole.github.io/post/pythonforembedded/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -39,19 +39,19 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Security" />
+<meta property="og:title" content="Python for embedded software modelling" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://prasadghole.github.io/post/security/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2022-06-23T12:15:15+05:30" />
-<meta property="article:modified_time" content="2022-06-24T14:11:38+05:30" />
+<meta property="og:url" content="http://prasadghole.github.io/post/pythonforembedded/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-07-06T14:56:38+05:30" />
+<meta property="article:modified_time" content="2022-08-10T19:46:17+05:30" />
 
-<meta itemprop="name" content="Security">
-<meta itemprop="description" content=""><meta itemprop="datePublished" content="2022-06-23T12:15:15+05:30" />
-<meta itemprop="dateModified" content="2022-06-24T14:11:38+05:30" />
-<meta itemprop="wordCount" content="127">
+<meta itemprop="name" content="Python for embedded software modelling">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2022-07-06T14:56:38+05:30" />
+<meta itemprop="dateModified" content="2022-08-10T19:46:17+05:30" />
+<meta itemprop="wordCount" content="217">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Security"/>
+<meta name="twitter:title" content="Python for embedded software modelling"/>
 <meta name="twitter:description" content=""/>
 
 <!--[if lte IE 9]>
@@ -129,69 +129,106 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Security</h1>
+      <h1 class="post-title">Python for embedded software modelling</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2022-06-23 </span>
+        <span class="post-time"> 2022-07-06 </span>
         
-          <span class="more-meta"> 127 words </span>
-          <span class="more-meta"> 1 min read </span>
+          <span class="more-meta"> 217 words </span>
+          <span class="more-meta"> 2 mins read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
     </header>
 
     
     <div class="post-content">
-      <h1 id="five-principals-for-of-embedded-security">Five Principals for of embedded security</h1>
-<h2 id="message">Message</h2>
-<p>Off course this is what you want to protect from intruder.</p>
-<h2 id="integrity">Integrity</h2>
-<p>Original message sent from sender should not altered when received by receiver.</p>
-<h2 id="authentication">Authentication</h2>
-<p>Message should be received from intended sender party.</p>
-<h2 id="authorization">Authorization</h2>
-<p>Sender of message should have be authorized to execute some action on receptor</p>
-<h2 id="anti-replay">Anti-replay</h2>
-<p>A valid message should not be used again by intruder to carry out malicious activities</p>
-<h2 id="nonreduating">Nonreduating</h2>
-<p>Sender of message should not able to disown the message.</p>
-<h1 id="encryption-types">Encryption types</h1>
-<h2 id="symmetric-key-cryptography">Symmetric key cryptography</h2>
-<ul>
-<li>Simple</li>
-<li>Fast</li>
-</ul>
-<h2 id="asymmetric-public-key-cryptography">Asymmetric (public key cryptography)</h2>
-<ul>
-<li>More failsafe</li>
-<li>slower</li>
-</ul>
-<h1 id="algorithms-security-levels">Algorithms security levels</h1>
-<ol>
-<li>MD5 Unsecured</li>
-<li>SHA-1 Unsecured</li>
-<li></li>
-</ol>
-<h1 id="hash-functions">Hash functions</h1>
-<h2 id="consistency">Consistency</h2>
-<p>Get same value for same input</p>
-<h2 id="compression">compression</h2>
-<p>Compress large data into small output range</p>
-<h2 id="lossiness">Lossiness</h2>
-<p>We loose information from input to output.</p>
+      <h1 id="why-python">Why Python?</h1>
+<p>Quick prototyping and availability of rich library set makes easy to model
+embedded software in python. Current scope of this blog post is to modelling
+embedded software and not embedded system.</p>
+<h1 id="architectural-patterns">Architectural patterns</h1>
+<p><a href="https://pypubsub.readthedocs.io">pypubsub</a> is suitable for simulating decoupled
+system using observer pattern. Hierarchical topic pattern gives more structured
+view to design and build decoupled system.</p>
+<p><a href="https://rxpy.readthedocs.io/en/latest/">rxpy</a> is more natural pattern for 
+modelling embedded systems as it a reactive framework.</p>
+<h1 id="basic-building-blocks">Basic building blocks</h1>
+<p>Below sections I am exploring many alternative approaches, which may not bind
+to above mentioned Architectural patterns.</p>
+<h2 id="timers">Timers</h2>
+<p>This is most fundamental unit of embedded system. On windows OS we can use
+win32event module to generate timing events. Based on these events as basic
+timer tick we can run or simulate the embedded system.</p>
+<p>We need to use thread and win32event to create an actor which will wait for
+timer event and execute function or in case of reactive system emit message.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">
+<span class="n">fromm</span> <span class="n">threading</span> <span class="kn">import</span> <span class="nn">Thread</span>
+<span class="kn">import</span> <span class="nn">win32event</span>
+
+<span class="k">class</span> <span class="nc">TimerEventGenerator</span><span class="p">(</span><span class="n">Thread</span><span class="p">):</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">period</span><span class="p">):</span>
+    <span class="nb">super</span><span class="p">(</span><span class="n">TimerEventGenerator</span><span class="p">,</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">period</span> <span class="o">=</span> <span class="n">period</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">event</span> <span class="o">=</span> <span class="n">win32event</span><span class="o">.</span><span class="n">CreateWaitableTimer</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span><span class="kc">False</span><span class="p">,</span><span class="kc">None</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">stoprequest</span> <span class="o">=</span> <span class="kc">False</span>
+
+  <span class="k">def</span> <span class="nf">Start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">win32event</span><span class="o">.</span><span class="n">SetWaitableTimer</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">handle</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">period</span><span class="p">,</span><span class="kc">None</span><span class="p">,</span><span class="kc">None</span><span class="p">,</span><span class="kc">None</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">while</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">stoprequest</span><span class="p">:</span>
+      <span class="n">win32event</span><span class="o">.</span><span class="n">WaitForSingleObject</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">handle</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">period</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Do your work&#34;</span><span class="p">)</span><span class="n">ku</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="n">TimerEventGenerator</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+
+<span class="n">t</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     
 <footer class="post-footer">
       
       <nav class="post-nav">
-        <a class="prev" href="/post/mpc2515/">
+        <a class="prev" href="/post/pythoninside/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">CAN bus on Arduino using MPC2515</span>
+            <span class="prev-text nav-default">Inside Python</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
-        <a class="next" href="/post/canviewer/">
-            <span class="next-text nav-default">CANViewer</span>
+        <a class="next" href="/post/canplayground/">
+            <span class="next-text nav-default">CAN Playground</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
