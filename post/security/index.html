@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Security - My daily musing</title>
+  <title>Notes on CyberSecurity - My daily musing</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,14 +16,19 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Prasad Ghole" /><meta name="description" content="" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="Prasad Ghole" /><meta name="description" content="Five Principals for of embedded security Message Off course this is what you want to protect from intruder.
+Integrity Original message sent from sender should not altered when received by receiver.
+Message should not be altered during communication
+Authentication Message should be received from intended sender party.
+Authorization Sender of message should have be authorized to execute some action on receptor.
+Anti-replay Nonreduating Sender of message should not able to disown the message." /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.89.4 with theme even" />
+<meta name="generator" content="Hugo 0.111.3 with theme even" />
 
 
 <link rel="canonical" href="http://prasadghole.github.io/post/security/" />
@@ -39,20 +44,34 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Security" />
-<meta property="og:description" content="" />
+<meta property="og:title" content="Notes on CyberSecurity" />
+<meta property="og:description" content="Five Principals for of embedded security Message Off course this is what you want to protect from intruder.
+Integrity Original message sent from sender should not altered when received by receiver.
+Message should not be altered during communication
+Authentication Message should be received from intended sender party.
+Authorization Sender of message should have be authorized to execute some action on receptor.
+Anti-replay Nonreduating Sender of message should not able to disown the message." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://prasadghole.github.io/post/security/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2022-06-23T12:15:15+05:30" />
-<meta property="article:modified_time" content="2022-06-24T14:11:38+05:30" />
-
-<meta itemprop="name" content="Security">
-<meta itemprop="description" content=""><meta itemprop="datePublished" content="2022-06-23T12:15:15+05:30" />
-<meta itemprop="dateModified" content="2022-06-24T14:11:38+05:30" />
-<meta itemprop="wordCount" content="127">
+<meta property="article:published_time" content="2022-11-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-05-18T19:24:25+05:30" />
+<meta itemprop="name" content="Notes on CyberSecurity">
+<meta itemprop="description" content="Five Principals for of embedded security Message Off course this is what you want to protect from intruder.
+Integrity Original message sent from sender should not altered when received by receiver.
+Message should not be altered during communication
+Authentication Message should be received from intended sender party.
+Authorization Sender of message should have be authorized to execute some action on receptor.
+Anti-replay Nonreduating Sender of message should not able to disown the message."><meta itemprop="datePublished" content="2022-11-10T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-05-18T19:24:25+05:30" />
+<meta itemprop="wordCount" content="562">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Security"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Notes on CyberSecurity"/>
+<meta name="twitter:description" content="Five Principals for of embedded security Message Off course this is what you want to protect from intruder.
+Integrity Original message sent from sender should not altered when received by receiver.
+Message should not be altered during communication
+Authentication Message should be received from intended sender party.
+Authorization Sender of message should have be authorized to execute some action on receptor.
+Anti-replay Nonreduating Sender of message should not able to disown the message."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -129,69 +148,548 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Security</h1>
+      <h1 class="post-title">Notes on CyberSecurity</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2022-06-23 </span>
+        <span class="post-time"> 2022-11-10 </span>
         
-          <span class="more-meta"> 127 words </span>
-          <span class="more-meta"> 1 min read </span>
+          <span class="more-meta"> 562 words </span>
+          <span class="more-meta"> 3 mins read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
     </header>
 
-    
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">Five Principals for of embedded security</a>
+<ul>
+<li><a href="#headline-2">Message</a>
+</li>
+<li><a href="#headline-3">Integrity </a>
+</li>
+<li><a href="#headline-4">Authentication</a>
+</li>
+<li><a href="#headline-5">Authorization</a>
+</li>
+<li><a href="#headline-6">Anti-replay</a>
+</li>
+<li><a href="#headline-7">Nonreduating</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-8">Encryption types</a>
+<ul>
+<li><a href="#headline-9">Symmetric key cryptography</a>
+<ul>
+<li><a href="#headline-10">Simple</a>
+</li>
+<li><a href="#headline-11">Fast</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-12">Asymmetric (public key cryptography)</a>
+<ul>
+<li><a href="#headline-13">More failsafe</a>
+</li>
+<li><a href="#headline-14">slower</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#headline-15">Algorithms security levels</a>
+</li>
+<li><a href="#headline-16">Hash functions </a>
+<ul>
+<li><a href="#headline-17">Consistency</a>
+</li>
+<li><a href="#headline-18">compression</a>
+</li>
+<li><a href="#headline-19">Lossiness</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-20">Threat modeling</a>
+<ul>
+<li><a href="#headline-21">What we are building </a>
+</li>
+<li><a href="#headline-22">What can go wrong</a>
+</li>
+<li><a href="#headline-23">How we mitigate it</a>
+</li>
+<li><a href="#headline-24">How well we done our job.</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-25">GPG </a>
+<ul>
+<li><a href="#headline-26">GPG key usage</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-27">FOTA</a>
+<ul>
+<li><a href="#headline-28">Secure boot</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-29">Penetration testing tools</a>
+<ul>
+<li><a href="#headline-30">Firmware </a>
+</li>
+<li><a href="#headline-31">Web</a>
+</li>
+<li><a href="#headline-32">Radio analysis</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-33">NIST Framework</a>
+</li>
+<li><a href="#headline-34">PKI for embedded system</a>
+</li>
+<li><a href="#headline-35">BLE security</a>
+</li>
+<li><a href="#headline-36">Network protocol security</a>
+<ul>
+<li><a href="#headline-37">Protocols</a>
+<ul>
+<li><a href="#headline-38">PPP (Point to Point)</a>
+</li>
+<li><a href="#headline-39">ARP (Address Resolution Protocol)</a>
+</li>
+<li><a href="#headline-40">DHCP (Dynamic host configuration protocol)</a>
+</li>
+<li><a href="#headline-41">SNMP (Simple network management protocol)</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+  </div>
+</div>
     <div class="post-content">
-      <h1 id="five-principals-for-of-embedded-security">Five Principals for of embedded security</h1>
-<h2 id="message">Message</h2>
+      
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Five Principals for of embedded security
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p><img src="/images/post/home-made-robot-desk.jpg" alt="/images/post/home-made-robot-desk.jpg" title="/images/post/home-made-robot-desk.jpg" /></p>
+<div id="outline-container-headline-2" class="outline-3">
+<h3 id="headline-2">
+Message
+</h3>
+<div id="outline-text-headline-2" class="outline-text-3">
 <p>Off course this is what you want to protect from intruder.</p>
-<h2 id="integrity">Integrity</h2>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-3">
+<h3 id="headline-3">
+Integrity 
+</h3>
+<div id="outline-text-headline-3" class="outline-text-3">
 <p>Original message sent from sender should not altered when received by receiver.</p>
-<h2 id="authentication">Authentication</h2>
+<p>
+Message should not be altered during communication</p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">
+Authentication
+</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
 <p>Message should be received from intended sender party.</p>
-<h2 id="authorization">Authorization</h2>
-<p>Sender of message should have be authorized to execute some action on receptor</p>
-<h2 id="anti-replay">Anti-replay</h2>
-<p>A valid message should not be used again by intruder to carry out malicious activities</p>
-<h2 id="nonreduating">Nonreduating</h2>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-3">
+<h3 id="headline-5">
+Authorization
+</h3>
+<div id="outline-text-headline-5" class="outline-text-3">
+<p>Sender of message should have be authorized to execute some action on receptor.</p>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-3">
+<h3 id="headline-6">
+Anti-replay
+</h3>
+</div>
+<div id="outline-container-headline-7" class="outline-3">
+<h3 id="headline-7">
+Nonreduating
+</h3>
+<div id="outline-text-headline-7" class="outline-text-3">
 <p>Sender of message should not able to disown the message.</p>
-<h1 id="encryption-types">Encryption types</h1>
-<h2 id="symmetric-key-cryptography">Symmetric key cryptography</h2>
-<ul>
-<li>Simple</li>
-<li>Fast</li>
-</ul>
-<h2 id="asymmetric-public-key-cryptography">Asymmetric (public key cryptography)</h2>
-<ul>
-<li>More failsafe</li>
-<li>slower</li>
-</ul>
-<h1 id="algorithms-security-levels">Algorithms security levels</h1>
+<table>
+<thead>
+<tr>
+<th>Principal</th>
+<th>Method</th>
+<th class="align-right"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Integrity</td>
+<td>Hash</td>
+<td class="align-right"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-2">
+<h2 id="headline-8">
+Encryption types
+</h2>
+<div id="outline-text-headline-8" class="outline-text-2">
+<div id="outline-container-headline-9" class="outline-3">
+<h3 id="headline-9">
+Symmetric key cryptography
+</h3>
+<div id="outline-text-headline-9" class="outline-text-3">
+<div id="outline-container-headline-10" class="outline-4">
+<h4 id="headline-10">
+Simple
+</h4>
+</div>
+<div id="outline-container-headline-11" class="outline-4">
+<h4 id="headline-11">
+Fast
+</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-12" class="outline-3">
+<h3 id="headline-12">
+Asymmetric (public key cryptography)
+</h3>
+<div id="outline-text-headline-12" class="outline-text-3">
+<div id="outline-container-headline-13" class="outline-4">
+<h4 id="headline-13">
+More failsafe
+</h4>
+</div>
+<div id="outline-container-headline-14" class="outline-4">
+<h4 id="headline-14">
+slower
+</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-15" class="outline-2">
+<h2 id="headline-15">
+Algorithms security levels
+</h2>
+<div id="outline-text-headline-15" class="outline-text-2">
 <ol>
 <li>MD5 Unsecured</li>
 <li>SHA-1 Unsecured</li>
-<li></li>
 </ol>
-<h1 id="hash-functions">Hash functions</h1>
-<h2 id="consistency">Consistency</h2>
+</div>
+</div>
+<div id="outline-container-headline-16" class="outline-2">
+<h2 id="headline-16">
+Hash functions 
+</h2>
+<div id="outline-text-headline-16" class="outline-text-2">
+<div id="outline-container-headline-17" class="outline-3">
+<h3 id="headline-17">
+Consistency
+</h3>
+<div id="outline-text-headline-17" class="outline-text-3">
 <p>Get same value for same input</p>
-<h2 id="compression">compression</h2>
+</div>
+</div>
+<div id="outline-container-headline-18" class="outline-3">
+<h3 id="headline-18">
+compression
+</h3>
+<div id="outline-text-headline-18" class="outline-text-3">
 <p>Compress large data into small output range</p>
-<h2 id="lossiness">Lossiness</h2>
+</div>
+</div>
+<div id="outline-container-headline-19" class="outline-3">
+<h3 id="headline-19">
+Lossiness
+</h3>
+<div id="outline-text-headline-19" class="outline-text-3">
 <p>We loose information from input to output.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-20" class="outline-2">
+<h2 id="headline-20">
+Threat modeling
+</h2>
+<div id="outline-text-headline-20" class="outline-text-2">
+<div id="outline-container-headline-21" class="outline-3">
+<h3 id="headline-21">
+What we are building 
+</h3>
+</div>
+<div id="outline-container-headline-22" class="outline-3">
+<h3 id="headline-22">
+What can go wrong
+</h3>
+</div>
+<div id="outline-container-headline-23" class="outline-3">
+<h3 id="headline-23">
+How we mitigate it
+</h3>
+</div>
+<div id="outline-container-headline-24" class="outline-3">
+<h3 id="headline-24">
+How well we done our job.
+</h3>
+<div id="outline-text-headline-24" class="outline-text-3">
+<p>STRIDE for finding threats</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-25" class="outline-2">
+<h2 id="headline-25">
+GPG 
+</h2>
+<div id="outline-text-headline-25" class="outline-text-2">
+<div id="outline-container-headline-26" class="outline-3">
+<h3 id="headline-26">
+GPG key usage
+</h3>
+<div id="outline-text-headline-26" class="outline-text-3">
+<ol>
+<li>I want anyone receiving my email to know that I cannot repudiate it. Sign my message with private key.</li>
+<li>I want to verify message I received is sent by person who say he is. Verify the signature by senders public key.</li>
+<li>I want to send message which only intended recipient can read. Encrypt message with recipient public key.</li>
+<li>I want to read message i received. Decrept message with your private key.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-27" class="outline-2">
+<h2 id="headline-27">
+FOTA
+</h2>
+<div id="outline-text-headline-27" class="outline-text-2">
+<p>Firmware over the air. For IOT devices we need to update the firmware on the field.</p>
+<div id="outline-container-headline-28" class="outline-3">
+<h3 id="headline-28">
+Secure boot
+</h3>
+<div id="outline-text-headline-28" class="outline-text-3">
+<p>When system is booting it provides window of opportunities to boot different application
+than expected.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-29" class="outline-2">
+<h2 id="headline-29">
+Penetration testing tools
+</h2>
+<div id="outline-text-headline-29" class="outline-text-2">
+<div id="outline-container-headline-30" class="outline-3">
+<h3 id="headline-30">
+Firmware 
+</h3>
+<div id="outline-text-headline-30" class="outline-text-3">
+<ul>
+<li>BinWalk</li>
+<li>Firmadyne</li>
+<li>Firmwalker</li>
+<li>Angr</li>
+<li>GDB</li>
+<li>Radare2</li>
+<li>Binary Analysis tool</li>
+<li>Qemu</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-31" class="outline-3">
+<h3 id="headline-31">
+Web
+</h3>
+<div id="outline-text-headline-31" class="outline-text-3">
+<ul>
+<li>Burp Suite</li>
+<li>OWASP Zed Attack proxy</li>
+<li>Rest plugin</li>
+<li>Postman Chrome extension</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-32" class="outline-3">
+<h3 id="headline-32">
+Radio analysis
+</h3>
+<div id="outline-text-headline-32" class="outline-text-3">
+<ul>
+<li>Atmel RZ Raven</li>
+<li>Attify Badge</li>
+<li>HackRF one</li>
+<li>Yardstick one</li>
+<li>Ubertooth</li>
+<li>BLE adapter</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-33" class="outline-2">
+<h2 id="headline-33">
+NIST Framework
+</h2>
+<div id="outline-text-headline-33" class="outline-text-2">
+<p>National institute standards and technology provide risk based cybersecurity
+framework. It consists of 5 core functions</p>
+<ul>
+<li>Identify</li>
+<li>Protect</li>
+<li>Detect</li>
+<li>Respond</li>
+<li>Recover</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-34" class="outline-2">
+<h2 id="headline-34">
+PKI for embedded system
+</h2>
+<div id="outline-text-headline-34" class="outline-text-2">
+<p>To identify if message is coming from authentic source we need to create certificate</p>
+<div class="src src-shell">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">openssl req -x509 -newkey rsa:2048 -nodes -keyout key.pem -out cert.pem -days <span class="m">365</span> -nodes</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<p>
+This will create</p>
+<ul>
+<li>Private key key.pem</li>
+<li>Public certificate cert.pem Se
+
+For </li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-35" class="outline-2">
+<h2 id="headline-35">
+BLE security
+</h2>
+<div id="outline-text-headline-35" class="outline-text-2">
+<p>
+<a href="https://medium.com/rtone-iot-security/deep-dive-into-bluetooth-le-security-d2301d640bfc">This medium post</a></p>
+</div>
+</div>
+<div id="outline-container-headline-36" class="outline-2">
+<h2 id="headline-36">
+Network protocol security
+</h2>
+<div id="outline-text-headline-36" class="outline-text-2">
+<div id="outline-container-headline-37" class="outline-3">
+<h3 id="headline-37">
+Protocols
+</h3>
+<div id="outline-text-headline-37" class="outline-text-3">
+<div id="outline-container-headline-38" class="outline-4">
+<h4 id="headline-38">
+PPP (Point to Point)
+</h4>
+<div id="outline-text-headline-38" class="outline-text-4">
+<ol>
+<li>CHAP (Challenge response Authentication protocol)</li>
+</ol>
+<p>Requires shared key hence only suitable for local preconfigued devices.</p>
+</div>
+</div>
+<div id="outline-container-headline-39" class="outline-4">
+<h4 id="headline-39">
+ARP (Address Resolution Protocol)
+</h4>
+<div id="outline-text-headline-39" class="outline-text-4">
+<p>Used for mapping hardware addresses to network (IP) addresses.
+It works by storing the hardware address and IP address mapping in tables. These
+tables are updated when new hardware device is connected.</p>
+<ul>
+<li>ARP cache poisoning
+ARP do not have any authentication mechanism hence hacker device can get entry
+into ARP table by creating reply with malicious MAC address. This way packets
+send by devices will never leave the network as it is talking to non existent 
+devices.</li>
+<li>Smart switch (Denial of Service)
+Some smart switches goes into dumb mode when high amounts of packages are
+received hacker can bombard smart switch with many packets and convert smart
+to hub. 
+
+This attack can be controlled by making ARP cache static.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-40" class="outline-4">
+<h4 id="headline-40">
+DHCP (Dynamic host configuration protocol)
+</h4>
+<div id="outline-text-headline-40" class="outline-text-4">
+<p>This protocol is used for providing IP addresses to connected devices.
+A hacking device can acts as DHCP client and drain out the address pool.
+A hacking device can act as DHCP server and provide false configuration information
+kj</p>
+</div>
+</div>
+<div id="outline-container-headline-41" class="outline-4">
+<h4 id="headline-41">
+SNMP (Simple network management protocol)
+</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+
     </div>
 
-    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Prasad Ghole</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2023-05-18
+        <a href="/commit/6be73f815b673de319ecf746fee18db4e7f5f479" title="Added missing files from backup.">(6be73f8)</a>
+    </span>
+  </p>
+  
+  
+</div>
 <footer class="post-footer">
       
       <nav class="post-nav">
-        <a class="prev" href="/post/mpc2515/">
+        <a class="prev" href="/post/eclipse_kura/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">CAN bus on Arduino using MPC2515</span>
+            <span class="prev-text nav-default">Eclipse Kura IOT gateway</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
-        <a class="next" href="/post/canviewer/">
-            <span class="next-text nav-default">CANViewer</span>
+        <a class="next" href="/post/mbed/">
+            <span class="next-text nav-default"></span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
@@ -200,6 +698,10 @@
   </article>
         </div>
         
+
+  
+
+  
 
       </div>
     </main>
@@ -231,7 +733,7 @@
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>Prasad Ghole</span>
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>Prasad Ghole</span>
   </span>
 </div>
 
@@ -248,7 +750,7 @@
 
 
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
 
 
 <script type="application/javascript">

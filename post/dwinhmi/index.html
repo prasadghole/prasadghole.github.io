@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.89.4 with theme even" />
+<meta name="generator" content="Hugo 0.111.3 with theme even" />
 
 
 <link rel="canonical" href="http://prasadghole.github.io/post/dwinhmi/" />
@@ -45,7 +45,6 @@
 <meta property="og:url" content="http://prasadghole.github.io/post/dwinhmi/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-07-03T14:06:55+05:30" />
 <meta property="article:modified_time" content="2022-07-10T21:37:59+05:30" />
-
 <meta itemprop="name" content="Dwinhmi">
 <meta itemprop="description" content="Using DWIN HMI Software"><meta itemprop="datePublished" content="2022-07-03T14:06:55+05:30" />
 <meta itemprop="dateModified" content="2022-07-10T21:37:59+05:30" />
@@ -180,20 +179,20 @@ I bought DWIN COF 4.3 inch display from <a href="https://robu.in/product/dwin-tn
 <h1 id="demo-project">Demo project</h1>
 <p>I downloaded <a href="https://www.electroniclinic.com/dmg80480c043_02wtc-touch-screen-getting-started-tutorial/">Demo GUI</a></p>
 <p>Using tutorial when I tried to download project as is, it was not successful. But then I made sure resolution
-is changed to matching with my COF display (480 * 272) I was able download files and see change in factory 
+is changed to matching with my COF display (480 * 272) I was able download files and see change in factory
 programmed UI.</p>
 <p>Next task is to download through SD card.</p>
 <h1 id="hello-world">Hello world</h1>
-<p>After downloading above project. I tried my own hands on hello world program after following 
+<p>After downloading above project. I tried my own hands on hello world program after following
 many youtube videos and tutorials but not able to run on target HMI. Program was simulating
 properly on DGUS software, but when downloaded on HMI shows static screens which were not
 part of hello world program.</p>
 <p>To fix this I downloaded <a href="https://www.dwin-global.com/factory-demo/">factory demo</a> for my model
 DMG48270F043_01WTR board.</p>
-<p>I observed DWIN_SET files in factory demo do not include <em>32.icl</em> as mentioned in other projects 
+<p>I observed DWIN_SET files in factory demo do not include <em>32.icl</em> as mentioned in other projects
 but infact contain 24.icl. Hence after chaning output file name to 24.icl and making changes
 in configuation. I was able to download and run my Hello world program successfully.</p>
-<p><a href="https://github.com/prasadghole/dwin/tree/main/DGM48270F043_01WTR/HelloWorld">Hello World</a> is 
+<p><a href="https://github.com/prasadghole/dwin/tree/main/DGM48270F043_01WTR/HelloWorld">Hello World</a> is
 availble in github for referance.</p>
 <h1 id="formatting-sd-card">Formatting SD card</h1>
 <p>SD card size limitations as per documentation in 1 to 16 GB. For my system
@@ -203,16 +202,16 @@ card was on D drive hence I issued folloing command</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">FORMAT d:/fs:fat32/a:4096 
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">FORMAT d:/fs:fat32/a:4096 
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>This took almost 10 minutes or more to format 16 GB of card.</p>
-<p>After copying it to SD card, and restarting still no blue boot screen. 
+<p>After copying it to SD card, and restarting still no blue boot screen.
 But previous UI also do not start.</p>
 <p>Till I figure out this I will continue explore using USB download.</p>
 <h1 id="dwin-display-memory-layout">DWIN display memory layout</h1>
 <h2 id="flash">Flash</h2>
-<p>16 MB of flash is divided into 64 sectors of each 256 KB. 
+<p>16 MB of flash is divided into 64 sectors of each 256 KB.
 Each sector index 0 to 63 will have file names accordingly.</p>
 <p><img src="/images/post/dwin_flashspace.PNG" alt="Flash Space"></p>
 <h2 id="ram">RAM</h2>
@@ -231,7 +230,7 @@ objects values are stored in memory addresses called as Variable Pointers
 <h3 id="description-pointers-sp">Description Pointers (SP)</h3>
 <p>A description pointer is a VP whose value can be modified by user using
 communication interface.</p>
-<p>Its UI developers responsibility to make sure VP length should be such that 
+<p>Its UI developers responsibility to make sure VP length should be such that
 there addresses are not overlapped.</p>
 <h2 id="controls">Controls</h2>
 <p>These are view of MVC architecture. Control have minimum 5 properties/parameters</p>
@@ -287,7 +286,7 @@ there addresses are not overlapped.</p>
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>Prasad Ghole</span>
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>Prasad Ghole</span>
   </span>
 </div>
 
@@ -304,7 +303,7 @@ there addresses are not overlapped.</p>
 
 
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
 
 
 <script type="application/javascript">

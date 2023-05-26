@@ -2,15 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://prasadghole.github.io/post/cmake/</loc>
+    <lastmod>2023-05-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://prasadghole.github.io/post/devworkflow/</loc>
+    <lastmod>2023-05-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://prasadghole.github.io/post/bootloader/</loc>
+    <lastmod>2023-05-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://prasadghole.github.io/</loc>
-    <lastmod>2022-08-10T19:46:17+05:30</lastmod>
+    <lastmod>2023-05-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://prasadghole.github.io/post/</loc>
-    <lastmod>2022-08-10T19:46:17+05:30</lastmod>
+    <lastmod>2023-05-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://prasadghole.github.io/post/threatanalysis/</loc>
+    <lastmod>2023-05-18T19:24:25+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://prasadghole.github.io/post/circularq/</loc>
+    <lastmod>2023-05-18T19:24:25+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://prasadghole.github.io/post/eclipse_kura/</loc>
+    <lastmod>2023-05-18T19:24:25+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://prasadghole.github.io/post/security/</loc>
+    <lastmod>2023-05-18T19:24:25+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://prasadghole.github.io/post/mbed/</loc>
+    <lastmod>2023-05-18T19:24:25+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://prasadghole.github.io/post/hugoblog/</loc>
+    <lastmod>2022-11-07T20:45:49+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -24,7 +87,7 @@
   
   <url>
     <loc>http://prasadghole.github.io/post/vpssetup/</loc>
-    <lastmod>2022-08-05T21:53:05+05:30</lastmod>
+    <lastmod>2022-11-05T22:18:56+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -45,14 +108,14 @@
   
   <url>
     <loc>http://prasadghole.github.io/tags/</loc>
-    <lastmod>2022-07-10T13:00:23+05:30</lastmod>
+    <lastmod>2023-05-18T19:24:25+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://prasadghole.github.io/post/pythonforembedded/</loc>
-    <lastmod>2022-08-10T19:46:17+05:30</lastmod>
+    <lastmod>2022-08-27T22:53:51+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -93,13 +156,6 @@
   </url>
   
   <url>
-    <loc>http://prasadghole.github.io/post/security/</loc>
-    <lastmod>2022-06-24T14:11:38+05:30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://prasadghole.github.io/post/canviewer/</loc>
     <lastmod>2022-06-24T14:11:38+05:30</lastmod>
     <changefreq>weekly</changefreq>
@@ -108,7 +164,7 @@
   
   <url>
     <loc>http://prasadghole.github.io/tags/git/</loc>
-    <lastmod>2021-05-05T16:10:54+05:30</lastmod>
+    <lastmod>2023-05-18T19:24:25+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -199,7 +255,7 @@
   
   <url>
     <loc>http://prasadghole.github.io/categories/</loc>
-    <lastmod>2022-06-24T14:11:38+05:30</lastmod>
+    <lastmod>2023-05-18T19:24:25+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -227,7 +283,7 @@
   
   <url>
     <loc>http://prasadghole.github.io/categories/development/</loc>
-    <lastmod>2022-06-24T14:11:38+05:30</lastmod>
+    <lastmod>2023-05-18T19:24:25+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -269,7 +325,7 @@
   
   <url>
     <loc>http://prasadghole.github.io/post/gitbare/</loc>
-    <lastmod>2021-05-05T15:59:08+05:30</lastmod>
+    <lastmod>2023-05-18T19:24:25+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -305,6 +361,20 @@
   <url>
     <loc>http://prasadghole.github.io/about/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://prasadghole.github.io/post/ble_notes/</loc>
+    <lastmod>2023-05-18T19:24:25+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://prasadghole.github.io/post/topic/</loc>
+    <lastmod>2023-05-18T19:24:25+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
 </urlset>

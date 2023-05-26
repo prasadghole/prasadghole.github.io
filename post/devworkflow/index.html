@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> - My daily musing</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Prasad Ghole" /><meta name="description" content="My development workflow and tools For embedded system I prfer command line tools for atleast in development phase.
+Certainly! Here&amp;#39;s an example of a blog post explaining how to create a CMake build file for STM32 microcontrollers using the GCC toolchain. You can publish it on a Hugo static site generator:
+```markdown — title: Creating a CMake Build File for STM32 Microcontrollers with GCC Toolchain date: 2023-05-26 —
+If you&amp;#39;re working on embedded systems development for STM32 microcontrollers, you&amp;#39;ll need an efficient build automation tool to streamline your software development process." /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.111.3 with theme even" />
+
+
+<link rel="canonical" href="http://prasadghole.github.io/post/devworkflow/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="" />
+<meta property="og:description" content="My development workflow and tools For embedded system I prfer command line tools for atleast in development phase.
+Certainly! Here&#39;s an example of a blog post explaining how to create a CMake build file for STM32 microcontrollers using the GCC toolchain. You can publish it on a Hugo static site generator:
+```markdown — title: Creating a CMake Build File for STM32 Microcontrollers with GCC Toolchain date: 2023-05-26 —
+If you&#39;re working on embedded systems development for STM32 microcontrollers, you&#39;ll need an efficient build automation tool to streamline your software development process." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://prasadghole.github.io/post/devworkflow/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-05-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-05-26T00:00:00+00:00" />
+<meta itemprop="name" content="">
+<meta itemprop="description" content="My development workflow and tools For embedded system I prfer command line tools for atleast in development phase.
+Certainly! Here&#39;s an example of a blog post explaining how to create a CMake build file for STM32 microcontrollers using the GCC toolchain. You can publish it on a Hugo static site generator:
+```markdown — title: Creating a CMake Build File for STM32 Microcontrollers with GCC Toolchain date: 2023-05-26 —
+If you&#39;re working on embedded systems development for STM32 microcontrollers, you&#39;ll need an efficient build automation tool to streamline your software development process."><meta itemprop="datePublished" content="2023-05-26T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-05-26T00:00:00+00:00" />
+<meta itemprop="wordCount" content="609">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="My development workflow and tools For embedded system I prfer command line tools for atleast in development phase.
+Certainly! Here&#39;s an example of a blog post explaining how to create a CMake build file for STM32 microcontrollers using the GCC toolchain. You can publish it on a Hugo static site generator:
+```markdown — title: Creating a CMake Build File for STM32 Microcontrollers with GCC Toolchain date: 2023-05-26 —
+If you&#39;re working on embedded systems development for STM32 microcontrollers, you&#39;ll need an efficient build automation tool to streamline your software development process."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+  
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'G-9RPT3X16Y6');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9RPT3X16Y6"></script>
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">My daily musing</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">My daily musing</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title"></h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2023-05-26 </span>
+        
+          <span class="more-meta"> 609 words </span>
+          <span class="more-meta"> 3 mins read </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">My development workflow and tools</a>
+</li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+My development workflow and tools
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p>For embedded system I prfer command line tools for atleast in development phase.</p>
+<p>
+Certainly! Here&#39;s an example of a blog post explaining how to create a CMake build file for STM32 microcontrollers using the GCC toolchain. You can publish it on a Hugo static site generator:</p>
+<p>
+```markdown
+—
+title: Creating a CMake Build File for STM32 Microcontrollers with GCC Toolchain
+date: 2023-05-26
+—</p>
+<p>
+If you&#39;re working on embedded systems development for STM32 microcontrollers, you&#39;ll need an efficient build automation tool to streamline your software development process. In this blog post, we&#39;ll explore how to create a CMake build file using the GCC toolchain, specifically designed for STM32 microcontrollers.</p>
+<p>
+## Prerequisites</p>
+<p>
+Before we begin, make sure you have the following tools set up:</p>
+<ul>
+<li>CMake: A cross-platform build automation tool.</li>
+<li>GCC Toolchain: The GNU Compiler Collection toolchain specifically for STM32 microcontrollers.</li>
+<li>STM32Cube: The software development framework for STM32 microcontrollers.</li>
+</ul>
+<p>## Project Setup</p>
+<p>
+Assuming you have a basic project structure in place, with source code files located in the `src` directory and header files in the `inc` directory, follow these steps to create the CMake build file:</p>
+<p>
+### Step 1: Create CMakeLists.txt</p>
+<p>
+In the project root directory, create a file named `CMakeLists.txt`. This file will contain the instructions for building your project using CMake.</p>
+<p>
+### Step 2: Set the Toolchain File</p>
+<p>
+Inside the `CMakeLists.txt` file, specify the path to the STM32 toolchain file using the `CMAKE_TOOLCHAIN_FILE` variable:</p>
+<p>
+```cmake
+set(CMAKE_TOOLCHAIN_FILE &#34;path/to/STM32Toolchain.cmake&#34;)
+```</p>
+<p>
+Replace `&#34;path/to/STM32Toolchain.cmake&#34;` with the actual path to the STM32 toolchain file for GCC.</p>
+<p>
+### Step 3: Define Microcontroller Parameters</p>
+<p>
+Set the target microcontroller family and the specific microcontroller model using the `MCU_FAMILY` and `MCU` variables:</p>
+<p>
+```cmake
+set(MCU_FAMILY &#34;STM32F4xx&#34; CACHE STRING &#34;Target STM32 microcontroller family&#34;)
+set(MCU &#34;STM32F407VG&#34; CACHE STRING &#34;Target STM32 microcontroller&#34;)
+```</p>
+<p>
+Adjust these variables to match your target microcontroller&#39;s specifications.</p>
+<p>
+### Step 4: Add Source Files</p>
+<p>
+List your source files in the `SOURCES` variable:</p>
+<p>
+```cmake
+set(SOURCES
+    src/main.c
+    src/gpio.c</p>
+<p>)
+```</p>
+<p>
+Make sure to include all the necessary source files for your project. </p>
+<p>
+### Step 5: Specify Include Directories</p>
+<p>
+Specify the directories containing the header files using the `include_directories` command:</p>
+<p>
+```cmake
+include_directories(
+    inc</p>
+<p>)
+```</p>
+<p>
+Include any additional directories where your header files are located.</p>
+<p>
+### Step 6: Create the Executable</p>
+<p>
+Create the executable by adding the following command:</p>
+<p>
+```cmake
+add_executable(${PROJECT_NAME} ${SOURCES})
+```</p>
+<p>
+### Step 7: Set Compiler and Linker Flags</p>
+<p>
+Set the compiler flags using the `target_compile_options` command:</p>
+<p>
+```cmake
+target_compile_options(${PROJECT_NAME} PRIVATE ${MCU_FLAGS})
+```</p>
+<p>
+Specify the linker flags and dependencies using the `target_link_options` command:</p>
+<p>
+```cmake
+target_link_options(${PROJECT_NAME} PRIVATE
+    -T${CMAKE_CURRENT_SOURCE_DIR}/STM32F4xx.ld
+    ${MCU_FLAGS}
+)
+```</p>
+<p>
+Make sure to adjust the linker flags and dependencies to match your target microcontroller&#39;s requirements.</p>
+<p>
+### Step 8: Specify Output Binary Format</p>
+<p>
+Specify the output binary format (ELF, HEX, BIN) and</p>
+<p>
+ add a custom command for generating the HEX and BIN files after the build:</p>
+<p>
+```cmake
+set(HEX_FILE ${PROJECT_NAME}.hex)
+set(BIN_FILE ${PROJECT_NAME}.bin)</p>
+<p>
+add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+    COMMAND ${CMAKE_OBJCOPY} -Oihex $&lt;TARGET_FILE:${PROJECT_NAME}&gt; ${HEX_FILE}
+    COMMAND ${CMAKE_OBJCOPY} -Obinary $&lt;TARGET_FILE:${PROJECT_NAME}&gt; ${BIN_FILE}
+    COMMENT &#34;Converting ${PROJECT_NAME} to ${HEX_FILE} and ${BIN_FILE}&#34;
+)
+```</p>
+<p>
+### Step 9: Build the Project</p>
+<p>
+You&#39;re now ready to build your project using CMake. Open your terminal, navigate to the project directory, and run the following commands:</p>
+<p>
+```bash
+mkdir build &amp;&amp; cd build
+cmake ..
+make
+```</p>
+<p>
+The build process will generate the necessary object files and the final executable.</p>
+<p>
+Congratulations! You&#39;ve successfully created a CMake build file for your STM32 microcontroller project using the GCC toolchain. With CMake, you can easily manage dependencies, compile your code, and generate the required output binary files.</p>
+<p>
+Happy coding!
+```</p>
+<p>
+Feel free to adjust the content and formatting of the blog post to fit your specific requirements and the style of your Hugo static site.</p>
+</div>
+</div>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Prasad Ghole</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2023-05-26
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/cmake/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default"></span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/bootloader/">
+            <span class="next-text nav-default">Bootloader Interface</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:prasad.ghole@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://linkedin.com/in/prasadghole" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://github.com/prasadghole" class="iconfont icon-github" title="github"></a>
+  <a href="http://prasadghole.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> site pv: <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> site uv: <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>Prasad Ghole</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-9RPT3X16Y6', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.89.4 with theme even" />
+<meta name="generator" content="Hugo 0.111.3 with theme even" />
 
 
 <link rel="canonical" href="http://prasadghole.github.io/post/pythonforembedded/" />
@@ -44,12 +44,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://prasadghole.github.io/post/pythonforembedded/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-07-06T14:56:38+05:30" />
-<meta property="article:modified_time" content="2022-08-10T19:46:17+05:30" />
-
+<meta property="article:modified_time" content="2022-08-27T22:53:51+05:30" />
 <meta itemprop="name" content="Python for embedded software modelling">
 <meta itemprop="description" content=""><meta itemprop="datePublished" content="2022-07-06T14:56:38+05:30" />
-<meta itemprop="dateModified" content="2022-08-10T19:46:17+05:30" />
-<meta itemprop="wordCount" content="217">
+<meta itemprop="dateModified" content="2022-08-27T22:53:51+05:30" />
+<meta itemprop="wordCount" content="215">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Python for embedded software modelling"/>
 <meta name="twitter:description" content=""/>
@@ -134,13 +133,28 @@
       <div class="post-meta">
         <span class="post-time"> 2022-07-06 </span>
         
-          <span class="more-meta"> 217 words </span>
+          <span class="more-meta"> 215 words </span>
           <span class="more-meta"> 2 mins read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
     </header>
 
-    
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#why-python">Why Python?</a></li>
+    <li><a href="#architectural-patterns">Architectural patterns</a></li>
+    <li><a href="#basic-building-blocks">Basic building blocks</a>
+      <ul>
+        <li><a href="#timers">Timers</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
     <div class="post-content">
       <h1 id="why-python">Why Python?</h1>
 <p>Quick prototyping and availability of rich library set makes easy to model
@@ -150,7 +164,7 @@ embedded software and not embedded system.</p>
 <p><a href="https://pypubsub.readthedocs.io">pypubsub</a> is suitable for simulating decoupled
 system using observer pattern. Hierarchical topic pattern gives more structured
 view to design and build decoupled system.</p>
-<p><a href="https://rxpy.readthedocs.io/en/latest/">rxpy</a> is more natural pattern for 
+<p><a href="https://rxpy.readthedocs.io/en/latest/">rxpy</a> is more natural pattern for
 modelling embedded systems as it a reactive framework.</p>
 <h1 id="basic-building-blocks">Basic building blocks</h1>
 <p>Below sections I am exploring many alternative approaches, which may not bind
@@ -185,35 +199,31 @@ timer event and execute function or in case of reactive system emit message.</p>
 </span><span class="lnt">20
 </span><span class="lnt">21
 </span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">
-<span class="n">fromm</span> <span class="n">threading</span> <span class="kn">import</span> <span class="nn">Thread</span>
-<span class="kn">import</span> <span class="nn">win32event</span>
-
-<span class="k">class</span> <span class="nc">TimerEventGenerator</span><span class="p">(</span><span class="n">Thread</span><span class="p">):</span>
-  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">period</span><span class="p">):</span>
-    <span class="nb">super</span><span class="p">(</span><span class="n">TimerEventGenerator</span><span class="p">,</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">period</span> <span class="o">=</span> <span class="n">period</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">event</span> <span class="o">=</span> <span class="n">win32event</span><span class="o">.</span><span class="n">CreateWaitableTimer</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span><span class="kc">False</span><span class="p">,</span><span class="kc">None</span><span class="p">)</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">stoprequest</span> <span class="o">=</span> <span class="kc">False</span>
-
-  <span class="k">def</span> <span class="nf">Start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="n">win32event</span><span class="o">.</span><span class="n">SetWaitableTimer</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">handle</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">period</span><span class="p">,</span><span class="kc">None</span><span class="p">,</span><span class="kc">None</span><span class="p">,</span><span class="kc">None</span><span class="p">)</span>
-
-  <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">while</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">stoprequest</span><span class="p">:</span>
-      <span class="n">win32event</span><span class="o">.</span><span class="n">WaitForSingleObject</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">handle</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">period</span><span class="p">)</span>
-      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Do your work&#34;</span><span class="p">)</span><span class="n">ku</span>
-
-<span class="n">t</span> <span class="o">=</span> <span class="n">TimerEventGenerator</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
-
-<span class="n">t</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
-
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">fromm</span> <span class="n">threading</span> <span class="kn">import</span> <span class="nn">Thread</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">win32event</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">TimerEventGenerator</span><span class="p">(</span><span class="n">Thread</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">period</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">super</span><span class="p">(</span><span class="n">TimerEventGenerator</span><span class="p">,</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">period</span> <span class="o">=</span> <span class="n">period</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">event</span> <span class="o">=</span> <span class="n">win32event</span><span class="o">.</span><span class="n">CreateWaitableTimer</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span><span class="kc">False</span><span class="p">,</span><span class="kc">None</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">stoprequest</span> <span class="o">=</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">def</span> <span class="nf">Start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">win32event</span><span class="o">.</span><span class="n">SetWaitableTimer</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">handle</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">period</span><span class="p">,</span><span class="kc">None</span><span class="p">,</span><span class="kc">None</span><span class="p">,</span><span class="kc">None</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">stoprequest</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">win32event</span><span class="o">.</span><span class="n">WaitForSingleObject</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">handle</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">period</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Do your work&#34;</span><span class="p">)</span><span class="n">ku</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">t</span> <span class="o">=</span> <span class="n">TimerEventGenerator</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div>
     </div>
@@ -268,7 +278,7 @@ timer event and execute function or in case of reactive system emit message.</p>
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>Prasad Ghole</span>
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>Prasad Ghole</span>
   </span>
 </div>
 
@@ -285,7 +295,7 @@ timer event and execute function or in case of reactive system emit message.</p>
 
 
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
 
 
 <script type="application/javascript">

@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.89.4 with theme even" />
+<meta name="generator" content="Hugo 0.111.3 with theme even" />
 
 
 <link rel="canonical" href="http://prasadghole.github.io/post/vpssetup/" />
@@ -44,12 +44,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://prasadghole.github.io/post/vpssetup/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-07-12T01:08:58+05:30" />
-<meta property="article:modified_time" content="2022-08-05T21:53:05+05:30" />
-
+<meta property="article:modified_time" content="2022-11-05T22:18:56+05:30" />
 <meta itemprop="name" content="VPS setup">
 <meta itemprop="description" content=""><meta itemprop="datePublished" content="2022-07-12T01:08:58+05:30" />
-<meta itemprop="dateModified" content="2022-08-05T21:53:05+05:30" />
-<meta itemprop="wordCount" content="326">
+<meta itemprop="dateModified" content="2022-11-05T22:18:56+05:30" />
+<meta itemprop="wordCount" content="325">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="VPS setup"/>
 <meta name="twitter:description" content=""/>
@@ -134,7 +133,7 @@
       <div class="post-meta">
         <span class="post-time"> 2022-07-12 </span>
         
-          <span class="more-meta"> 326 words </span>
+          <span class="more-meta"> 325 words </span>
           <span class="more-meta"> 2 mins read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
@@ -154,7 +153,7 @@ ubuntu os. (Centos was default)</p>
 Once started on vps manage page you will see ip address of my vps machine.</p>
 <p>I ssh into it.</p>
 <h2 id="web-server">Web Server</h2>
-<p>Apache was pre installed on this machine. Hence when I types ip address I was able to default 
+<p>Apache was pre installed on this machine. Hence when I types ip address I was able to default
 http page. Next task is convert this to https only secured website.</p>
 <h2 id="creating-new-non-root-user">Creating new non root user</h2>
 <div class="highlight"><div class="chroma">
@@ -163,9 +162,9 @@ http page. Next task is convert this to https only secured website.</p>
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">adduser usename
-usermod -aG sudo usrname
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">adduser usename
+</span></span><span class="line"><span class="cl">usermod -aG sudo usrname
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>SSH access for new user</p>
 <div class="highlight"><div class="chroma">
@@ -173,14 +172,12 @@ usermod -aG sudo usrname
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">su - username
-mkdir .ssh
-chmod 700 .ssh
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">su - username
+</span></span><span class="line"><span class="cl">mkdir .ssh
+</span></span><span class="line"><span class="cl">chmod 700 .ssh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Create public private key pair or use existing public key. I used my existing
 public key as</p>
@@ -189,8 +186,8 @@ public key as</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">scp ~/.ssh/id_rsa.pub username@hostname:/home/username/.ssh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">scp ~/.ssh/id_rsa.pub username@hostname:/home/username/.ssh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>On VPS server</p>
 <div class="highlight"><div class="chroma">
@@ -198,34 +195,33 @@ public key as</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">~/home/username/.ssh/id_rsa.pub &gt;&gt; authorized_keys
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">echo ~/home/username/.ssh/id_rsa.pub &gt;&gt; authorized_keys
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="creating-git-user">Creating git user</h3>
-<p>To use VPS as git server I have created git user with 
+<p>To use VPS as git server I have created git user with
 <a href="https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server">setting up git server</a></p>
 <h1 id="setting-up-jenkins">Setting up Jenkins</h1>
 <p>On my particular machine standard instructions for installing jenkins were not working
-I followed <a href="https://www.jenkins.io/doc/book/installing/linux/">Install on linux</a>:w</p>
+I followed <a href="https://www.jenkins.io/doc/book/installing/linux/">Install on linux</a>
+<a href="https://linux.how2shout.com/how-to-install-jenkins-on-debian-11-bullseye/">https://linux.how2shout.com/how-to-install-jenkins-on-debian-11-bullseye/</a></p>
 <h2 id="install-java">Install java</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sudo apt install default-jre
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt install default-jre
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Run jenkins</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sudo systemctl start jenkins
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo systemctl start jenkins
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="starting-jenkins">Starting Jenkins</h2>
 <p>Once started on http port 8080 it will ask for initial password. To get the password</p>
@@ -236,12 +232,12 @@ I followed <a href="https://www.jenkins.io/doc/book/installing/linux/">Install o
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sudo cat /var/lib/jenkins/secrets/initialAdminPassword
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Proceed with default plugin installation.</p>
 <h1 id="hosting-web-site">Hosting web site</h1>
-<p>My current vps support apache webserver as default. File served from 
+<p>My current vps support apache webserver as default. File served from
 /var/www/html.index is my home page.</p>
 <h2 id="domain-name-in-direction">Domain name in direction</h2>
 <h2 id="setting-up-https-secured-access">Setting up https secured access</h2>
@@ -253,16 +249,14 @@ I followed <a href="https://www.jenkins.io/doc/book/installing/linux/">Install o
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
-</span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sudo apt install software-properties-common
-sudo add-apt-repository ppa:certbot/certbot
-
-sudo apt update
-sudo apt install certbot python3-certbot-apache
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt install software-properties-common
+</span></span><span class="line"><span class="cl">sudo add-apt-repository ppa:certbot/certbot
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">sudo apt install certbot python3-certbot-apache
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="references">References</h1>
 <ol>
@@ -321,7 +315,7 @@ sudo apt install certbot python3-certbot-apache
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>Prasad Ghole</span>
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>Prasad Ghole</span>
   </span>
 </div>
 
@@ -338,7 +332,7 @@ sudo apt install certbot python3-certbot-apache
 
 
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
 
 
 <script type="application/javascript">
