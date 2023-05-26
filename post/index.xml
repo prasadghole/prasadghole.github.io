@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Prasad Ghole</copyright>
-    <lastBuildDate>Mon, 07 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://prasadghole.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://prasadghole.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bootloader Interface</title>
+      <link>http://prasadghole.github.io/post/bootloader/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://prasadghole.github.io/post/bootloader/</guid>
+      <description> Check valid application Initial time window to wait for jump to application </description>
+    </item>
+    
     <item>
       <title>Hugo with emacs org mode</title>
       <link>http://prasadghole.github.io/post/hugoblog/</link>
