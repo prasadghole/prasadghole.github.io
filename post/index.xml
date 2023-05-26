@@ -7,102 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Prasad Ghole</copyright>
-    <lastBuildDate>Fri, 26 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://prasadghole.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>http://prasadghole.github.io/post/cmake/</link>
-      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://prasadghole.github.io/post/cmake/</guid>
-      <description>Daily Notes - May 26, 2023 Today, I worked on creating a CMake build file for STM32 microcontrollers using the GCC toolchain. It was an exciting experience, and I want to share my process with you.
-![STM32 Microcontroller](/images/post/stm32_microcontroller.png)
-Prerequisites Before starting, ensure that the following tools are set up:
-CMake: A cross-platform build automation tool. GCC Toolchain: The GNU Compiler Collection toolchain specifically for STM32 microcontrollers. STM32Cube: The software development framework for STM32 microcontrollers.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://prasadghole.github.io/post/devworkflow/</link>
-      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://prasadghole.github.io/post/devworkflow/</guid>
-      <description>My development workflow and tools For embedded system I prfer command line tools for atleast in development phase.
-Certainly! Here&amp;#39;s an example of a blog post explaining how to create a CMake build file for STM32 microcontrollers using the GCC toolchain. You can publish it on a Hugo static site generator:
-```markdown — title: Creating a CMake Build File for STM32 Microcontrollers with GCC Toolchain date: 2023-05-26 —
-If you&amp;#39;re working on embedded systems development for STM32 microcontrollers, you&amp;#39;ll need an efficient build automation tool to streamline your software development process.</description>
-    </item>
-    
-    <item>
-      <title>Bootloader Interface</title>
-      <link>http://prasadghole.github.io/post/bootloader/</link>
-      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://prasadghole.github.io/post/bootloader/</guid>
-      <description> Check valid application Initial time window to wait for jump to application </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://prasadghole.github.io/post/threatanalysis/</link>
-      <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://prasadghole.github.io/post/threatanalysis/</guid>
-      <description> —
-Cyber security requirements During requirements elicitation phase security requirements can be driven by
-Industry requirements Many industries will have compliance requirements for basic security framework.
-Scenario driven requirements Prevent/Detect/Respond as frame for requirements STRIDE threat modeling is focused on preventing threats.
-People/Process/Technology as frame for requirements These are further divided into
-Trustworthiness Is how much authority and discretion the people in the system expected to have.
-Skills Operational security preventive requirements STRIDE Threat Desirable Property SPOOFING Authentication Tampering Integrity Repudiation Non Repudiation Information Disclosure Confidentiality Denial of Service Availability Elevation of privilege Authorization </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://prasadghole.github.io/post/circularq/</link>
-      <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://prasadghole.github.io/post/circularq/</guid>
-      <description>Circular queue Circular queue or ring buffer is a data structure used commonly in embedded system. This post summaries my implementation understanding based on various internet sources.
-Head vs Tail One of the measure confusion was how to refer head and tail. If we consider real life queue in railway new people join (queue) from tail and processed (dequeue) from head. But some websites, in fact Linux Kernel head index incremented when item added,which in real life added at end.</description>
-    </item>
-    
-    <item>
-      <title>Eclipse Kura IOT gateway</title>
-      <link>http://prasadghole.github.io/post/eclipse_kura/</link>
-      <pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://prasadghole.github.io/post/eclipse_kura/</guid>
-      <description>Simulating on PC Thanks to this this post I was able to install and run the raspebery pi on windows machine. (qemu was installed using msys2 pacman ass scoop.sh installer did not work.
-Once started enable ssh using GUI and then login using
-1 2 3 4 5 6 7 8 9 10 11 qemu-system-arm ^ -kernel kernel-qemu-4.4.34-jessie ^ -cpu arm1176 ^ -m 256 ^ -M versatilepb ^ -serial stdio ^ -append &amp;#34;root=/dev/sda2 rootfstype=ext4 rw&amp;#34; ^ -hda rasp-jess.</description>
-    </item>
-    
-    <item>
-      <title>Notes on CyberSecurity</title>
-      <link>http://prasadghole.github.io/post/security/</link>
-      <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://prasadghole.github.io/post/security/</guid>
-      <description>Five Principals for of embedded security Message Off course this is what you want to protect from intruder.
-Integrity Original message sent from sender should not altered when received by receiver.
-Message should not be altered during communication
-Authentication Message should be received from intended sender party.
-Authorization Sender of message should have be authorized to execute some action on receptor.
-Anti-replay Nonreduating Sender of message should not able to disown the message.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://prasadghole.github.io/post/mbed/</link>
-      <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://prasadghole.github.io/post/mbed/</guid>
-      <description>MBed from ARM mbed Ecosystem ARM mbed provide cloud and desktop platform for developing firmware using multiple toolchain. It compiles application and mbed OS code into single binary file to be loaded or debugged.i
-It uses *arm rtx * RTOS as base OS along with other components.
-Online Keil compliler support My board NRF52-DK is not supported. Hence only option limited is mbed IDE.
-My hands on experience Build Connected board nRF52DK with BLE support.</description>
-    </item>
-    
+    <lastBuildDate>Mon, 07 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://prasadghole.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo with emacs org mode</title>
       <link>http://prasadghole.github.io/post/hugoblog/</link>
@@ -179,6 +84,15 @@ Hugo project path We need to specify hugo project path
 I was able to use successfully provided by corjfowler
 CAN Transmission I used example code from library and make sure
 CS pin for SPI communication is properly mapped. Clock frequency is matched with crystal clock on MPC2515 board. 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 include &amp;lt;mcp_can.</description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>http://prasadghole.github.io/post/security/</link>
+      <pubDate>Thu, 23 Jun 2022 12:15:15 +0530</pubDate>
+      
+      <guid>http://prasadghole.github.io/post/security/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -348,28 +262,6 @@ vim surround vim multiple cursor vim git gutter vim airline vim nerdcommenter em
       <pubDate>Mon, 11 Feb 2019 00:18:21 +0530</pubDate>
       
       <guid>http://prasadghole.github.io/post/vimbindings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://prasadghole.github.io/post/ble_notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://prasadghole.github.io/post/ble_notes/</guid>
-      <description>Bluetooth version Building blocks of bluetooth device Application Host Controller BLE limitations Speed theoretical upper limit of 1Mbps. But it is restricted by
-Traffic protocol overhead Radio limitations connection interval For active connection interval to interval between two consecutive connection event is 7.5 ms to 4 S. Practically we can assume 5-10 KB per seconds.
-Operating range Practically 2 to 5 meters.
-Topology BLE can transmit in
-broadcasting Broadcasting is needed for advertising device services.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://prasadghole.github.io/post/topic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://prasadghole.github.io/post/topic/</guid>
       <description></description>
     </item>
     
