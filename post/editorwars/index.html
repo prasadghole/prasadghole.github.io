@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Vim Tips - My daily musing</title>
+  <title>Text Editor wars - My daily musing</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,9 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Prasad Ghole" /><meta name="description" content="Search in visual mode Follow the steps:
-Select visual mode by V or select block or column by using CTRL_V Press escape to exit visual mode Search / as you do for regular search Edit multiline together In various case I need to append or insert test at multiple lines like adding semicolon at the end of lines. I followed below steps
-CTRL&#43;V to select block. Press I to insert at start." /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="Prasad ghole" /><meta name="description" content="EMACS vs (N)VIM" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -28,7 +26,7 @@ CTRL&#43;V to select block. Press I to insert at start." /><meta name="keywords"
 <meta name="generator" content="Hugo 0.111.3 with theme even" />
 
 
-<link rel="canonical" href="http://prasadghole.github.io/post/vimtips/" />
+<link rel="canonical" href="http://prasadghole.github.io/post/editorwars/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -41,25 +39,19 @@ CTRL&#43;V to select block. Press I to insert at start." /><meta name="keywords"
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Vim Tips" />
-<meta property="og:description" content="Search in visual mode Follow the steps:
-Select visual mode by V or select block or column by using CTRL_V Press escape to exit visual mode Search / as you do for regular search Edit multiline together In various case I need to append or insert test at multiple lines like adding semicolon at the end of lines. I followed below steps
-CTRL&#43;V to select block. Press I to insert at start." />
+<meta property="og:title" content="Text Editor wars" />
+<meta property="og:description" content="EMACS vs (N)VIM" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://prasadghole.github.io/post/vimtips/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-01-22T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-06-24T14:11:38+05:30" />
-<meta itemprop="name" content="Vim Tips">
-<meta itemprop="description" content="Search in visual mode Follow the steps:
-Select visual mode by V or select block or column by using CTRL_V Press escape to exit visual mode Search / as you do for regular search Edit multiline together In various case I need to append or insert test at multiple lines like adding semicolon at the end of lines. I followed below steps
-CTRL&#43;V to select block. Press I to insert at start."><meta itemprop="datePublished" content="2021-01-22T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2022-06-24T14:11:38+05:30" />
-<meta itemprop="wordCount" content="113">
-<meta itemprop="keywords" content="vim," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Vim Tips"/>
-<meta name="twitter:description" content="Search in visual mode Follow the steps:
-Select visual mode by V or select block or column by using CTRL_V Press escape to exit visual mode Search / as you do for regular search Edit multiline together In various case I need to append or insert test at multiple lines like adding semicolon at the end of lines. I followed below steps
-CTRL&#43;V to select block. Press I to insert at start."/>
+<meta property="og:url" content="http://prasadghole.github.io/post/editorwars/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-11-03T12:34:58+05:30" />
+<meta property="article:modified_time" content="2022-11-10T23:20:11+05:30" />
+<meta itemprop="name" content="Text Editor wars">
+<meta itemprop="description" content="EMACS vs (N)VIM"><meta itemprop="datePublished" content="2022-11-03T12:34:58+05:30" />
+<meta itemprop="dateModified" content="2022-11-10T23:20:11+05:30" />
+<meta itemprop="wordCount" content="120">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Text Editor wars"/>
+<meta name="twitter:description" content="EMACS vs (N)VIM"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -136,92 +128,85 @@ CTRL&#43;V to select block. Press I to insert at start."/>
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Vim Tips</h1>
+      <h1 class="post-title">Text Editor wars</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2021-01-22 </span>
-        <div class="post-category">
-            <a href="/categories/development/"> development </a>
-            </div>
-          <span class="more-meta"> 113 words </span>
+        <span class="post-time"> 2022-11-03 </span>
+        
+          <span class="more-meta"> 120 words </span>
           <span class="more-meta"> 1 min read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
     </header>
 
-    <div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">Contents</h2>
-  <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#search-in-visual-mode">Search in visual mode</a></li>
-        <li><a href="#edit-multiline-together">Edit multiline together</a></li>
-        <li><a href="#spell-check">Spell check</a>
-          <ul>
-            <li><a href="#add-word-to-spell-check-dictionary">Add word to spell check dictionary</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-  </div>
-</div>
+    
     <div class="post-content">
-      <h2 id="search-in-visual-mode">Search in visual mode</h2>
-<p>Follow the steps:</p>
-<ol>
-<li>Select visual mode by V or select block or column by using CTRL_V</li>
-<li>Press escape to exit visual mode</li>
-<li>Search <code>/</code> as you do for regular search</li>
-</ol>
-<h2 id="edit-multiline-together">Edit multiline together</h2>
-<p>In various case I need to append or insert test at multiple lines like adding
-semicolon at the end of lines. I followed below steps</p>
-<ol>
-<li>CTRL+V to select block.</li>
-<li>Press I to insert at start.</li>
-<li>Type character at first line.</li>
-<li>Escape and you will see same character is applied to all the selected lines.</li>
-</ol>
-<p><img src="/images/post/vim1.gif" alt="gif"></p>
-<h2 id="spell-check">Spell check</h2>
-<h3 id="add-word-to-spell-check-dictionary">Add word to spell check dictionary</h3>
-<p>Vim stores good words in &lsquo;spellfile&rsquo;.
-Place cursor on wrong word and press</p>
-<p><strong>zg</strong></p>
-
+      <h1 id="vim-vs-emacs">Vim vs EMACS</h1>
+<p>I thought this war was over for me. But recently I gave one more try to emacs. Org mode
+is single most reason for this shift.</p>
+<p>In EMACS I can</p>
+<ul>
+<li>Document in mLrkdown</li>
+<li>Use agenda for task management</li>
+<li>Time tracking and reporting</li>
+<li>Text based web browsing (including picture)</li>
+<li>Extending using LISP</li>
+<li>Better GUI with multiple fonts and glyphs</li>
+<li>More than text editor.</li>
+</ul>
+<p>But neovim with its multithreading, non-blocking mode give more edge to already faster
+vim.</p>
+<table>
+<thead>
+<tr>
+<th>Parameters</th>
+<th>VIM</th>
+<th>EMACS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Speed</td>
+<td>Fast</td>
+<td>Slow</td>
+</tr>
+<tr>
+<td>Multithread</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Org mode</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Time Tracking</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Web browsing</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p>My current 2022 choice is use EMACS for documentation and literate programming using bable.
+And for software development use nvim.</p>
     </div>
 
-    <div class="post-copyright">
-  <p class="copyright-item">
-    <span class="item-title">Author</span>
-    <span class="item-content">Prasad Ghole</span>
-  </p>
-  <p class="copyright-item">
-    <span class="item-title">LastMod</span>
-    <span class="item-content">
-        2022-06-24
-        <a href="/commit/6c0027712e437b9521c0557b342662f6d5944c29" title="added CAN viewer and MPC 2515 posts">(6c00277)</a>
-    </span>
-  </p>
-  
-  
-</div>
+    
 <footer class="post-footer">
-      <div class="post-tags">
-          <a href="/tags/vim/">vim</a>
-          </div>
+      
       <nav class="post-nav">
-        <a class="prev" href="/post/installemacsonwindows/">
+        <a class="prev" href="/post/hugoblog/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Installing spacemacs on windows</span>
+            <span class="prev-text nav-default">Hugo with emacs org mode</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
-        <a class="next" href="/post/gitbare/">
-            <span class="next-text nav-default">Git in a box</span>
+        <a class="next" href="/post/bookmark/">
+            <span class="next-text nav-default">Bookmark</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
@@ -230,10 +215,6 @@ Place cursor on wrong word and press</p>
   </article>
         </div>
         
-
-  
-
-  
 
       </div>
     </main>

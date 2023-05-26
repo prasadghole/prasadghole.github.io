@@ -30,6 +30,27 @@
   </url>
   
   <url>
+    <loc>http://prasadghole.github.io/post/editorwars/</loc>
+    <lastmod>2022-11-10T23:20:11+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://prasadghole.github.io/post/bookmark/</loc>
+    <lastmod>2022-09-23T16:10:40+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://prasadghole.github.io/post/software_quality/</loc>
+    <lastmod>2022-09-23T16:10:40+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://prasadghole.github.io/post/pysnippets/</loc>
     <lastmod>2022-08-10T19:11:31+05:30</lastmod>
     <changefreq>weekly</changefreq>
@@ -116,6 +137,13 @@
   <url>
     <loc>http://prasadghole.github.io/post/canviewer/</loc>
     <lastmod>2022-06-24T14:11:38+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://prasadghole.github.io/post/reactivedp/</loc>
+    <lastmod>2022-08-10T21:35:54+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -268,36 +296,8 @@
   </url>
   
   <url>
-    <loc>http://prasadghole.github.io/post/pointers_mistakes/</loc>
-    <lastmod>2021-01-27T18:12:58+05:30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://prasadghole.github.io/tags/c/</loc>
-    <lastmod>2021-01-27T18:12:58+05:30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://prasadghole.github.io/post/gitbare/</loc>
     <lastmod>2023-05-26T18:39:25+05:30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://prasadghole.github.io/tags/security/</loc>
-    <lastmod>2022-06-24T14:11:38+05:30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://prasadghole.github.io/post/security_1/</loc>
-    <lastmod>2022-06-24T14:11:38+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
