@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on The rational observer</title>
-    <link>https://prasadghole.github.io/categories/</link>
-    <description>Recent content in Categories on The rational observer</description>
-    <image>
-      <title>The rational observer</title>
-      <url>https://prasadghole.github.io/papermod-cover.png</url>
-      <link>https://prasadghole.github.io/papermod-cover.png</link>
-    </image>
+    <title>Categories on My daily musing</title>
+    <link>http://prasadghole.github.io/categories/</link>
+    <description>Recent content in Categories on My daily musing</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 02 Feb 2021 00:48:49 +0530</lastBuildDate><atom:link href="https://prasadghole.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <copyright>Prasad Ghole</copyright>
+    <lastBuildDate>Tue, 02 Feb 2021 00:48:49 +0530</lastBuildDate><atom:link href="http://prasadghole.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Publishing</title>
-      <link>https://prasadghole.github.io/categories/publishing/</link>
+      <link>http://prasadghole.github.io/categories/publishing/</link>
       <pubDate>Tue, 02 Feb 2021 00:48:49 +0530</pubDate>
       
-      <guid>https://prasadghole.github.io/categories/publishing/</guid>
+      <guid>http://prasadghole.github.io/categories/publishing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>development</title>
-      <link>https://prasadghole.github.io/categories/development/</link>
+      <link>http://prasadghole.github.io/categories/development/</link>
       <pubDate>Tue, 26 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://prasadghole.github.io/categories/development/</guid>
+      <guid>http://prasadghole.github.io/categories/development/</guid>
       <description></description>
     </item>
     

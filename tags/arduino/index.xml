@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Arduino on The rational observer</title>
-    <link>https://prasadghole.github.io/tags/arduino/</link>
-    <description>Recent content in Arduino on The rational observer</description>
-    <image>
-      <title>The rational observer</title>
-      <url>https://prasadghole.github.io/papermod-cover.png</url>
-      <link>https://prasadghole.github.io/papermod-cover.png</link>
-    </image>
+    <title>Arduino on My daily musing</title>
+    <link>http://prasadghole.github.io/tags/arduino/</link>
+    <description>Recent content in Arduino on My daily musing</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Jun 2022 11:51:05 +0530</lastBuildDate><atom:link href="https://prasadghole.github.io/tags/arduino/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <copyright>Prasad Ghole</copyright>
+    <lastBuildDate>Fri, 24 Jun 2022 11:51:05 +0530</lastBuildDate><atom:link href="http://prasadghole.github.io/tags/arduino/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CAN bus on Arduino using MPC2515</title>
-      <link>https://prasadghole.github.io/post/mpc2515/</link>
+      <link>http://prasadghole.github.io/post/mpc2515/</link>
       <pubDate>Fri, 24 Jun 2022 11:51:05 +0530</pubDate>
       
-      <guid>https://prasadghole.github.io/post/mpc2515/</guid>
+      <guid>http://prasadghole.github.io/post/mpc2515/</guid>
       <description>In search of working Arduino library There are many CAN libraries available to use with Arduino but very few provide proper feedback based on error code.
 I was able to use successfully provided by corjfowler
 CAN Transmission I used example code from library and make sure
-CS pin for SPI communication is properly mapped. Clock frequency is matched with crystal clock on MPC2515 board. include &amp;lt;mcp_can.h&amp;gt;#include &amp;lt;SPI.h&amp;gt;MCP_CAN CAN0(10); // Set CS to pin 10void setup(){Serial.</description>
+CS pin for SPI communication is properly mapped. Clock frequency is matched with crystal clock on MPC2515 board. 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 include &amp;lt;mcp_can.</description>
     </item>
     
   </channel>

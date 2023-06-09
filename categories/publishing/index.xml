@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publishing on The rational observer</title>
-    <link>https://prasadghole.github.io/categories/publishing/</link>
-    <description>Recent content in Publishing on The rational observer</description>
-    <image>
-      <title>The rational observer</title>
-      <url>https://prasadghole.github.io/papermod-cover.png</url>
-      <link>https://prasadghole.github.io/papermod-cover.png</link>
-    </image>
+    <title>Publishing on My daily musing</title>
+    <link>http://prasadghole.github.io/categories/publishing/</link>
+    <description>Recent content in Publishing on My daily musing</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 02 Feb 2021 00:48:49 +0530</lastBuildDate><atom:link href="https://prasadghole.github.io/categories/publishing/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <copyright>Prasad Ghole</copyright>
+    <lastBuildDate>Tue, 02 Feb 2021 00:48:49 +0530</lastBuildDate><atom:link href="http://prasadghole.github.io/categories/publishing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reveal Secrets</title>
-      <link>https://prasadghole.github.io/post/reveal-secrets/</link>
+      <link>http://prasadghole.github.io/post/reveal-secrets/</link>
       <pubDate>Tue, 02 Feb 2021 00:48:49 +0530</pubDate>
       
-      <guid>https://prasadghole.github.io/post/reveal-secrets/</guid>
-      <description>Reveal.js links</description>
+      <guid>http://prasadghole.github.io/post/reveal-secrets/</guid>
+      <description>Reveal js Converting daily notes to beautiful presentations made easy with reveal js integration. Configuration is also very simple but still there are some tit bits to remember. Below are some of the links
+Configuring emacs (spacemacs) https://www.johbo.com/2017/presentations-with-org-mode.html
+http://jr0cket.co.uk/2017/03/org-mode-driven-presentations-with-org-reveal-spacemacs.html
+About org mode http://jr0cket.co.uk/2013/08/manage-dev-life-with-emacs-org-mode.html
+https://orgmode.org/
+Publishing to Internet http://jr0cket.co.uk/2014/01/share-your-revealjs-slides-on-github-pages.html
+Using Pandoc 1 pandoc --standalone -f org -t revealjs TraingSlides.org -o out.html As I may not use emacs/spacemacs on every machine Pandoc is right option to create revealjs output from org or markdown document.</description>
     </item>
     
   </channel>
