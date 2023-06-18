@@ -1,109 +1,112 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on My daily musing</title>
-    <link>http://prasadghole.github.io/tags/</link>
-    <description>Recent content in Tags on My daily musing</description>
+    <title>Tags on The rational observer</title>
+    <link>https://prasadghole.github.io/tags/</link>
+    <description>Recent content in Tags on The rational observer</description>
+    <image>
+      <title>The rational observer</title>
+      <url>https://prasadghole.github.io/papermod-cover.png</url>
+      <link>https://prasadghole.github.io/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>Prasad Ghole</copyright>
-    <lastBuildDate>Fri, 08 Jul 2022 18:21:06 +0530</lastBuildDate><atom:link href="http://prasadghole.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Jul 2022 18:21:06 +0530</lastBuildDate><atom:link href="https://prasadghole.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python</title>
-      <link>http://prasadghole.github.io/tags/python/</link>
+      <link>https://prasadghole.github.io/tags/python/</link>
       <pubDate>Fri, 08 Jul 2022 18:21:06 +0530</pubDate>
       
-      <guid>http://prasadghole.github.io/tags/python/</guid>
+      <guid>https://prasadghole.github.io/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CAN</title>
-      <link>http://prasadghole.github.io/tags/can/</link>
+      <link>https://prasadghole.github.io/tags/can/</link>
       <pubDate>Tue, 05 Jul 2022 20:29:14 +0530</pubDate>
       
-      <guid>http://prasadghole.github.io/tags/can/</guid>
+      <guid>https://prasadghole.github.io/tags/can/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Arduino</title>
-      <link>http://prasadghole.github.io/tags/arduino/</link>
+      <link>https://prasadghole.github.io/tags/arduino/</link>
       <pubDate>Fri, 24 Jun 2022 11:51:05 +0530</pubDate>
       
-      <guid>http://prasadghole.github.io/tags/arduino/</guid>
+      <guid>https://prasadghole.github.io/tags/arduino/</guid>
       <description></description>
     </item>
     
     <item>
       <title>git</title>
-      <link>http://prasadghole.github.io/tags/git/</link>
+      <link>https://prasadghole.github.io/tags/git/</link>
       <pubDate>Tue, 06 Apr 2021 02:37:08 +0530</pubDate>
       
-      <guid>http://prasadghole.github.io/tags/git/</guid>
+      <guid>https://prasadghole.github.io/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming</title>
-      <link>http://prasadghole.github.io/tags/programming/</link>
+      <link>https://prasadghole.github.io/tags/programming/</link>
       <pubDate>Mon, 22 Mar 2021 00:11:46 +0530</pubDate>
       
-      <guid>http://prasadghole.github.io/tags/programming/</guid>
+      <guid>https://prasadghole.github.io/tags/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>development</title>
-      <link>http://prasadghole.github.io/tags/development/</link>
+      <link>https://prasadghole.github.io/tags/development/</link>
       <pubDate>Thu, 11 Feb 2021 00:18:21 +0530</pubDate>
       
-      <guid>http://prasadghole.github.io/tags/development/</guid>
+      <guid>https://prasadghole.github.io/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>quotes</title>
-      <link>http://prasadghole.github.io/tags/quotes/</link>
+      <link>https://prasadghole.github.io/tags/quotes/</link>
       <pubDate>Mon, 08 Feb 2021 00:33:13 +0530</pubDate>
       
-      <guid>http://prasadghole.github.io/tags/quotes/</guid>
+      <guid>https://prasadghole.github.io/tags/quotes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Everthing is Code</title>
-      <link>http://prasadghole.github.io/tags/everthing-is-code/</link>
+      <link>https://prasadghole.github.io/tags/everthing-is-code/</link>
       <pubDate>Fri, 05 Feb 2021 23:38:24 +0530</pubDate>
       
-      <guid>http://prasadghole.github.io/tags/everthing-is-code/</guid>
+      <guid>https://prasadghole.github.io/tags/everthing-is-code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mouseless</title>
-      <link>http://prasadghole.github.io/tags/mouseless/</link>
+      <link>https://prasadghole.github.io/tags/mouseless/</link>
       <pubDate>Fri, 05 Feb 2021 23:38:24 +0530</pubDate>
       
-      <guid>http://prasadghole.github.io/tags/mouseless/</guid>
+      <guid>https://prasadghole.github.io/tags/mouseless/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emacs</title>
-      <link>http://prasadghole.github.io/tags/emacs/</link>
+      <link>https://prasadghole.github.io/tags/emacs/</link>
       <pubDate>Tue, 02 Feb 2021 00:48:49 +0530</pubDate>
       
-      <guid>http://prasadghole.github.io/tags/emacs/</guid>
+      <guid>https://prasadghole.github.io/tags/emacs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vim</title>
-      <link>http://prasadghole.github.io/tags/vim/</link>
+      <link>https://prasadghole.github.io/tags/vim/</link>
       <pubDate>Tue, 26 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://prasadghole.github.io/tags/vim/</guid>
+      <guid>https://prasadghole.github.io/tags/vim/</guid>
       <description></description>
     </item>
     
