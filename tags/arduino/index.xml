@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Arduino on The rational observer</title>
+    <link>https://prasadghole.github.io/tags/arduino/</link>
+    <description>Recent content in Arduino on The rational observer</description>
+    <image>
+      <title>The rational observer</title>
+      <url>https://prasadghole.github.io/papermod-cover.png</url>
+      <link>https://prasadghole.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 24 Jun 2022 11:51:05 +0530</lastBuildDate><atom:link href="https://prasadghole.github.io/tags/arduino/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CAN bus on Arduino using MPC2515</title>
+      <link>https://prasadghole.github.io/post/mpc2515/</link>
+      <pubDate>Fri, 24 Jun 2022 11:51:05 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/mpc2515/</guid>
+      <description>In search of working Arduino library There are many CAN libraries available to use with Arduino but very few provide proper feedback based on error code.
+I was able to use successfully provided by corjfowler
+CAN Transmission I used example code from library and make sure
+CS pin for SPI communication is properly mapped. Clock frequency is matched with crystal clock on MPC2515 board. include &amp;lt;mcp_can.h&amp;gt;#include &amp;lt;SPI.h&amp;gt;MCP_CAN CAN0(10); // Set CS to pin 10void setup(){Serial.</description>
+    </item>
+    
+  </channel>
+</rss>
