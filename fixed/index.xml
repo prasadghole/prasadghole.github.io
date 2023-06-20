@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fixeds on Gokarna</title>
+    <link>https://prasadghole.github.io/fixed/</link>
+    <description>Recent content in Fixeds on Gokarna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://prasadghole.github.io/fixed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://prasadghole.github.io/fixed/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/fixed/about/</guid>
+      <description>In the novel, The Strange Case of Dr. Jeykll and Mr. Hyde, Mr. Poole is Dr. Jekyll&amp;rsquo;s virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It&amp;rsquo;s made by @mdo.
+There are currently two themes built on Poole:
+Hyde Lanyon Learn more and contribute on GitHub.
+Setup Some fun facts about the setup of this project include:
+Built for Jekyll Developed on GitHub and hosted for free on GitHub Pages Coded with Sublime Text 2, an amazing code editor Designed and developed while listening to music like Blood Bros Trilogy Have questions or suggestions?</description>
+    </item>
+    
+    <item>
+      <title>Another Fixed Page</title>
+      <link>https://prasadghole.github.io/fixed/altab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/fixed/altab/</guid>
+      <description>This is just another example of a fixed page, to demonstrate ordered elements in the sidebar.</description>
+    </item>
+    
+    <item>
+      <title>A Menu Page Using Hugo Menu Templates</title>
+      <link>https://prasadghole.github.io/fixed/mpage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/fixed/mpage/</guid>
+      <description>This is example of a page from site menu. Pages from &amp;lsquo;main&amp;rsquo; menu appear just above the fixed pages from sidebar. Checkout official documentation about Menu Templates.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Not a Volatile - Restrict</title>
+    <meta name="description" content=" Restrict keyword in C">
+    <meta name="keywords" content='blog, gokarna, hugo, Programming'>
+
+    <meta property="og:url" content="https://prasadghole.github.io/post/restrickeyword/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Not a Volatile - Restrict">
+    <meta property="og:description" content=" Restrict keyword in C">
+    <meta property="og:image" content="https://prasadghole.github.io/images/avatar.webp">
+    <meta property="og:image:secure_url" content="https://prasadghole.github.io/images/avatar.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Not a Volatile - Restrict">
+    <meta name="twitter:description" content=" Restrict keyword in C">
+    <meta property="twitter:domain" content="https://prasadghole.github.io/post/restrickeyword/">
+    <meta property="twitter:url" content="https://prasadghole.github.io/post/restrickeyword/">
+    <meta name="twitter:image" content="https://prasadghole.github.io/images/avatar.webp">
+
+    
+    <link rel="canonical" href="https://prasadghole.github.io/post/restrickeyword/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.d2f86e708954a1836cc8969565d39b1138231a1ba1af1672d8c07be9ef953b31.js" integrity="sha256-0vhucIlUoYNsyJaVZdObETgjGhuhrxZy2MB76e&#43;VOzE="></script>
+
+    
+    
+        <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://prasadghole.github.io">
+                <img src="https://prasadghole.github.io/images/avatar.webp" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://prasadghole.github.io">Gokarna</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/fixed/mpage/"> A Menu Page </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/post/"><span data-feather='book'></span> Post </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/projects/"><span data-feather='code'></span> Projects </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/526avijitgupta/gokarna"><span data-feather='github'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://www.buymeacoffee.com/avijitgupta"><span data-feather='coffee'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/index.xml"><span data-feather='rss'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/fixed/mpage/"> A Menu Page </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/post/"><span data-feather='book'></span> Post </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/projects/"><span data-feather='code'></span> Projects </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/526avijitgupta/gokarna"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://www.buymeacoffee.com/avijitgupta"><span data-feather='coffee'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/index.xml"><span data-feather='rss'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Not a Volatile - Restrict</h1>
+        <small role="doc-subtitle"> Restrict keyword in C</small>
+        <p class="post-date">
+            March 22, 2021
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://prasadghole.github.io/tags/programming">Programming</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 id="restrict-type-qualifier">restrict type qualifier</h1>
+<p>C99 introduced new C only <strong>restrict</strong> keyword. It does exactly opposite work of
+<strong>volatile</strong>  keyword but with very few restricted use cases. It applies only to
+pointers to objects.</p>
+<p>Objects indirectly accessed by pointers cannot be optimized
+by compiler due to potential aliasing, which may occur when more than one pointer
+can point to same object.
+Due to this compiler may or may not optimize the code.</p>
+<h1 id="use-case">Use case</h1>
+<p>As mentioned above by using restrict keyword we can tell compiler to optimize use
+of parameters of function accessing restricated objects via pointers.</p>
+<pre tabindex="0"><code>void f(unsigned int n, int * restrict p, int * restrict q) {
+  while (n-- &gt; 0) {
+    *p++ = *q++;
+  }
+</code></pre><p>Here programmer is telling compiler that obects accessed by pointer p and q are
+accessing different objects in memory.</p>
+<p>But remember it is the programmers responsibility to make sure above statement is
+correct else undefined behaviour can happen due to optimization.</p>
+<h1 id="demo">Demo</h1>
+<pre tabindex="0"><code>
+int foo(int *a, int *b)
+{
+    *a = 5;
+    *b = 6;
+    return *a + *b;
+}
+ 
+</code></pre><h2 id="results">Results</h2>
+<p><img src="/images/post/restrict.png" alt="Optimized functions "></p>
+<p>As we can see function rfoo has optimized the use of pointers and placed
+direct results in register eax.</p>
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>&copy; 2023 The Marauders</span>
+    
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>

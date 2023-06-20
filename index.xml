@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gokarna</title>
+    <link>https://prasadghole.github.io/</link>
+    <description>Recent content on Gokarna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 07 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://prasadghole.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://prasadghole.github.io/fixed/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/fixed/about/</guid>
+      <description>In the novel, The Strange Case of Dr. Jeykll and Mr. Hyde, Mr. Poole is Dr. Jekyll&amp;rsquo;s virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It&amp;rsquo;s made by @mdo.
+There are currently two themes built on Poole:
+Hyde Lanyon Learn more and contribute on GitHub.
+Setup Some fun facts about the setup of this project include:
+Built for Jekyll Developed on GitHub and hosted for free on GitHub Pages Coded with Sublime Text 2, an amazing code editor Designed and developed while listening to music like Blood Bros Trilogy Have questions or suggestions?</description>
+    </item>
+    
+    <item>
+      <title>Another Fixed Page</title>
+      <link>https://prasadghole.github.io/fixed/altab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/fixed/altab/</guid>
+      <description>This is just another example of a fixed page, to demonstrate ordered elements in the sidebar.</description>
+    </item>
+    
+    <item>
+      <title>Setting up neovim on windows</title>
+      <link>https://prasadghole.github.io/post/neovim/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/neovim/</guid>
+      <description>Package manager I use vimplug as plugin manager.
+iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim | ni &amp;#34;$env:LOCALAPPDATA\nvim\autoload\plug.vim&amp;#34; -Force Configuration Directory This is different than traditional vim
+$HOME\AppData\Local\nvim\init.vim Plugins for completion call plug#begin(&amp;#39;$HOME/.vim/plugged&amp;#39;) &amp;#34; Plugins Plug &amp;#39;dense-analysis/ale&amp;#39; &amp;#34; Asynchronous Lint Engine (ALE) Plug &amp;#39;neoclide/coc.nvim&amp;#39;, {&amp;#39;branch&amp;#39;: &amp;#39;release&amp;#39;} &amp;#34; CoC (Conquer of Completion) call plug#end() Coc-pyright Initially I tried coc-python but it seems not working on python 3.11. Hence I moved to pyright.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://prasadghole.github.io/post/sst_nucleo_f303/</link>
+      <pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/sst_nucleo_f303/</guid>
+      <description>Porting SST on Nucleo F303 The Quantum Framework, developed by Miro Samek, is a software framework designed for building event-driven, reactive embedded systems. It provides a structured approach to software development, emphasizing modularity, reusability, and scalability.
+At the core of the Quantum Framework is the concept of hierarchical state machines (HSMs), which are used to model the behavior of the system. HSMs allow for the representation of complex system behaviors in a hierarchical and modular manner, making it easier to understand and maintain the software.</description>
+    </item>
+    
+    <item>
+      <title>Bootloader Interface</title>
+      <link>https://prasadghole.github.io/post/bootloader/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/bootloader/</guid>
+      <description> Check valid application Initial time window to wait for jump to application </description>
+    </item>
+    
+    <item>
+      <title>Hugo with emacs org mode</title>
+      <link>https://prasadghole.github.io/post/hugoblog/</link>
+      <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/hugoblog/</guid>
+      <description>Why Exclusively using emacs for writing documentation. I can now write posts directly in org mode.
+Advantages Never leave emacs. Template with all the hugo parameters Override or customize front matter. Basic Setup For my hugo even theme when I create post using new command front matter is already inserted. Below are customization options
+Hugo project path We need to specify hugo project path
+#+hugo_base_dir: /msys64/home/pghole/blog/ This is hard coded.</description>
+    </item>
+    
+    <item>
+      <title>Text Editor wars</title>
+      <link>https://prasadghole.github.io/post/editorwars/</link>
+      <pubDate>Thu, 03 Nov 2022 12:34:58 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/editorwars/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bookmark</title>
+      <link>https://prasadghole.github.io/post/bookmark/</link>
+      <pubDate>Fri, 23 Sep 2022 16:01:08 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/bookmark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software_Quality</title>
+      <link>https://prasadghole.github.io/post/software_quality/</link>
+      <pubDate>Thu, 22 Sep 2022 19:23:54 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/software_quality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python snippets</title>
+      <link>https://prasadghole.github.io/post/pysnippets/</link>
+      <pubDate>Tue, 26 Jul 2022 14:14:57 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/pysnippets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VPS setup</title>
+      <link>https://prasadghole.github.io/post/vpssetup/</link>
+      <pubDate>Tue, 12 Jul 2022 01:08:58 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/vpssetup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inside Python</title>
+      <link>https://prasadghole.github.io/post/pythoninside/</link>
+      <pubDate>Fri, 08 Jul 2022 18:21:06 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/pythoninside/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python for embedded software modelling</title>
+      <link>https://prasadghole.github.io/post/pythonforembedded/</link>
+      <pubDate>Wed, 06 Jul 2022 14:56:38 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/pythonforembedded/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CAN Playground</title>
+      <link>https://prasadghole.github.io/post/canplayground/</link>
+      <pubDate>Tue, 05 Jul 2022 20:29:14 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/canplayground/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dwinhmi</title>
+      <link>https://prasadghole.github.io/post/dwinhmi/</link>
+      <pubDate>Sun, 03 Jul 2022 14:06:55 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/dwinhmi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CAN bus on Arduino using MPC2515</title>
+      <link>https://prasadghole.github.io/post/mpc2515/</link>
+      <pubDate>Fri, 24 Jun 2022 11:51:05 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/mpc2515/</guid>
+      <description>In search of working Arduino library There are many CAN libraries available to use with Arduino but very few provide proper feedback based on error code.
+I was able to use successfully provided by corjfowler
+CAN Transmission I used example code from library and make sure
+CS pin for SPI communication is properly mapped. Clock frequency is matched with crystal clock on MPC2515 board. include &amp;lt;mcp_can.h&amp;gt;#include &amp;lt;SPI.h&amp;gt;MCP_CAN CAN0(10); // Set CS to pin 10void setup(){Serial.</description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>https://prasadghole.github.io/post/security/</link>
+      <pubDate>Thu, 23 Jun 2022 12:15:15 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CANViewer</title>
+      <link>https://prasadghole.github.io/post/canviewer/</link>
+      <pubDate>Wed, 22 Jun 2022 14:57:27 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/canviewer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reactive Design patterns</title>
+      <link>https://prasadghole.github.io/post/reactivedp/</link>
+      <pubDate>Wed, 12 Jan 2022 01:00:05 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/reactivedp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Githubtips</title>
+      <link>https://prasadghole.github.io/post/githubtips/</link>
+      <pubDate>Tue, 06 Apr 2021 02:37:08 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/githubtips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Not a Volatile - Restrict</title>
+      <link>https://prasadghole.github.io/post/restrickeyword/</link>
+      <pubDate>Mon, 22 Mar 2021 00:11:46 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/restrickeyword/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Whats in C Object name?</title>
+      <link>https://prasadghole.github.io/post/cname/</link>
+      <pubDate>Sun, 21 Mar 2021 23:11:48 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/cname/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Active Objects</title>
+      <link>https://prasadghole.github.io/post/activeobj/</link>
+      <pubDate>Thu, 11 Feb 2021 00:18:21 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/activeobj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Too late</title>
+      <link>https://prasadghole.github.io/post/toolate/</link>
+      <pubDate>Mon, 08 Feb 2021 00:33:13 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/toolate/</guid>
+      <description>&lt;p&gt;We are now faced with the fact that tomorrow is today. We are confronted with
+fierce  urgency of now. In this unfolding conundrum of like and history there
+is a such thing as being too late. Procrastination is still the thief of time.
+Life often leaves us standing bare, naked and dejected with a lost opportunity.
+The tide in the affairs of men does not remain at the flood; it ebbs. We may
+cry out desperately for time to pause in her passage, but time is deaf to every
+plea and rush on. Over the bleached bones and jumbuled residue of numerous
+civilizations are written the pathetic word  &lt;strong&gt;Too Late&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Martin Luther King Jr.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Beyond Vietnam - a time to break silence&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Plantuml</title>
+      <link>https://prasadghole.github.io/post/plantuml/</link>
+      <pubDate>Fri, 05 Feb 2021 23:38:24 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/plantuml/</guid>
+      <description>Plantuml Plantuml is markup language for software diagrams specifically UML. Especially for programmers it natural extension of drawing diagrams as coding.
+Why Plantuml Mouseless I am trying to minimise my mouse uses. With the help of tools we can draw and view diagrams without touching mouse.
+Everything is text Many UML drawing tools (MS visio) store diagrams in internal proprietary binary format. To view and modify we need tools installed. Most of these tools are very expensive.</description>
+    </item>
+    
+    <item>
+      <title>CAN Summary</title>
+      <link>https://prasadghole.github.io/post/cansummary/</link>
+      <pubDate>Wed, 03 Feb 2021 11:34:54 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/cansummary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reveal Secrets</title>
+      <link>https://prasadghole.github.io/post/reveal-secrets/</link>
+      <pubDate>Tue, 02 Feb 2021 00:48:49 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/reveal-secrets/</guid>
+      <description>Reveal js Converting daily notes to beautiful presentations made easy with reveal js integration. Configuration is also very simple but still there are some tit bits to remember. Below are some of the links
+Configuring emacs (spacemacs) https://www.johbo.com/2017/presentations-with-org-mode.html
+http://jr0cket.co.uk/2017/03/org-mode-driven-presentations-with-org-reveal-spacemacs.html
+About org mode http://jr0cket.co.uk/2013/08/manage-dev-life-with-emacs-org-mode.html
+https://orgmode.org/
+Publishing to Internet http://jr0cket.co.uk/2014/01/share-your-revealjs-slides-on-github-pages.html
+Using Pandoc pandoc --standalone -f org -t revealjs TraingSlides.org -o out.html As I may not use emacs/spacemacs on every machine Pandoc is right option to create revealjs output from org or markdown document.</description>
+    </item>
+    
+    <item>
+      <title>Installing spacemacs on windows</title>
+      <link>https://prasadghole.github.io/post/installemacsonwindows/</link>
+      <pubDate>Tue, 26 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/installemacsonwindows/</guid>
+      <description>Installing spacemacs on windows Once we install vanilla emacs from gnu website we want to do little twick for running emacs configuration when we run runemacs.exe command.
+We need to find out where is emacs startup home directory path.
+Finding startup directory Check user emacs directory CTRL-H v Enter variable name user-emacs-directory
+Cloning spacemacs configuration When ever emacs starts it looks for startup directory in user emacs directory found above. We will get that configuration directly from github.</description>
+    </item>
+    
+    <item>
+      <title>Vim Tips</title>
+      <link>https://prasadghole.github.io/post/vimtips/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/vimtips/</guid>
+      <description>Search in visual mode Follow the steps:
+Select visual mode by V or select block or column by using CTRL_V Press escape to exit visual mode Search / as you do for regular search Edit multiline together In various case I need to append or insert test at multiple lines like adding semicolon at the end of lines. I followed below steps
+CTRL+V to select block. Press I to insert at start.</description>
+    </item>
+    
+    <item>
+      <title>Git in a box</title>
+      <link>https://prasadghole.github.io/post/gitbare/</link>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/gitbare/</guid>
+      <description>Git in a box Github is certailnly a good source of keeping master copy of your decentralized git repo. But in some scenario project thing it would be much better to have git repository as portable copy.This is where git bare repository helps.
+Bare repository A bare repository is one without working copy. We can push or pull our changes to/from this repo. We can keep this repository portable and handy.</description>
+    </item>
+    
+    <item>
+      <title>Vim Plug in</title>
+      <link>https://prasadghole.github.io/post/vimplug/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/vimplug/</guid>
+      <description>Well time has come to install vim plugins for using more advance features of vim. There are lots many options available but I choose vim plug being simple and easy to use.
+Installation Github repo has all necessary details for installing so I won&amp;rsquo;t repeat here.
+Plugins I use fzf Fuzzy finder
+vim surround vim multiple cursor vim git gutter vim airline vim nerdcommenter emmet vim slumlord cvim </description>
+    </item>
+    
+    <item>
+      <title>I love vim (bindings)</title>
+      <link>https://prasadghole.github.io/post/vimbindings/</link>
+      <pubDate>Mon, 11 Feb 2019 00:18:21 +0530</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/vimbindings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://prasadghole.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Menu Page Using Hugo Menu Templates</title>
+      <link>https://prasadghole.github.io/fixed/mpage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/fixed/mpage/</guid>
+      <description>This is example of a page from site menu. Pages from &amp;lsquo;main&amp;rsquo; menu appear just above the fixed pages from sidebar. Checkout official documentation about Menu Templates.</description>
+    </item>
+    
+  </channel>
+</rss>

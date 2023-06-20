@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>CAN bus on Arduino using MPC2515</title>
+    <meta name="description" content="Sky above, sand below and peace within">
+    <meta name="keywords" content='blog, gokarna, hugo, Arduino, CAN'>
+
+    <meta property="og:url" content="https://prasadghole.github.io/post/mpc2515/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CAN bus on Arduino using MPC2515">
+    <meta property="og:description" content="Sky above, sand below and peace within">
+    <meta property="og:image" content="https://prasadghole.github.io/images/avatar.webp">
+    <meta property="og:image:secure_url" content="https://prasadghole.github.io/images/avatar.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CAN bus on Arduino using MPC2515">
+    <meta name="twitter:description" content="Sky above, sand below and peace within">
+    <meta property="twitter:domain" content="https://prasadghole.github.io/post/mpc2515/">
+    <meta property="twitter:url" content="https://prasadghole.github.io/post/mpc2515/">
+    <meta name="twitter:image" content="https://prasadghole.github.io/images/avatar.webp">
+
+    
+    <link rel="canonical" href="https://prasadghole.github.io/post/mpc2515/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.d2f86e708954a1836cc8969565d39b1138231a1ba1af1672d8c07be9ef953b31.js" integrity="sha256-0vhucIlUoYNsyJaVZdObETgjGhuhrxZy2MB76e&#43;VOzE="></script>
+
+    
+    
+        <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://prasadghole.github.io">
+                <img src="https://prasadghole.github.io/images/avatar.webp" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://prasadghole.github.io">Gokarna</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/fixed/mpage/"> A Menu Page </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/post/"><span data-feather='book'></span> Post </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/projects/"><span data-feather='code'></span> Projects </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/526avijitgupta/gokarna"><span data-feather='github'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://www.buymeacoffee.com/avijitgupta"><span data-feather='coffee'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/index.xml"><span data-feather='rss'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/fixed/mpage/"> A Menu Page </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/post/"><span data-feather='book'></span> Post </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/projects/"><span data-feather='code'></span> Projects </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/526avijitgupta/gokarna"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://www.buymeacoffee.com/avijitgupta"><span data-feather='coffee'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/index.xml"><span data-feather='rss'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>CAN bus on Arduino using MPC2515</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            June 24, 2022
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://prasadghole.github.io/tags/arduino">Arduino</a></li>
+        
+            <li class="post-tag"><a href="https://prasadghole.github.io/tags/can">CAN</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 id="in-search-of-working-arduino-library">In search of working Arduino library</h1>
+<p>There are many CAN libraries available to use with Arduino but very few provide proper
+feedback based on error code.</p>
+<p>I was able to use successfully provided by
+<a href="https://github.com/coryjfowler/MCP_CAN_lib">corjfowler</a></p>
+<h1 id="can-transmission">CAN Transmission</h1>
+<p>I used example code from library and make sure</p>
+<ul>
+<li>CS pin for SPI communication is properly mapped.</li>
+<li>Clock frequency is matched with crystal clock on MPC2515 board.</li>
+</ul>
+<pre tabindex="0"><code>include &lt;mcp_can.h&gt;
+#include &lt;SPI.h&gt;
+
+MCP_CAN CAN0(10);     // Set CS to pin 10
+
+void setup()
+{
+  Serial.begin(115200);
+
+  // Initialize MCP2515 running at 8MHz with a baudrate of 500kb/s and the masks and filters disabled.
+  if(CAN0.begin(MCP_ANY, CAN_500KBPS, MCP_8MHZ) == CAN_OK) 
+  {
+    Serial.println(&#34;MCP2515 Initialized Successfully!&#34;);
+  }
+  else 
+  {
+    Serial.println(&#34;Error Initializing MCP2515...&#34;);
+  }
+  CAN0.setMode(MCP_NORMAL);   // Change to normal mode to allow messages to be transmitted
+}
+
+byte data[8] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07};
+
+void loop()
+{
+  // send data:  ID = 0x100, Standard CAN Frame, Data length = 8 bytes, &#39;data&#39; = array of data bytes to send
+  byte sndStat = CAN0.sendMsgBuf(0x100, 0, 8, data);
+  if(sndStat == CAN_OK)
+  {
+    Serial.println(&#34;Message Sent Successfully!&#34;);
+  } else
+  {
+    Serial.println(&#34;Error Sending Message...&#34;);
+  }
+  delay(100);   // send data per 100ms
+}
+</code></pre><h1 id="can-reception">CAN reception</h1>
+<p>I used example code from library and make sure</p>
+<ul>
+<li>CS pin for SPI communication is properly mapped.</li>
+<li>Clock frequency is matched with crystal clock on MPC2515 board.</li>
+</ul>
+<pre tabindex="0"><code>// CAN Receive Example
+//
+
+#include &lt;mcp_can.h&gt;
+#include &lt;SPI.h&gt;
+
+long unsigned int rxId;
+unsigned char len = 0;
+unsigned char rxBuf[8];
+char msgString[128];                        // Array to store serial string
+
+#define CAN0_INT 2                              // Set INT to pin 2
+MCP_CAN CAN0(10);                               // Set CS to pin 10
+
+
+void setup()
+{
+  Serial.begin(115200);
+    
+  // Initialize MCP2515 running at 16MHz with a baudrate of 500kb/s and the masks and filters disabled.
+  if(CAN0.begin(MCP_ANY, CAN_500KBPS, MCP_8MHZ) == CAN_OK)
+  {
+    Serial.println(&#34;MCP2515 Initialized Successfully!&#34;);
+  }
+  else
+  {
+    Serial.println(&#34;Error Initializing MCP2515...&#34;);
+  }
+  CAN0.setMode(MCP_NORMAL);                     // Set operation mode to normal so the MCP2515 sends acks to received data.
+
+  pinMode(CAN0_INT, INPUT);                            // Configuring pin for /INT input
+                    
+  Serial.println(&#34;MCP2515 Library Receive Example...&#34;);
+}
+
+void loop()
+{
+  if(!digitalRead(CAN0_INT))                         // If CAN0_INT pin is low, read receive buffer
+  {
+      CAN0.readMsgBuf(&amp;rxId, &amp;len, rxBuf);      // Read data: len = data length, buf = data byte(s)
+              
+      if((rxId &amp; 0x80000000) == 0x80000000)     // Determine if ID is standard (11 bits) or extended (29 bits)
+        sprintf(msgString, &#34;Extended ID: 0x%.8lX  DLC: %1d  Data:&#34;, (rxId &amp; 0x1FFFFFFF), len);
+      else
+        sprintf(msgString, &#34;Standard ID: 0x%.3lX       DLC: %1d  Data:&#34;, rxId, len);
+
+      Serial.print(msgString);
+
+      if((rxId &amp; 0x40000000) == 0x40000000)
+      {    // Determine if message is a remote request frame.
+        sprintf(msgString, &#34; REMOTE REQUEST FRAME&#34;);
+        Serial.print(msgString);
+      } 
+      else
+      {
+        for(byte i = 0; i&lt;len; i++)
+        {
+          sprintf(msgString, &#34; 0x%.2X&#34;, rxBuf[i]);
+          Serial.print(msgString);
+        }
+      }
+
+      Serial.println();
+    }
+}
+</code></pre>
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>&copy; 2023 The Marauders</span>
+    
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>

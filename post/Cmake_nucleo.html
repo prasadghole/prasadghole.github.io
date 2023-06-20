@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-05-31 Wed 16:45 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Building Embedded Systems with CMake: Turning 'Make' into 'Magic' for STM IDE</title>
+<meta name="description" content="&quot;Building embeeded system with CMake&quot;" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Building Embedded Systems with CMake: Turning 'Make' into 'Magic' for STM IDE</h1>
+
+< id="outline-container-orgee26734" class="outline-2">
+<h2 id="orgee26734">How STM IDE build hello world</h2>
+<div class="outline-text-2" id="text-orgee26734">
+<div class="org-src-container">
+<pre class="src src-shell"><span style="color: #a45bad;">14:00:22</span> **** Build of configuration Debug for project HelloWorld_Nuclio_F303 ****
+make -j16 all 
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.d"</span> -MT<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.d"</span> -MT<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.d"</span> -MT<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.d"</span> -MT<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.d"</span> -MT<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.d"</span> -MT<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.d"</span> -MT<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.d"</span> -MT<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.d"</span> -MT<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.d"</span> -MT<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.d"</span> -MT<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.d"</span> -MT<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.d"</span> -MT<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.d"</span> -MT<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.d"</span> -MT<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.d"</span> -MT<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.d"</span> -MT<span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.o"</span>
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF<span style="color: #2d9574;">"Core/Startup/startup_stm32f303retx.d"</span> -MT<span style="color: #2d9574;">"Core/Startup/startup_stm32f303retx.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Core/Startup/startup_stm32f303retx.o"</span> <span style="color: #2d9574;">"../Core/Startup/startup_stm32f303retx.s"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Core/Src/gpio.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Core/Src/gpio.d"</span> -MT<span style="color: #2d9574;">"Core/Src/gpio.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Core/Src/gpio.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Core/Src/main.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Core/Src/main.d"</span> -MT<span style="color: #2d9574;">"Core/Src/main.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Core/Src/main.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Core/Src/stm32f3xx_hal_msp.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Core/Src/stm32f3xx_hal_msp.d"</span> -MT<span style="color: #2d9574;">"Core/Src/stm32f3xx_hal_msp.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Core/Src/stm32f3xx_hal_msp.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Core/Src/stm32f3xx_it.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Core/Src/stm32f3xx_it.d"</span> -MT<span style="color: #2d9574;">"Core/Src/stm32f3xx_it.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Core/Src/stm32f3xx_it.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Core/Src/syscalls.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Core/Src/syscalls.d"</span> -MT<span style="color: #2d9574;">"Core/Src/syscalls.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Core/Src/syscalls.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Core/Src/sysmem.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Core/Src/sysmem.d"</span> -MT<span style="color: #2d9574;">"Core/Src/sysmem.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Core/Src/sysmem.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Core/Src/system_stm32f3xx.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Core/Src/system_stm32f3xx.d"</span> -MT<span style="color: #2d9574;">"Core/Src/system_stm32f3xx.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Core/Src/system_stm32f3xx.o"</span>
+arm-none-eabi-gcc <span style="color: #2d9574;">"../Core/Src/usart.c"</span> -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF<span style="color: #2d9574;">"Core/Src/usart.d"</span> -MT<span style="color: #2d9574;">"Core/Src/usart.o"</span> --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o <span style="color: #2d9574;">"Core/Src/usart.o"</span>
+arm-none-eabi-gcc -o <span style="color: #2d9574;">"HelloWorld_Nuclio_F303.elf"</span> @<span style="color: #2d9574;">"objects.list"</span>   -mcpu=cortex-m4 -T<span style="color: #2d9574;">"D:\EclipseWorkspace\eclipse-workspace-stm32\HelloWorld\STM32F303RETX_FLASH.ld"</span> --specs=nosys.specs -Wl,-Map=<span style="color: #2d9574;">"HelloWorld_Nuclio_F303.map"</span> -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: HelloWorld_Nuclio_F303.elf
+
+arm-none-eabi-size   HelloWorld_Nuclio_F303.elf 
+arm-none-eabi-objdump -h -S  HelloWorld_Nuclio_F303.elf  &gt; <span style="color: #2d9574;">"HelloWorld_Nuclio_F303.list"</span>
+arm-none-eabi-objcopy  -O ihex  HelloWorld_Nuclio_F303.elf  <span style="color: #2d9574;">"HelloWorld_Nuclio_F303.hex"</span>
+   text    data     bss     dec     hex filename
+  <span style="color: #a45bad;">11704</span>      <span style="color: #a45bad;">20</span>    <span style="color: #a45bad;">1708</span>   <span style="color: #a45bad;">13432</span>    <span style="color: #a45bad;">3478</span> HelloWorld_Nuclio_F303.elf
+Finished building: default.size.stdout
+
+Finished building: HelloWorld_Nuclio_F303.hex
+Finished building: HelloWorld_Nuclio_F303.list
+
+<span style="color: #a45bad;">14:00:25</span> Build Finished. <span style="color: #a45bad;">0</span> errors, <span style="color: #a45bad;">0</span> warnings. <span style="color: #4f97d7;">(</span>took <span style="color: #a45bad;">2s.581ms</span><span style="color: #4f97d7;">)</span>
+
+</pre>
+</div>
+</div>
+</>
+
+< id="outline-container-org7a4fe87" class="outline-2">
+<h2 id="org7a4fe87">Lets convert to Cmake (ChatGPT)</h2>
+<div class="outline-text-2" id="text-org7a4fe87">
+<p>
+I fed the above build log to chatgpt prompt and go below response back
+</p>
+<div class="org-src-container">
+<pre class="src src-cmake"><span style="color: #bc6ec5; font-weight: bold;">cmake_minimum_required</span><span style="color: #4f97d7;">(</span>VERSION <span style="color: #a45bad;">3</span>.<span style="color: #a45bad;">12</span><span style="color: #4f97d7;">)</span>
+<span style="color: #bc6ec5; font-weight: bold;">project</span><span style="color: #4f97d7;">(</span>STM32_Project<span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Set the path to the toolchain</span>
+<span style="color: #bc6ec5; font-weight: bold;">set</span><span style="color: #4f97d7;">(</span>CMAKE_TOOLCHAIN_FILE <span style="color: #2d9574;">"/path/to/toolchain/file.cmake"</span><span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Add your source files</span>
+<span style="color: #bc6ec5; font-weight: bold;">set</span><span style="color: #4f97d7;">(</span>SOURCES
+    ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c
+    ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c
+    ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c
+    ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.c
+    ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c
+    ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.c
+    ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c
+    ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c
+    ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.c
+    ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c
+    ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c
+    ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c
+    ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c
+    <span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Add more source files as needed</span>
+<span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Set compiler flags</span>
+<span style="color: #bc6ec5; font-weight: bold;">set</span><span style="color: #4f97d7;">(</span>CMAKE_C_FLAGS <span style="color: #2d9574;">"-mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -DUSE_FULL_LL_DRIVER -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb"</span><span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Include directories</span>
+<span style="color: #bc6ec5; font-weight: bold;">include_directories</span><span style="color: #4f97d7;">(</span>
+    ../Core/Inc
+    ../Drivers/STM32F3xx_HAL_Driver/Inc
+    ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy
+    ../Drivers/CMSIS/Device/ST/STM32F3xx/Include
+    ../Drivers/CMSIS/Include
+<span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Add an executable target</span>
+<span style="color: #bc6ec5; font-weight: bold;">add_executable</span><span style="color: #4f97d7;">(</span>$<span style="color: #bc6ec5;">{</span><span style="color: #7590db;">PROJECT_NAME</span><span style="color: #bc6ec5;">}</span> $<span style="color: #bc6ec5;">{</span><span style="color: #7590db;">SOURCES</span><span style="color: #bc6ec5;">}</span><span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Set compiler flags for the target</span>
+<span style="color: #bc6ec5; font-weight: bold;">target_compile_options</span><span style="color: #4f97d7;">(</span>$<span style="color: #bc6ec5;">{</span><span style="color: #7590db;">PROJECT_NAME</span><span style="color: #bc6ec5;">}</span> PRIVATE $<span style="color: #bc6ec5;">{</span><span style="color: #7590db;">CMAKE_C_FLAGS</span><span style="color: #bc6ec5;">}</span><span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Set linker flags for the target</span>
+<span style="color: #bc6ec5; font-weight: bold;">target_link_options</span><span style="color: #4f97d7;">(</span>$<span style="color: #bc6ec5;">{</span><span style="color: #7590db;">PROJECT_NAME</span><span style="color: #bc6ec5;">}</span> PRIVATE -Wl,--gc-sections<span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Set the desired output directory for the binary</span>
+<span style="color: #bc6ec5; font-weight: bold;">set_target_properties</span><span style="color: #4f97d7;">(</span>$<span style="color: #bc6ec5;">{</span><span style="color: #7590db;">PROJECT_NAME</span><span style="color: #bc6ec5;">}</span> PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY <span style="color: #2d9574;">"${</span><span style="color: #7590db;">CMAKE_CURRENT_SOURCE_DIR</span><span style="color: #2d9574;">}/build"</span>
+<span style="color: #4f97d7;">)</span>
+
+</pre>
+</div>
+
+<p>
+Why not asked chatgpt to create CMAKE_TOOLCHAIN_FILE ?
+</p>
+
+<div class="org-src-container">
+<pre class="src src-cmake"><span style="color: #bc6ec5; font-weight: bold;">set</span><span style="color: #4f97d7;">(</span>CMAKE_SYSTEM_NAME Generic<span style="color: #4f97d7;">)</span>
+<span style="color: #bc6ec5; font-weight: bold;">set</span><span style="color: #4f97d7;">(</span>CMAKE_SYSTEM_PROCESSOR arm<span style="color: #4f97d7;">)</span>
+
+<span style="color: #bc6ec5; font-weight: bold;">set</span><span style="color: #4f97d7;">(</span>CMAKE_C_COMPILER arm-none-eabi-gcc<span style="color: #4f97d7;">)</span>
+<span style="color: #bc6ec5; font-weight: bold;">set</span><span style="color: #4f97d7;">(</span>CMAKE_CXX_COMPILER arm-none-eabi-g++<span style="color: #4f97d7;">)</span>
+<span style="color: #bc6ec5; font-weight: bold;">set</span><span style="color: #4f97d7;">(</span>CMAKE_ASM_COMPILER arm-none-eabi-as<span style="color: #4f97d7;">)</span>
+
+<span style="color: #bc6ec5; font-weight: bold;">set</span><span style="color: #4f97d7;">(</span>CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER<span style="color: #4f97d7;">)</span>
+<span style="color: #bc6ec5; font-weight: bold;">set</span><span style="color: #4f97d7;">(</span>CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY<span style="color: #4f97d7;">)</span>
+<span style="color: #bc6ec5; font-weight: bold;">set</span><span style="color: #4f97d7;">(</span>CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY<span style="color: #4f97d7;">)</span>
+
+<span style="color: #bc6ec5; font-weight: bold;">set</span><span style="color: #4f97d7;">(</span>CMAKE_C_FLAGS <span style="color: #2d9574;">"-mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16"</span><span style="color: #4f97d7;">)</span>
+<span style="color: #bc6ec5; font-weight: bold;">set</span><span style="color: #4f97d7;">(</span>CMAKE_CXX_FLAGS <span style="color: #2d9574;">"${</span><span style="color: #7590db;">CMAKE_C_FLAGS</span><span style="color: #2d9574;">} -std=c++14"</span><span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Specify the path to the toolchain's bin directory</span>
+<span style="color: #bc6ec5; font-weight: bold;">set</span><span style="color: #4f97d7;">(</span>TOOLCHAIN_PATH <span style="color: #2d9574;">"C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\binC:/path/to/arm-none-eabi-gcc/bin"</span><span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Set the search path for the toolchain's executables</span>
+<span style="color: #bc6ec5; font-weight: bold;">set</span><span style="color: #4f97d7;">(</span>CMAKE_FIND_ROOT_PATH $<span style="color: #bc6ec5;">{</span><span style="color: #7590db;">TOOLCHAIN_PATH</span><span style="color: #bc6ec5;">}</span><span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Add the toolchain's libraries and includes to the search paths</span>
+<span style="color: #bc6ec5; font-weight: bold;">set</span><span style="color: #4f97d7;">(</span>CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER<span style="color: #4f97d7;">)</span>
+<span style="color: #bc6ec5; font-weight: bold;">set</span><span style="color: #4f97d7;">(</span>CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY<span style="color: #4f97d7;">)</span>
+<span style="color: #bc6ec5; font-weight: bold;">set</span><span style="color: #4f97d7;">(</span>CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY<span style="color: #4f97d7;">)</span>
+
+</pre>
+</div>
+</div>
+</>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2023-05-31 Wed 00:00</p>
+<p class="date">Created: 2023-05-31 Wed 16:45</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Dwinhmi</title>
+    <meta name="description" content="Using DWIN HMI Software">
+    <meta name="keywords" content='blog, gokarna, hugo'>
+
+    <meta property="og:url" content="https://prasadghole.github.io/post/dwinhmi/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dwinhmi">
+    <meta property="og:description" content="Using DWIN HMI Software">
+    <meta property="og:image" content="https://prasadghole.github.io/images/avatar.webp">
+    <meta property="og:image:secure_url" content="https://prasadghole.github.io/images/avatar.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dwinhmi">
+    <meta name="twitter:description" content="Using DWIN HMI Software">
+    <meta property="twitter:domain" content="https://prasadghole.github.io/post/dwinhmi/">
+    <meta property="twitter:url" content="https://prasadghole.github.io/post/dwinhmi/">
+    <meta name="twitter:image" content="https://prasadghole.github.io/images/avatar.webp">
+
+    
+    <link rel="canonical" href="https://prasadghole.github.io/post/dwinhmi/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.d2f86e708954a1836cc8969565d39b1138231a1ba1af1672d8c07be9ef953b31.js" integrity="sha256-0vhucIlUoYNsyJaVZdObETgjGhuhrxZy2MB76e&#43;VOzE="></script>
+
+    
+    
+        <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://prasadghole.github.io">
+                <img src="https://prasadghole.github.io/images/avatar.webp" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://prasadghole.github.io">Gokarna</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/fixed/mpage/"> A Menu Page </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/post/"><span data-feather='book'></span> Post </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/projects/"><span data-feather='code'></span> Projects </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/526avijitgupta/gokarna"><span data-feather='github'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://www.buymeacoffee.com/avijitgupta"><span data-feather='coffee'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/index.xml"><span data-feather='rss'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/fixed/mpage/"> A Menu Page </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/post/"><span data-feather='book'></span> Post </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/projects/"><span data-feather='code'></span> Projects </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/526avijitgupta/gokarna"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://www.buymeacoffee.com/avijitgupta"><span data-feather='coffee'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/index.xml"><span data-feather='rss'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Dwinhmi</h1>
+        <small role="doc-subtitle">Using DWIN HMI Software</small>
+        <p class="post-date">
+            July 3, 2022
+        </p>
+
+        <ul class="post-tags">
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 id="setup">Setup</h1>
+<p><img src="/images/post/dwinsetup.jpeg" alt="setup">
+I bought DWIN COF 4.3 inch display from <a href="https://robu.in/product/dwin-tn-resistive-touch-4-3-inch-cof-display/">robu</a> along with <a href="https://robu.in/product/debugging-hdl662s-adapter-board/">HDL66A</a> adapter board. These 2 connected to PC USB port with male to male USB cable.</p>
+<p>Default HMI interface is in chinease and I want to use my own UI.</p>
+<h1 id="development-tools">Development Tools</h1>
+<h1 id="demo-project">Demo project</h1>
+<p>I downloaded <a href="https://www.electroniclinic.com/dmg80480c043_02wtc-touch-screen-getting-started-tutorial/">Demo GUI</a></p>
+<p>Using tutorial when I tried to download project as is, it was not successful. But then I made sure resolution
+is changed to matching with my COF display (480 * 272) I was able download files and see change in factory
+programmed UI.</p>
+<p>Next task is to download through SD card.</p>
+<h1 id="hello-world">Hello world</h1>
+<p>After downloading above project. I tried my own hands on hello world program after following
+many youtube videos and tutorials but not able to run on target HMI. Program was simulating
+properly on DGUS software, but when downloaded on HMI shows static screens which were not
+part of hello world program.</p>
+<p>To fix this I downloaded <a href="https://www.dwin-global.com/factory-demo/">factory demo</a> for my model
+DMG48270F043_01WTR board.</p>
+<p>I observed DWIN_SET files in factory demo do not include <em>32.icl</em> as mentioned in other projects
+but infact contain 24.icl. Hence after chaning output file name to 24.icl and making changes
+in configuation. I was able to download and run my Hello world program successfully.</p>
+<p><a href="https://github.com/prasadghole/dwin/tree/main/DGM48270F043_01WTR/HelloWorld">Hello World</a> is
+availble in github for referance.</p>
+<h1 id="formatting-sd-card">Formatting SD card</h1>
+<p>SD card size limitations as per documentation in 1 to 16 GB. For my system
+card was on D drive hence I issued folloing command</p>
+<pre tabindex="0"><code>FORMAT d:/fs:fat32/a:4096 
+</code></pre><p>This took almost 10 minutes or more to format 16 GB of card.</p>
+<p>After copying it to SD card, and restarting still no blue boot screen.
+But previous UI also do not start.</p>
+<p>Till I figure out this I will continue explore using USB download.</p>
+<h1 id="dwin-display-memory-layout">DWIN display memory layout</h1>
+<h2 id="flash">Flash</h2>
+<p>16 MB of flash is divided into 64 sectors of each 256 KB.
+Each sector index 0 to 63 will have file names accordingly.</p>
+<p><img src="/images/post/dwin_flashspace.PNG" alt="Flash Space"></p>
+<h2 id="ram">RAM</h2>
+<p>128 KB flash is aligned as 2 bytes continuous memory.
+Address 0x0000 to 0x0FFF is reserved for system variable.</p>
+<p><img src="/images/post/dwin_ramspace.PNG" alt="Flash Space"></p>
+<h1 id="ui-development">UI development</h1>
+<h2 id="interface-objects">Interface objects</h2>
+<p>If we assume model view controller (MVC) architecture we can consider
+interface objects as model.</p>
+<h3 id="variable-pointers-vp">Variable Pointers (VP)</h3>
+<p>DGUS uses simple memory map address similar to MODBUS protocol to issue
+read/write commands and read/write data. GUI objects called as interface
+objects values are stored in memory addresses called as Variable Pointers
+(VP). VP values are modified only by user interaction.</p>
+<h3 id="description-pointers-sp">Description Pointers (SP)</h3>
+<p>A description pointer is a VP whose value can be modified by user using
+communication interface.</p>
+<p>Its UI developers responsibility to make sure VP length should be such that
+there addresses are not overlapped.</p>
+<h2 id="controls">Controls</h2>
+<p>These are view of MVC architecture. Control have minimum 5 properties/parameters</p>
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>&copy; 2023 The Marauders</span>
+    
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>

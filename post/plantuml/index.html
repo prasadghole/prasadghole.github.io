@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Plantuml</title>
+    <meta name="description" content="Plantuml tool">
+    <meta name="keywords" content='blog, gokarna, hugo, Mouseless, Everthing is Code'>
+
+    <meta property="og:url" content="https://prasadghole.github.io/post/plantuml/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Plantuml">
+    <meta property="og:description" content="Plantuml tool">
+    <meta property="og:image" content="https://prasadghole.github.io/images/avatar.webp">
+    <meta property="og:image:secure_url" content="https://prasadghole.github.io/images/avatar.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Plantuml">
+    <meta name="twitter:description" content="Plantuml tool">
+    <meta property="twitter:domain" content="https://prasadghole.github.io/post/plantuml/">
+    <meta property="twitter:url" content="https://prasadghole.github.io/post/plantuml/">
+    <meta name="twitter:image" content="https://prasadghole.github.io/images/avatar.webp">
+
+    
+    <link rel="canonical" href="https://prasadghole.github.io/post/plantuml/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.d2f86e708954a1836cc8969565d39b1138231a1ba1af1672d8c07be9ef953b31.js" integrity="sha256-0vhucIlUoYNsyJaVZdObETgjGhuhrxZy2MB76e&#43;VOzE="></script>
+
+    
+    
+        <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://prasadghole.github.io">
+                <img src="https://prasadghole.github.io/images/avatar.webp" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://prasadghole.github.io">Gokarna</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/fixed/mpage/"> A Menu Page </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/post/"><span data-feather='book'></span> Post </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/projects/"><span data-feather='code'></span> Projects </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/526avijitgupta/gokarna"><span data-feather='github'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://www.buymeacoffee.com/avijitgupta"><span data-feather='coffee'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://prasadghole.github.io/index.xml"><span data-feather='rss'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/fixed/mpage/"> A Menu Page </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/post/"><span data-feather='book'></span> Post </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/projects/"><span data-feather='code'></span> Projects </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/526avijitgupta/gokarna"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://www.buymeacoffee.com/avijitgupta"><span data-feather='coffee'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://prasadghole.github.io/index.xml"><span data-feather='rss'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Plantuml</h1>
+        <small role="doc-subtitle">Plantuml tool</small>
+        <p class="post-date">
+            February 5, 2021
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://prasadghole.github.io/tags/mouseless">Mouseless</a></li>
+        
+            <li class="post-tag"><a href="https://prasadghole.github.io/tags/everthing-is-code">Everthing is Code</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 id="plantuml">Plantuml</h1>
+<p>Plantuml is markup language for software diagrams specifically UML. Especially for
+programmers it natural extension of drawing diagrams as coding.</p>
+<p><img src="https://plantuml.com/" alt="Plantuml Website"></p>
+<h2 id="why-plantuml">Why Plantuml</h2>
+<h3 id="mouseless">Mouseless</h3>
+<p>I am trying to minimise my mouse uses. With the help of tools we can draw and view
+diagrams without touching mouse.</p>
+<h3 id="everything-is-text">Everything is text</h3>
+<p>Many UML drawing tools (MS visio) store diagrams in internal proprietary binary
+format.  To view and modify we need tools installed. Most of these tools are
+very expensive.
+Writing Plantuml markup is almost similar to writing C code.</p>
+<h3 id="source-control">Source Control</h3>
+<p>As diagrams are described in text format. I can store them in git and track
+changes easily. In case of drawing tools being binary simple version control
+diffs are not sufficient.</p>
+<h3 id="integration-with-other-tools">Integration with other tools</h3>
+<p>Plantuml library mainly provide backend framework and easily integrate with various
+text editors and IDE. I used it with</p>
+<ul>
+<li>Visual Studio Code</li>
+<li>Eclipse</li>
+<li>Confluence</li>
+<li>Emacs (need to check spacemacs support)</li>
+</ul>
+<h3 id="lightweight">Lightweight</h3>
+<p>It uses simple java libraries graphviz.</p>
+
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>&copy; 2023 The Marauders</span>
+    
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>
