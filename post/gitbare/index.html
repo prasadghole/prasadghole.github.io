@@ -18,19 +18,19 @@
 
     
     <title>Git in a box</title>
-    <meta name="description" content="Sky above, sand below and peace within">
+    <meta name="description" content="">
     <meta name="keywords" content='blog, gokarna, hugo, git'>
 
     <meta property="og:url" content="https://prasadghole.github.io/post/gitbare/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Git in a box">
-    <meta property="og:description" content="Sky above, sand below and peace within">
+    <meta property="og:description" content="">
     <meta property="og:image" content="https://prasadghole.github.io/images/avatar.webp">
     <meta property="og:image:secure_url" content="https://prasadghole.github.io/images/avatar.webp">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Git in a box">
-    <meta name="twitter:description" content="Sky above, sand below and peace within">
+    <meta name="twitter:description" content="">
     <meta property="twitter:domain" content="https://prasadghole.github.io/post/gitbare/">
     <meta property="twitter:url" content="https://prasadghole.github.io/post/gitbare/">
     <meta name="twitter:image" content="https://prasadghole.github.io/images/avatar.webp">
@@ -89,18 +89,10 @@
         
 
         <div class="nav-title">
-            <a class="nav-brand" href="https://prasadghole.github.io">Gokarna</a>
+            <a class="nav-brand" href="https://prasadghole.github.io">My daily musing</a>
         </div>
 
         <div class="nav-links">
-            
-            <div class="nav-link">
-                <a href="https://prasadghole.github.io/fixed/mpage/"> A Menu Page </a>
-            </div>
-            
-            <div class="nav-link">
-                <a href="https://prasadghole.github.io/"><span data-feather='home'></span> Home </a>
-            </div>
             
             <div class="nav-link">
                 <a href="https://prasadghole.github.io/post/"><span data-feather='book'></span> Post </a>
@@ -115,15 +107,11 @@
             </div>
             
             <div class="nav-link">
-                <a href="https://github.com/526avijitgupta/gokarna"><span data-feather='github'></span>  </a>
+                <a href="https://github.com/prasadghole"><span data-feather='github'></span>  </a>
             </div>
             
             <div class="nav-link">
-                <a href="https://www.buymeacoffee.com/avijitgupta"><span data-feather='coffee'></span>  </a>
-            </div>
-            
-            <div class="nav-link">
-                <a href="https://prasadghole.github.io/index.xml"><span data-feather='rss'></span>  </a>
+                <a href="https://github.com/prasadghole"><span data-feather='linkedin'></span>  </a>
             </div>
             
 
@@ -146,14 +134,6 @@
             <ul class="nav-hamburger-list visibility-hidden">
                 
                 <li class="nav-item">
-                    <a href="https://prasadghole.github.io/fixed/mpage/"> A Menu Page </a>
-                </li>
-                
-                <li class="nav-item">
-                    <a href="https://prasadghole.github.io/"><span data-feather='home'></span> Home </a>
-                </li>
-                
-                <li class="nav-item">
                     <a href="https://prasadghole.github.io/post/"><span data-feather='book'></span> Post </a>
                 </li>
                 
@@ -166,15 +146,11 @@
                 </li>
                 
                 <li class="nav-item">
-                    <a href="https://github.com/526avijitgupta/gokarna"><span data-feather='github'></span>  </a>
+                    <a href="https://github.com/prasadghole"><span data-feather='github'></span>  </a>
                 </li>
                 
                 <li class="nav-item">
-                    <a href="https://www.buymeacoffee.com/avijitgupta"><span data-feather='coffee'></span>  </a>
-                </li>
-                
-                <li class="nav-item">
-                    <a href="https://prasadghole.github.io/index.xml"><span data-feather='rss'></span>  </a>
+                    <a href="https://github.com/prasadghole"><span data-feather='linkedin'></span>  </a>
                 </li>
                 
                 <li class="nav-item dark-theme-toggle">
@@ -212,16 +188,15 @@ scenario project thing it would be much better to have git repository as portabl
 git bare repository helps.</p>
 <h2 id="bare-repository">Bare repository</h2>
 <p>A bare repository is one without working copy. We can push or pull our changes to/from this repo. We
-can keep this repository portable and handy. Can be mount on shared drive and your github is done.
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-C" data-lang="C"><span style="display:flex; background-color:#3c3d38"><span>git init <span style="color:#f92672">--</span>bare 
-</span></span></code></pre></div></p>
-<h2 id="using-bare-repository">Using bare repository</h2>
+can keep this repository portable and handy. Can be mount on shared drive and your github is done.</p>
+<pre tabindex="0"><code>git init --bare 
+</code></pre><h2 id="using-bare-repository">Using bare repository</h2>
 <p>We can push existing repo to this file based repository similar to remote repository.</p>
-<p>git remote add origin <!-- raw HTML omitted --></p>
-<p>git push -u origin master</p>
-<p>We can clone this bare repository similar to our github repo
-git clone <!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
-
+<pre tabindex="0"><code>git remote add origin &lt;path of bare repo&gt; 
+git push -u origin master
+</code></pre><p>We can clone this bare repository similar to our github repo</p>
+<pre tabindex="0"><code>git clone &lt;path of bar repository&gt; &lt;clone directory&gt;
+</code></pre>
         </p>
         
     </div>
@@ -240,7 +215,7 @@ git clone <!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
     
 
     
-    <span>&copy; 2023 The Marauders</span>
+    <span>&copy; 2023 Prasadghole.com</span>
     
     <span>
         Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>

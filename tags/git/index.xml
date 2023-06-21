@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>git on Gokarna</title>
+    <title>git on My daily musing</title>
     <link>https://prasadghole.github.io/tags/git/</link>
-    <description>Recent content in git on Gokarna</description>
+    <description>Recent content in git on My daily musing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 06 Apr 2021 02:37:08 +0530</lastBuildDate><atom:link href="https://prasadghole.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Githubtips</title>
+      <title>Github Tips</title>
       <link>https://prasadghole.github.io/post/githubtips/</link>
       <pubDate>Tue, 06 Apr 2021 02:37:08 +0530</pubDate>
       

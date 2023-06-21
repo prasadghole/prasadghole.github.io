@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>development on Gokarna</title>
+    <title>development on My daily musing</title>
     <link>https://prasadghole.github.io/categories/development/</link>
-    <description>Recent content in development on Gokarna</description>
+    <description>Recent content in development on My daily musing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 26 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://prasadghole.github.io/categories/development/index.xml" rel="self" type="application/rss+xml" />
