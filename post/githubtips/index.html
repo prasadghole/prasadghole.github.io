@@ -25,15 +25,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Github Tips">
     <meta property="og:description" content="">
-    <meta property="og:image" content="https://prasadghole.github.io/images/avatar.webp">
-    <meta property="og:image:secure_url" content="https://prasadghole.github.io/images/avatar.webp">
+    <meta property="og:image" content="https://prasadghole.github.io/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://prasadghole.github.io/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Github Tips">
     <meta name="twitter:description" content="">
     <meta property="twitter:domain" content="https://prasadghole.github.io/post/githubtips/">
     <meta property="twitter:url" content="https://prasadghole.github.io/post/githubtips/">
-    <meta name="twitter:image" content="https://prasadghole.github.io/images/avatar.webp">
+    <meta name="twitter:image" content="https://prasadghole.github.io/images/avatar.jpg">
 
     
     <link rel="canonical" href="https://prasadghole.github.io/post/githubtips/" />
@@ -83,7 +83,7 @@
         
         <div class="avatar">
             <a href="https://prasadghole.github.io">
-                <img src="https://prasadghole.github.io/images/avatar.webp" alt="avatar" />
+                <img src="https://prasadghole.github.io/images/avatar.jpg" alt="avatar" />
             </a>
         </div>
         
@@ -187,7 +187,13 @@
 <pre tabindex="0"><code>exec ssh-agent bash
 eval ssh-agent -s
 ssh-add ~/.ssh/xxxxxxxxx*
-</code></pre>
+</code></pre><h1 id="configure-beyond-compare-as-diff-tool">Configure beyond compare as diff tool</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git config --global diff.tool bc
+</span></span><span style="display:flex;"><span>git config --global difftool.bc.path <span style="color:#e6db74">&#34;C:\Program Files\Beyond Compare 4\BComp.exe&#34;</span>
+</span></span><span style="display:flex;"><span>git config --global merge.tool bc
+</span></span><span style="display:flex;"><span>git config --global mergetool.bc.path <span style="color:#e6db74">&#34;C:\Program Files\Beyond Compare 4\BComp.exe&#34;</span>
+</span></span><span style="display:flex;"><span>git config --global alias.mydiff <span style="color:#e6db74">&#34;difftool --dir-diff --tool=bc --no-prompt&#34;</span>
+</span></span></code></pre></div><p><a href="https://gist.githubusercontent.com/aaronhoffman/60536ceb0812ce0ab0f594ae2e78f475/raw/3351b12fc0564831e17d814dac003bae80768429/git-bc.cmd">Thanks To aaronhoffman</a></p>
         </p>
         
     </div>
