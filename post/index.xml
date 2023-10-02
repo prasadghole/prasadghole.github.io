@@ -6,7 +6,77 @@
     <description>Recent content in Posts on My daily musing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 21 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://prasadghole.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://prasadghole.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://prasadghole.github.io/post/hsm/</link>
+      <pubDate>Thu, 31 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/hsm/</guid>
+      <description>HSM in C </description>
+    </item>
+    
+    <item>
+      <title>Modus Toolbox BLE Notes</title>
+      <link>https://prasadghole.github.io/post/modtoolboxble/</link>
+      <pubDate>Sat, 19 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/modtoolboxble/</guid>
+      <description>I am trying to document steps for using Modus Toolbox to create central and peripheral mode.
+BTSDK App Template This is template application created from empty application it only start the stack and display message on peripheral UART port.
+Connection mode We will add connection mode so that it can be connected to BLE central.
+Display local BLE device address /* Print out the local Bluetooth Device Address. The address type is set in the makefile (BT_DEVICE_ADDRESS) */ wiced_bt_device_address_t bda; wiced_bt_dev_read_local_addr( bda ); WICED_BT_TRACE( &amp;#34;Local Bluetooth Device Address: [%B]\r\n&amp;#34;, bda ); Start advertising We should start minimal with name of peripheral device to be advertising and make sure proper pairing mode is enabled.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://prasadghole.github.io/post/sst_template/</link>
+      <pubDate>Tue, 08 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/sst_template/</guid>
+      <description>Super Simple Tasker Template project </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://prasadghole.github.io/post/sst_nucleo_f303/</link>
+      <pubDate>Sat, 29 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/sst_nucleo_f303/</guid>
+      <description>Porting SST on Nucleo F303 The Quantum Framework, developed by Miro Samek, is a software framework designed for building event-driven, reactive embedded systems. It provides a structured approach to software development, emphasizing modularity, reusability, and scalability.
+At the core of the Quantum Framework is the concept of hierarchical state machines (HSMs), which are used to model the behavior of the system. HSMs allow for the representation of complex system behaviors in a hierarchical and modular manner, making it easier to understand and maintain the software.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://prasadghole.github.io/post/labviewadv/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/labviewadv/</guid>
+      <description>Advance Labview Functional Global Variable Alternative to global varialbe &amp;#34;Functional Variable&amp;#34;. VI with unintialized while loop. It has 2 inputs as read/write and data to write. Benifit of this is to avoid DATA RACE condition.
+Attribution tabs These can be used for organizing controls on VI. Like Input,output,parameter.
+Driver Layes Follow a practice to read use one VI to perform one measurement.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://prasadghole.github.io/post/cunittest/</link>
+      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/cunittest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://prasadghole.github.io/post/c/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://prasadghole.github.io/post/c/</guid>
+      <description>#+Title
+Resource Management As per SRP (Single Responsibility Principle) resource management like dynamic buffers. If memory need to be shared with multiple modules resourcd acquisition and release should handled by single function or main module.</description>
+    </item>
+    
     <item>
       <title></title>
       <link>https://prasadghole.github.io/post/gitbranch/</link>
@@ -27,16 +97,6 @@ Create branch git checkout -b &amp;lt;new-branch-name&amp;gt; Use git foreach co
       <description>Package manager I use vimplug as plugin manager.
 iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim | ni &amp;#34;$env:LOCALAPPDATA\nvim\autoload\plug.vim&amp;#34; -Force Configuration Directory This is different than traditional vim
 $HOME\AppData\Local\nvim\init.vim Plugins for completion call plug#begin(&amp;#39;$HOME/.vim/plugged&amp;#39;) &amp;#34; Plugins Plug &amp;#39;dense-analysis/ale&amp;#39; &amp;#34; Asynchronous Lint Engine (ALE) Plug &amp;#39;neoclide/coc.nvim&amp;#39;, {&amp;#39;branch&amp;#39;: &amp;#39;release&amp;#39;} &amp;#34; CoC (Conquer of Completion) call plug#end() Coc-pyright Initially I tried coc-python but it seems not working on python 3.11. Hence I moved to pyright.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://prasadghole.github.io/post/sst_nucleo_f303/</link>
-      <pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://prasadghole.github.io/post/sst_nucleo_f303/</guid>
-      <description>Porting SST on Nucleo F303 The Quantum Framework, developed by Miro Samek, is a software framework designed for building event-driven, reactive embedded systems. It provides a structured approach to software development, emphasizing modularity, reusability, and scalability.
-At the core of the Quantum Framework is the concept of hierarchical state machines (HSMs), which are used to model the behavior of the system. HSMs allow for the representation of complex system behaviors in a hierarchical and modular manner, making it easier to understand and maintain the software.</description>
     </item>
     
     <item>
@@ -142,15 +202,6 @@ Hugo project path We need to specify hugo project path this can be relative #+hu
     </item>
     
     <item>
-      <title>Dwinhmi</title>
-      <link>https://prasadghole.github.io/post/dwinhmi/</link>
-      <pubDate>Sun, 03 Jul 2022 14:06:55 +0530</pubDate>
-      
-      <guid>https://prasadghole.github.io/post/dwinhmi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>CAN bus on Arduino using MPC2515</title>
       <link>https://prasadghole.github.io/post/mpc2515/</link>
       <pubDate>Fri, 24 Jun 2022 11:51:05 +0530</pubDate>
@@ -252,15 +303,6 @@ civilizations are written the pathetic word  &lt;strong&gt;Too Late&lt;/strong&g
       <description>Plantuml Plantuml is markup language for software diagrams specifically UML. Especially for programmers it natural extension of drawing diagrams as coding.
 Why Plantuml Mouseless I am trying to minimise my mouse uses. With the help of tools we can draw and view diagrams without touching mouse.
 Everything is text Many UML drawing tools (MS visio) store diagrams in internal proprietary binary format. To view and modify we need tools installed. Most of these tools are very expensive.</description>
-    </item>
-    
-    <item>
-      <title>CAN Summary</title>
-      <link>https://prasadghole.github.io/post/cansummary/</link>
-      <pubDate>Wed, 03 Feb 2021 11:34:54 +0530</pubDate>
-      
-      <guid>https://prasadghole.github.io/post/cansummary/</guid>
-      <description></description>
     </item>
     
     <item>

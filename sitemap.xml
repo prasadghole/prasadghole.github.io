@@ -2,20 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://prasadghole.github.io/post/gitbranch/</loc>
-    <lastmod>2023-06-21T00:00:00+00:00</lastmod>
+    <loc>https://prasadghole.github.io/post/hsm/</loc>
+    <lastmod>2023-08-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://prasadghole.github.io/</loc>
-    <lastmod>2023-06-21T00:00:00+00:00</lastmod>
+    <lastmod>2023-08-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://prasadghole.github.io/post/</loc>
+    <lastmod>2023-08-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://prasadghole.github.io/post/modtoolboxble/</loc>
+    <lastmod>2023-08-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://prasadghole.github.io/post/sst_template/</loc>
+    <lastmod>2023-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://prasadghole.github.io/post/sst_nucleo_f303/</loc>
+    <lastmod>2023-07-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://prasadghole.github.io/post/labviewadv/</loc>
+    <lastmod>2023-07-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://prasadghole.github.io/post/cunittest/</loc>
+    <lastmod>2023-07-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://prasadghole.github.io/post/c/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://prasadghole.github.io/post/gitbranch/</loc>
     <lastmod>2023-06-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://prasadghole.github.io/post/neovim/</loc>
     <lastmod>2023-06-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://prasadghole.github.io/post/sst_nucleo_f303/</loc>
-    <lastmod>2023-05-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://prasadghole.github.io/post/bootloader/</loc>
     <lastmod>2023-05-26T00:00:00+00:00</lastmod>
@@ -58,9 +76,6 @@
   </url><url>
     <loc>https://prasadghole.github.io/post/canplayground/</loc>
     <lastmod>2022-07-05T20:29:14+05:30</lastmod>
-  </url><url>
-    <loc>https://prasadghole.github.io/post/dwinhmi/</loc>
-    <lastmod>2022-07-03T14:06:55+05:30</lastmod>
   </url><url>
     <loc>https://prasadghole.github.io/tags/arduino/</loc>
     <lastmod>2022-06-24T11:51:05+05:30</lastmod>
@@ -112,9 +127,6 @@
   </url><url>
     <loc>https://prasadghole.github.io/post/plantuml/</loc>
     <lastmod>2021-02-05T23:38:24+05:30</lastmod>
-  </url><url>
-    <loc>https://prasadghole.github.io/post/cansummary/</loc>
-    <lastmod>2021-02-03T11:34:54+05:30</lastmod>
   </url><url>
     <loc>https://prasadghole.github.io/categories/</loc>
     <lastmod>2022-06-15T00:48:49+05:30</lastmod>

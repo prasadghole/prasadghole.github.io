@@ -303,28 +303,56 @@ Which key
 </h3>
 <div id="outline-text-headline-12" class="outline-text-3">
 <p>This mode give nice options of displaying options of next command.</p>
-<div class="src src-eli">
-<pre tabindex="0"><code class="language-eli" data-lang="eli">(which-key-mode)</code></pre>
+<div class="src src-elisp">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elisp" data-lang="elisp"><span style="display:flex;"><span>(which-key-mode)</span></span></code></pre></div>
 </div>
 </div>
 </div>
 <div id="outline-container-headline-13" class="outline-3">
 <h3 id="headline-13">
-Programming Literate Programming
+Auto completion
 </h3>
 <div id="outline-text-headline-13" class="outline-text-3">
-<div class="src src-org">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-org" data-lang="org"><span style="display:flex;"><span> &#39;org-babel-load-languages
-</span></span><span style="display:flex;"><span> &#39;((python . t)))</span></span></code></pre></div>
+<p>I choose default and most used package auto complete.</p>
+<div class="src src-elisp">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elisp" data-lang="elisp"><span style="display:flex;"><span>(require <span style="color:#e6db74">&#39;auto-complete</span>)
+</span></span><span style="display:flex;"><span>(global-auto-complete-mode <span style="color:#66d9ef">t</span>)</span></span></code></pre></div>
 </div>
-<p>(org-babel-do-load-languages</p>
 </div>
 </div>
 <div id="outline-container-headline-14" class="outline-3">
 <h3 id="headline-14">
-Start with org agenda
+Spell check
 </h3>
 <div id="outline-text-headline-14" class="outline-text-3">
+<p>As I will be using emacs mostly for text editing for blogs and articles spell check
+is must</p>
+<div class="src src-elisp">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elisp" data-lang="elisp"><span style="display:flex;"><span><span style="color:#75715e">;; Spell check</span>
+</span></span><span style="display:flex;"><span>(require <span style="color:#e6db74">&#39;flyspell</span>)
+</span></span><span style="display:flex;"><span>(flyspell-mode <span style="color:#66d9ef">t</span>)</span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-15" class="outline-3">
+<h3 id="headline-15">
+Programming Literate Programming
+</h3>
+<div id="outline-text-headline-15" class="outline-text-3">
+<div class="src src-elisp">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elisp" data-lang="elisp"><span style="display:flex;"><span>   <span style="color:#e6db74">&#39;org-babel-load-languages</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&#39;</span>((python <span style="color:#f92672">.</span> <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>     (plantuml <span style="color:#f92672">.</span> <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>  ))</span></span></code></pre></div>
+</div>
+<p>(org-babel-do-load-languages</p>
+</div>
+</div>
+<div id="outline-container-headline-16" class="outline-3">
+<h3 id="headline-16">
+Start with org agenda
+</h3>
+<div id="outline-text-headline-16" class="outline-text-3">
 <div class="src src-elisp">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elisp" data-lang="elisp"><span style="display:flex;"><span>(defun show-org-agenda ()
 </span></span><span style="display:flex;"><span>  (interactive)
