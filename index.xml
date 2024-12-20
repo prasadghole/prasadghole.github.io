@@ -38,13 +38,12 @@
     </item>
     
     <item>
-      <title></title>
+      <title>Porting SST on Nucleo F303</title>
       <link>/posts/sst_nucleo_f303/</link>
       <pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate>
       
       <guid>/posts/sst_nucleo_f303/</guid>
-      <description>&lt;h1 class=&#34;title&#34;&gt;Porting SST on Nucleo F303&lt;/h1&gt;
-
+      <description>
 &lt;p&gt;The Quantum Framework, developed by Miro Samek, is a software framework designed for building event-driven, reactive embedded systems. It provides a structured approach to software development, emphasizing modularity, reusability, and scalability.&lt;/p&gt;
 &lt;p&gt;
 At the core of the Quantum Framework is the concept of hierarchical state machines (HSMs), which are used to model the behavior of the system. HSMs allow for the representation of complex system behaviors in a hierarchical and modular manner, making it easier to understand and maintain the software.&lt;/p&gt;
