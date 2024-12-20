@@ -3,7 +3,6 @@
 
 <html lang="en-us" data-theme="">
 <head>
-	<meta name="generator" content="Hugo 0.123.7">
     
         
 <meta charset="utf-8">
@@ -13,13 +12,13 @@
 
 <title>My New Hugo Site</title>
 
-<meta name="description" content="">
+<meta name="description" content="Porting SST on Nucleo F303 The Quantum Framework, developed by Miro Samek, is a software framework designed for building event-driven, reactive embedded systems. It provides a structured approach to software development, emphasizing modularity, reusability, and scalability.
+At the core of the Quantum Framework is the concept of hierarchical state machines (HSMs), which are used to model the behavior of the system. HSMs allow for the representation of complex system behaviors in a hierarchical and modular manner, making it easier to understand and maintain the software.">
 
 
 
 
 
-<link rel="alternate" type="application/rss+xml" href="/index.xml" title="My New Hugo Site" />
 <link rel="icon" type="image/x-icon" href="http://prasadghole.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="http://prasadghole.github.io/favicon.png">
 
@@ -322,94 +321,16 @@
         </header>
         <main id="main" tabindex="-1">
             
-    <div class="homepage-content">
-        
-    </div>
+    
 
-    <div class="articles h-feed">
-        
-        
-            <article class="post-list h-feed post-card">
-    <div class="post-header">
-        <header>
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                <h1 class="p-name post-title"></h1>
+                
+
+            </header>
             
-            
-            
-            <h1 class="p-name post-title ">
-                <a class="u-url" href="/posts/my-first-post/">My First Post</a>
-            </h1>
-        </header>
-        
-
-    </div>
-
-    
-        <div class="content post-summary p-summary">
-            # Introduction This is bold text, and this is emphasized text.
-Visit the Hugo website!
-        </div>
-    
-
-    
-    
-    
-    
-    
-
-    
-
-
-
-<div class="post-info noselect">
-    
-        <div class="post-date dt-published">
-            <time datetime="2024-12-20">2024-12-20</time>
-            
-        </div>
-    
-
-    <a class="post-hidden-url u-url" href="/posts/my-first-post/">/posts/my-first-post/</a>
-    <a href="http://prasadghole.github.io/" class="p-name p-author post-hidden-author h-card" rel="me">map[name:Prasad]</a>
-
-
-    <div class="post-taxonomies">
-        
-        
-        
-    </div>
-</div>
-
-</article>
-
-        
-            <article class="post-list h-feed post-card">
-    <div class="post-header">
-        <header>
-            
-            
-            
-            <h1 class="p-name post-title ">
-                <a class="u-url" href="/posts/sst_nucleo_f303/"></a>
-            </h1>
-        </header>
-        
-
-    </div>
-
-    
-        <div class="content post-summary p-summary">
-            Porting SST on Nucleo F303 The Quantum Framework, developed by Miro Samek, is a software framework designed for building event-driven, reactive embedded systems. It provides a structured approach to software development, emphasizing modularity, reusability, and scalability.
-At the core of the Quantum Framework is the concept of hierarchical state machines (HSMs), which are used to model the behavior of the system. HSMs allow for the representation of complex system behaviors in a hierarchical and modular manner, making it easier to understand and maintain the software.
-        </div>
-    
-
-    
-    
-    
-    
-    
-
-    
 
 
 
@@ -432,69 +353,155 @@ At the core of the Quantum Framework is the concept of hierarchical state machin
     </div>
 </div>
 
-</article>
-
-        
-            <article class="post-list h-feed post-card">
-    <div class="post-header">
-        <header>
-            
-            
-            
-            <h1 class="p-name post-title ">
-                <a class="u-url" href="/posts/hugoblog/">Hugo with emacs org mode</a>
-            </h1>
-        </header>
-        
-
-    </div>
-
-    
-        <div class="content post-summary p-summary">
-            Why Exclusively using emacs for writing documentation. I can now write posts directly in org mode.
-Advantages Never leave emacs. Template with all the hugo parameters Override or customize front matter. Basic Setup For my hugo even theme when I create post using new command front matter is already inserted. Below are customization options
-Hugo project path We need to specify hugo project path
-#+hugo_base_dir: /msys64/home/pghole/blog/ This is hard coded.
         </div>
-    
-
-    
-    
-    
-    
-    
-
-    
-
-
-
-<div class="post-info noselect">
-    
-        <div class="post-date dt-published">
-            <time datetime="2022-11-07">2022-11-07</time>
-            
-        </div>
-    
-
-    <a class="post-hidden-url u-url" href="/posts/hugoblog/">/posts/hugoblog/</a>
-    <a href="http://prasadghole.github.io/" class="p-name p-author post-hidden-author h-card" rel="me">Prasad Ghole</a>
-
-
-    <div class="post-taxonomies">
         
-        
-        
-    </div>
+
+  
+  
+
+
+
+
+  
+  
+  
+  <details class="toc noselect">
+    <summary>Table of Contents</summary>
+    <div class="inner"><nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">Super Simple Tasker</a>
+</li>
+<li><a href="#headline-2">Porting on Nucleo board F303</a>
+<ul>
+<li><a href="#headline-3">Imported kernel files from below folders to respective</a>
+</li>
+<li><a href="#headline-4">Import bsp files</a>
+</li>
+<li><a href="#headline-5">Main.c</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav></div>
+  </details>
+  
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+        <div class="content e-content">
+            <h1 class="title">Porting SST on Nucleo F303</h1>
+
+<p>The Quantum Framework, developed by Miro Samek, is a software framework designed for building event-driven, reactive embedded systems. It provides a structured approach to software development, emphasizing modularity, reusability, and scalability.</p>
+<p>
+At the core of the Quantum Framework is the concept of hierarchical state machines (HSMs), which are used to model the behavior of the system. HSMs allow for the representation of complex system behaviors in a hierarchical and modular manner, making it easier to understand and maintain the software.</p>
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Super Simple Tasker
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p>Instead of moving to this full fledge framework from bare metal programs. Super simple tasker also known as hardware based RTOS.
+Using nested vectore controller features to simulate preemptive kernel, also saving overhead of private stack for each task.</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
+<h2 id="headline-2">
+Porting on Nucleo board F303
+</h2>
+<div id="outline-text-headline-2" class="outline-text-2">
+<p>Example code provided in SST repository <a href="https://github.com/QuantumLeaps/Super-Simple-Tasker">SST</a> for nucleo l053 controller. Below are steps I followed
+for porting blinky example F303.</p>
+<p>
+After creating standard project in STM32CubeIDE using seperate INC/SRC structre.</p>
+<div id="outline-container-headline-3" class="outline-3">
+<h3 id="headline-3">
+Imported kernel files from below folders to respective
+</h3>
+<div id="outline-text-headline-3" class="outline-text-3">
+<p>INC/SRC folders.</p>
+<ol>
+<li>sst.c</li>
+<li>sst_port.c from (ports/arm-cm)</li>
+<li>sst_port.h from (ports/arm-cm)</li>
+<li>sst.h</li>
+<li>dbc_assert.h</li>
+</ol>
+<p>6</p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">
+Import bsp files
+</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
+<ol>
+<li>bsp_nucleo-l053r8.c</li>
+</ol>
+<p>This file uses basic low level drivers. In order to make it HAL compatible and to
+map LED 2 on nucleo board made changes to device specific header file and called initialization
+from MX library.</p>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-3">
+<h3 id="headline-5">
+Main.c
+</h3>
+<div id="outline-text-headline-5" class="outline-text-3">
+<p>Finally copied the main.c from example folder.</p>
+</div>
+</div>
+</div>
 </div>
 
-</article>
+        </div>
 
+    </article>
+
+    
+    
+
+    
         
         
+    
+
+    
+
+    
         
 
-    </div>
 
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
 
         </main>
         

@@ -38,6 +38,77 @@
     </item>
     
     <item>
+      <title></title>
+      <link>/posts/sst_nucleo_f303/</link>
+      <pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sst_nucleo_f303/</guid>
+      <description>&lt;h1 class=&#34;title&#34;&gt;Porting SST on Nucleo F303&lt;/h1&gt;
+
+&lt;p&gt;The Quantum Framework, developed by Miro Samek, is a software framework designed for building event-driven, reactive embedded systems. It provides a structured approach to software development, emphasizing modularity, reusability, and scalability.&lt;/p&gt;
+&lt;p&gt;
+At the core of the Quantum Framework is the concept of hierarchical state machines (HSMs), which are used to model the behavior of the system. HSMs allow for the representation of complex system behaviors in a hierarchical and modular manner, making it easier to understand and maintain the software.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Super Simple Tasker
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;Instead of moving to this full fledge framework from bare metal programs. Super simple tasker also known as hardware based RTOS.
+Using nested vectore controller features to simulate preemptive kernel, also saving overhead of private stack for each task.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Porting on Nucleo board F303
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;Example code provided in SST repository &lt;a href=&#34;https://github.com/QuantumLeaps/Super-Simple-Tasker&#34;&gt;SST&lt;/a&gt; for nucleo l053 controller. Below are steps I followed
+for porting blinky example F303.&lt;/p&gt;
+&lt;p&gt;
+After creating standard project in STM32CubeIDE using seperate INC/SRC structre.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+Imported kernel files from below folders to respective
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;INC/SRC folders.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;sst.c&lt;/li&gt;
+&lt;li&gt;sst_port.c from (ports/arm-cm)&lt;/li&gt;
+&lt;li&gt;sst_port.h from (ports/arm-cm)&lt;/li&gt;
+&lt;li&gt;sst.h&lt;/li&gt;
+&lt;li&gt;dbc_assert.h&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;6&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+Import bsp files
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;bsp_nucleo-l053r8.c&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This file uses basic low level drivers. In order to make it HAL compatible and to
+map LED 2 on nucleo board made changes to device specific header file and called initialization
+from MX library.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+Main.c
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Finally copied the main.c from example folder.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Hugo with emacs org mode</title>
       <link>/posts/hugoblog/</link>
       <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
