@@ -13,9 +13,10 @@
 <title>Hugo with emacs org mode - My New Hugo Site</title>
 
 <meta name="description" content="Why Exclusively using emacs for writing documentation. I can now write posts directly in org mode.
+unicorn
 Advantages Never leave emacs. Template with all the hugo parameters Override or customize front matter. Basic Setup For my hugo even theme when I create post using new command front matter is already inserted. Below are customization options
 Hugo project path We need to specify hugo project path
-#&#43;hugo_base_dir: /msys64/home/pghole/blog/ This is hard coded.">
+#&#43;hugo_base_dir: ../../ This is relative path to my post where top level of hugo site located.">
 
 
 
@@ -310,7 +311,16 @@ Hugo project path We need to specify hugo project path
 </div>
 
 
-    <nav></nav>
+    <nav class="noselect">
+        
+        
+        <a class="" href="http://prasadghole.github.io/" title="">Home</a>
+        
+        <a class="" href="http://prasadghole.github.io/about/" title="">About</a>
+        
+        <a class="" href="http://prasadghole.github.io/tags/" title="">Tags</a>
+        
+    </nav>
 
 
 
@@ -385,7 +395,7 @@ Hugo project path We need to specify hugo project path
 </li>
 <li><a href="#headline-7">TOC</a>
 </li>
-<li><a href="#headline-8">Credits</a>
+<li><a href="#headline-8">Image export hack</a>
 </li>
 </ul>
 </li>
@@ -416,15 +426,15 @@ Hugo project path We need to specify hugo project path
 
         <div class="content e-content">
             
-<p><img src="/images/post/org-mode-qt.jpg" alt="/images/post/org-mode-qt.jpg" title="/images/post/org-mode-qt.jpg" /></p>
 <div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
 Why
 </h2>
 <div id="outline-text-headline-1" class="outline-text-2">
-<p>
-Exclusively using emacs for writing documentation. I can now write posts directly
+<p>Exclusively using emacs for writing documentation. I can now write posts directly
 in org mode.</p>
+<p>
+<a href="~/pgblog/static/images/org-mode-qt.png">unicorn</a></p>
 </div>
 </div>
 <div id="outline-container-headline-2" class="outline-2">
@@ -453,9 +463,9 @@ Hugo project path
 <div id="outline-text-headline-4" class="outline-text-3">
 <p>We need to specify hugo project path</p>
 <div class="src src-text">
-<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>#+hugo_base_dir: /msys64/home/pghole/blog/</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>#+hugo_base_dir: ../../</span></span></code></pre></div>
 </div>
-<p>This is hard coded. Find way to make it based on environment Find way to make it based on environment.</p>
+<p>This is relative path to my post where top level of hugo site located.</p>
 </div>
 </div>
 <div id="outline-container-headline-5" class="outline-3">
@@ -490,10 +500,12 @@ TOC
 </div>
 <div id="outline-container-headline-8" class="outline-3">
 <h3 id="headline-8">
-Credits
+Image export hack
 </h3>
 <div id="outline-text-headline-8" class="outline-text-3">
-<p><a href="https://www.freepik.com/free-vector/cyber-security-concept_7970729.htm#query=cybersecurity&amp;position=1&amp;from_view=search&amp;track=sph">Freepik</a></p>
+<p>I am facing some issue when exporting images as markdown
+created do not use ! sign before the path. Hence I have
+to manually add exclaimation mark.</p>
 </div>
 </div>
 </div>

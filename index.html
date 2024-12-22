@@ -309,7 +309,16 @@
 </div>
 
 
-    <nav></nav>
+    <nav class="noselect">
+        
+        
+        <a class="" href="http://prasadghole.github.io/" title="">Home</a>
+        
+        <a class="" href="http://prasadghole.github.io/about/" title="">About</a>
+        
+        <a class="" href="http://prasadghole.github.io/tags/" title="">Tags</a>
+        
+    </nav>
 
 
 
@@ -328,6 +337,111 @@
 
     <div class="articles h-feed">
         
+        
+            <article class="post-list h-feed post-card">
+    <div class="post-header">
+        <header>
+            
+            
+            
+            <h1 class="p-name post-title ">
+                <a class="u-url" href="/posts/px4_trick/">PX4 tricks and tips</a>
+            </h1>
+        </header>
+        
+
+    </div>
+
+    
+        <div class="content post-summary p-summary">
+            Upload new firmware from command line python3 Tools/px_uploader.py --port=/dev/ttyACM0 build/px4_fmu-v6c_default/px4_fmu-v6c_default.px4 Use mavlink console without QGC python3 Tools/mavlink_shell.py Using port /dev/serial/by-id/usb-Auterion_PX4_FMU_v6C.x_0-if00 Connecting to MAVLINK... NuttShell (NSH) NuttX-11.0.0 nsh&gt; nsh&gt; Hardware Debugging PX4 code using STM32Code IDE Hardware level debugging of PX4 code using STM32 debug ports provide more inside into low level hardware debugging.
+Attach to target I tried to download and run the code from IDE but it always results in exception.
+        </div>
+    
+
+    
+    
+    
+    
+    
+
+    
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2024-12-22">2024-12-22</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="/posts/px4_trick/">/posts/px4_trick/</a>
+    <a href="http://prasadghole.github.io/" class="p-name p-author post-hidden-author h-card" rel="me">Prasad Ghole</a>
+
+
+    <div class="post-taxonomies">
+        
+        
+        
+    </div>
+</div>
+
+</article>
+
+        
+            <article class="post-list h-feed post-card">
+    <div class="post-header">
+        <header>
+            
+            
+            
+            <h1 class="p-name post-title ">
+                <a class="u-url" href="/posts/hugotemplate/">Template</a>
+            </h1>
+        </header>
+        
+
+    </div>
+
+    
+        <div class="content post-summary p-summary">
+            
+        </div>
+    
+
+    
+    
+    
+    
+    
+
+    
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2024-12-22">2024-12-22</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="/posts/hugotemplate/">/posts/hugotemplate/</a>
+    <a href="http://prasadghole.github.io/" class="p-name p-author post-hidden-author h-card" rel="me">Prasad Ghole</a>
+
+
+    <div class="post-taxonomies">
+        
+        
+        
+    </div>
+</div>
+
+</article>
+
         
             <article class="post-list h-feed post-card">
     <div class="post-header">
@@ -452,9 +566,10 @@ At the core of the Quantum Framework is the concept of hierarchical state machin
     
         <div class="content post-summary p-summary">
             Why Exclusively using emacs for writing documentation. I can now write posts directly in org mode.
+unicorn
 Advantages Never leave emacs. Template with all the hugo parameters Override or customize front matter. Basic Setup For my hugo even theme when I create post using new command front matter is already inserted. Below are customization options
 Hugo project path We need to specify hugo project path
-#+hugo_base_dir: /msys64/home/pghole/blog/ This is hard coded.
+#+hugo_base_dir: ../../ This is relative path to my post where top level of hugo site located.
         </div>
     
 

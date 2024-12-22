@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Px4 on My New Hugo Site</title>
+    <link>/tags/px4/</link>
+    <description>My New Hugo Site (Px4)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+      
+
+      
+    
+
+    
+    <lastBuildDate>Sun, 22 Dec 2024 00:00:00 +0530</lastBuildDate>
+    
+    <atom:link href="/tags/px4/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PX4 tricks and tips</title>
+      <link>/posts/px4_trick/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0530</pubDate>
+      
+      <guid>/posts/px4_trick/</guid>
+      <description>&lt;h2 id=&#34;upload-new-firmware-from-command-line&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#upload-new-firmware-from-command-line&#34;&gt;
+        #
+    &lt;/a&gt;
+    Upload new firmware from command line
+&lt;/div&gt;
+&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python3 Tools/px_uploader.py --port&lt;span style=&#34;color:#ff6ac1&#34;&gt;=&lt;/span&gt;/dev/ttyACM0 build/px4_fmu-v6c_default/px4_fmu-v6c_default.px4&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;use-mavlink-console-without-qgc&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#use-mavlink-console-without-qgc&#34;&gt;
+        #
+    &lt;/a&gt;
+    Use mavlink console without QGC
+&lt;/div&gt;
+&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python3 Tools/mavlink_shell.py
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Using port /dev/serial/by-id/usb-Auterion_PX4_FMU_v6C.x_0-if00
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Connecting to MAVLINK...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;NuttShell &lt;span style=&#34;color:#ff6ac1&#34;&gt;(&lt;/span&gt;NSH&lt;span style=&#34;color:#ff6ac1&#34;&gt;)&lt;/span&gt; NuttX-11.0.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nsh&amp;gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nsh&amp;gt; &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;hardware-debugging-px4-code-using-stm32code-ide&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#hardware-debugging-px4-code-using-stm32code-ide&#34;&gt;
+        #
+    &lt;/a&gt;
+    Hardware Debugging PX4 code using STM32Code IDE
+&lt;/div&gt;
+&lt;/h2&gt;
+&lt;p&gt;Hardware level debugging of PX4 code using STM32 debug ports provide more inside into low level hardware debugging.&lt;/p&gt;
+&lt;h3 id=&#34;attach-to-target&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#attach-to-target&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Attach to target
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;I tried to download and run the code from IDE but it always results in exception. Hence its better to download the px4 code separately and then attach during run time.&lt;/p&gt;
+&lt;h3 id=&#34;debug-configuration&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#debug-configuration&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Debug configuration
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;h4 id=&#34;debug-type&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#debug-type&#34;&gt;
+        ###
+    &lt;/a&gt;
+    Debug Type
+&lt;/div&gt;
+&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/hugotricks/Debug_1.png&#34; alt=&#34;Debug Config Type&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;debugger-setting&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#debugger-setting&#34;&gt;
+        ###
+    &lt;/a&gt;
+    Debugger setting
+&lt;/div&gt;
+&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/hugotricks/Debbug_2.png&#34; alt=&#34;Debug_Debugger&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;startup&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#startup&#34;&gt;
+        ###
+    &lt;/a&gt;
+    Startup
+&lt;/div&gt;
+&lt;/h4&gt;
+&lt;p&gt;Make sure to disable download and set to false&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/hugotricks/Debug_3.png&#34; alt=&#34;Startup&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
