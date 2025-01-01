@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>Contemplative Chronicles</title>
     <link>/</link>
-    <description>My New Hugo Site</description>
+    <description>Contemplative Chronicles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -268,7 +268,7 @@ Why
 &lt;p&gt;Exclusively using emacs for writing documentation. I can now write posts directly
 in org mode.&lt;/p&gt;
 &lt;p&gt;
-&lt;a href=&#34;~/pgblog/static/images/org-mode-qt.png&#34;&gt;unicorn&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;http://prasadghole.github.io/images/org-mode-qt.png&#34;&gt;unicorn&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;

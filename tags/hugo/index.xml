@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on My New Hugo Site</title>
+    <title>Hugo on Contemplative Chronicles</title>
     <link>/tags/hugo/</link>
-    <description>My New Hugo Site (Hugo)</description>
+    <description>Contemplative Chronicles (Hugo)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -33,7 +33,7 @@
 &lt;/div&gt;
 &lt;/h2&gt;
 &lt;p&gt;Exclusively using emacs for writing documentation. I can now write posts directly in org mode.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/org-mode-qt.png&#34;&gt;Image&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/org-mode-qt.png&#34;&gt;unicorn&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;advantages&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#advantages&#34;&gt;
