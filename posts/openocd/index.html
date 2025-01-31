@@ -10,9 +10,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer-when-downgrade">
 
-<title>Template - Contemplative Chronicles</title>
+<title>Openocd - Contemplative Chronicles</title>
 
-<meta name="description" content="">
+<meta name="description" content=" Build Openocd for STM32 Download openocd stm32 git clone https://github.com/STMicroelectronics/OpenOCD.git Build openocd As stlink is not supported by default we have to configure the Compiling OpenOCD
+To build OpenOCD, use the following sequence of commands:
+./bootstrap ./configure --enable-stlink make sudo make install ">
 
 
 
@@ -326,7 +328,7 @@
     <article class="post h-entry">
         <div class="post-header">
             <header>
-                <h1 class="p-name post-title">Template</h1>
+                <h1 class="p-name post-title">Openocd</h1>
                 
 
             </header>
@@ -342,7 +344,7 @@
         </div>
     
 
-    <a class="post-hidden-url u-url" href="/posts/hugotemplate/">/posts/hugotemplate/</a>
+    <a class="post-hidden-url u-url" href="/posts/openocd/">/posts/openocd/</a>
     <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me">Prasad Ghole</a>
 
 
@@ -363,6 +365,23 @@
 
 
   
+  
+  
+  <details class="toc noselect">
+    <summary>Table of Contents</summary>
+    <div class="inner"><nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">Build Openocd for STM32 </a>
+<ul>
+<li><a href="#headline-2">Download openocd stm32</a>
+</li>
+<li><a href="#headline-3">Build openocd </a>
+</li>
+</ul>
+</li>
+</ul>
+</nav></div>
+  </details>
   
 
 
@@ -387,6 +406,43 @@
 
         <div class="content e-content">
             
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Build Openocd for STM32 
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<div id="outline-container-headline-2" class="outline-3">
+<h3 id="headline-2">
+Download openocd stm32
+</h3>
+<div id="outline-text-headline-2" class="outline-text-3">
+<div class="src src-shell">
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/STMicroelectronics/OpenOCD.git</span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-3">
+<h3 id="headline-3">
+Build openocd 
+</h3>
+<div id="outline-text-headline-3" class="outline-text-3">
+<p>
+As stlink is not supported by default we have to configure the </p>
+<p>
+Compiling OpenOCD</p>
+<p>
+To build OpenOCD, use the following sequence of commands:</p>
+<div class="src src-shell">
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>  ./bootstrap 
+</span></span><span style="display:flex;"><span>  ./configure --enable-stlink
+</span></span><span style="display:flex;"><span>  make
+</span></span><span style="display:flex;"><span>  sudo make install</span></span></code></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
         </div>
 
     </article>
