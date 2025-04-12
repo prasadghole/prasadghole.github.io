@@ -2,540 +2,141 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Contemplative Chronicles</title>
-    <link>/</link>
-    <description>Contemplative Chronicles</description>
+    <link>http://prasadghole.github.io/</link>
+    <description>Recent content on Contemplative Chronicles</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-      
-
-      
-    
-
-    
-    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate>
-    
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
+    <language>en</language>
+    <copyright>© 2025 </copyright>
+    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://prasadghole.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Tools</title>
-      <link>/posts/tools/</link>
+      <link>http://prasadghole.github.io/posts/tools/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>/posts/tools/</guid>
-      <description>
-&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-1&#34;&gt;
-FZF 
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;
-For zsh we need version more than 0.48 hence I can&amp;#39;t use default apt from ubuntu 
-linux.&lt;/p&gt;
-&lt;div class=&#34;src src-shell&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    git clone --depth &lt;span style=&#34;color:#ff9f43&#34;&gt;1&lt;/span&gt; https://github.com/junegunn/fzf.git ~/.fzf
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ~/.fzf/install
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#78787e&#34;&gt;# Set up fzf key bindings and fuzzy completion&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff5c57&#34;&gt;source&lt;/span&gt; &amp;lt;&lt;span style=&#34;color:#ff6ac1&#34;&gt;(&lt;/span&gt;fzf --zsh&lt;span style=&#34;color:#ff6ac1&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
+      <guid>http://prasadghole.github.io/posts/tools/</guid>
+      <description>FZF For zsh we need version more than 0.</description>
+      
+    </item>
+    
+    <item>
+      <title>Emacs</title>
+      <link>http://prasadghole.github.io/posts/emacs/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://prasadghole.github.io/posts/emacs/</guid>
+      <description>After going through journey of 10 years with diffrent config as spacemacs.</description>
+      
     </item>
     
     <item>
       <title>Martin Luther King Quotes</title>
-      <link>/posts/martinlking/</link>
+      <link>http://prasadghole.github.io/posts/martinlking/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>/posts/martinlking/</guid>
-      <description>
-&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-1&#34;&gt;
-Tool Late
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;blockquote&gt;
-&lt;p&gt;
-We are now faced with the fact that tomorrow is today. We are confronted with 
-fierce  urgency of now. In this unfolding conundrum of like and history there
-is a such thing as being too late. Procrastination is still the thief of time.
-Life often leaves us standing bare, naked and dejected with a lost opportunity.
-The tide in the affairs of men does not remain at the flood; it ebbs. We may 
-cry out desperately for time to pause in her passage, but time is deaf to every
-plea and rush on. Over the bleached bones and jumbuled residue of numerous 
-civilizations are written the pathetic word  &lt;strong&gt;&lt;strong&gt;Too Late&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;Martin Luther King Jr.&lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;Beyond Vietnam - a time to break silence&lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
+      <guid>http://prasadghole.github.io/posts/martinlking/</guid>
+      <description>Tool Late We are now faced with the fact that tomorrow is today.</description>
+      
     </item>
     
     <item>
       <title>Minicom</title>
-      <link>/posts/minicom/</link>
+      <link>http://prasadghole.github.io/posts/minicom/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>/posts/minicom/</guid>
+      <guid>http://prasadghole.github.io/posts/minicom/</guid>
       <description></description>
+      
     </item>
     
     <item>
       <title>NUTTX Porting</title>
-      <link>/posts/nuttxporting/</link>
+      <link>http://prasadghole.github.io/posts/nuttxporting/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>/posts/nuttxporting/</guid>
-      <description>
-&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-1&#34;&gt;
-Installation
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://nuttx.apache.org/docs/latest/quickstart/install.html&#34;&gt;Nuttx Installation&lt;/a&gt;&lt;/p&gt;
-&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-2&#34;&gt;
-Download  
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;Latest version 12.8.0&lt;/p&gt;
-&lt;div class=&#34;src src-shell&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkdir nuttxspace
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff5c57&#34;&gt;cd&lt;/span&gt; nuttxspace
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -L https://www.apache.org/dyn/closer.lua/nuttx/12.8.0/apache-nuttx-12.8.0.tar.gz?action&lt;span style=&#34;color:#ff6ac1&#34;&gt;=&lt;/span&gt;download -o nuttx.tar.gz
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -L https://www.apache.org/dyn/closer.lua/nuttx/12.8.0/apache-nuttx-apps-12.8.0.tar.gz?action&lt;span style=&#34;color:#ff6ac1&#34;&gt;=&lt;/span&gt;download -o apps.tar.gz
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tar zxf nuttx.tar.gz
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tar zxf apps.tar.gz&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-3&#34;&gt;
-Cmake vs make
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;Key benefit of CMake is the out-of-tree building, which allows one to have different build folders for different configs, 
-very proper if one need check multiple configs for the same codebase. Out-of-tree means above build folders can be out of Nuttx source tree.&lt;/p&gt;
-&lt;p&gt;
-For STM32F303RE &lt;/p&gt;
-&lt;div class=&#34;src src-shell&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cmake -B build -DBOARD_CONFIG&lt;span style=&#34;color:#ff6ac1&#34;&gt;=&lt;/span&gt;nucleo-f303re:nsh -GNinja
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cmake --build build&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-4&#34;&gt;
-Flash and Debug 
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;div class=&#34;src src-text&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;apt install openocd&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-I get this error &lt;/p&gt;
-&lt;div class=&#34;src src-shell&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nuttx openocd -f interface/stlink-v2-1.cfg -f target/stm32f3x.cfg -c &lt;span style=&#34;color:#5af78e&#34;&gt;&amp;#39;init&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#5af78e&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#5af78e&#34;&gt;&lt;/span&gt;  -c &lt;span style=&#34;color:#5af78e&#34;&gt;&amp;#39;program build/nuttx.bin verify reset&amp;#39;&lt;/span&gt; -c &lt;span style=&#34;color:#5af78e&#34;&gt;&amp;#39;shutdown&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Open On-Chip Debugger 0.12.0
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Licensed under GNU GPL v2
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;For bug reports, &lt;span style=&#34;color:#ff5c57&#34;&gt;read&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        http://openocd.org/doc/doxygen/bugs.html
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Info : auto-selecting first available session transport &lt;span style=&#34;color:#5af78e&#34;&gt;&amp;#34;hla_swd&amp;#34;&lt;/span&gt;. To override use &lt;span style=&#34;color:#5af78e&#34;&gt;&amp;#39;transport select &amp;lt;transport&amp;gt;&amp;#39;&lt;/span&gt;.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Info : clock speed &lt;span style=&#34;color:#ff9f43&#34;&gt;1000&lt;/span&gt; kHz
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Info : STLINK V2J45M31 &lt;span style=&#34;color:#ff6ac1&#34;&gt;(&lt;/span&gt;API v2&lt;span style=&#34;color:#ff6ac1&#34;&gt;)&lt;/span&gt; VID:PID 0483:374B
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Info : Target voltage: 3.240394
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Info : &lt;span style=&#34;color:#ff6ac1&#34;&gt;[&lt;/span&gt;stm32f3x.cpu&lt;span style=&#34;color:#ff6ac1&#34;&gt;]&lt;/span&gt; Cortex-M4 r0p1 processor detected
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Info : &lt;span style=&#34;color:#ff6ac1&#34;&gt;[&lt;/span&gt;stm32f3x.cpu&lt;span style=&#34;color:#ff6ac1&#34;&gt;]&lt;/span&gt; target has &lt;span style=&#34;color:#ff9f43&#34;&gt;6&lt;/span&gt; breakpoints, &lt;span style=&#34;color:#ff9f43&#34;&gt;4&lt;/span&gt; watchpoints
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Info : starting gdb server &lt;span style=&#34;color:#ff6ac1&#34;&gt;for&lt;/span&gt; stm32f3x.cpu on &lt;span style=&#34;color:#ff9f43&#34;&gt;3333&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Info : Listening on port &lt;span style=&#34;color:#ff9f43&#34;&gt;3333&lt;/span&gt; &lt;span style=&#34;color:#ff6ac1&#34;&gt;for&lt;/span&gt; gdb connections
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff6ac1&#34;&gt;[&lt;/span&gt;stm32f3x.cpu&lt;span style=&#34;color:#ff6ac1&#34;&gt;]&lt;/span&gt; halted due to breakpoint, current mode: Thread 
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;xPSR: 0x61000000 pc: 0x2000002e msp: 0x20010000
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Info : Unable to match requested speed &lt;span style=&#34;color:#ff9f43&#34;&gt;1000&lt;/span&gt; kHz, using &lt;span style=&#34;color:#ff9f43&#34;&gt;950&lt;/span&gt; kHz
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Info : Unable to match requested speed &lt;span style=&#34;color:#ff9f43&#34;&gt;1000&lt;/span&gt; kHz, using &lt;span style=&#34;color:#ff9f43&#34;&gt;950&lt;/span&gt; kHz
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff6ac1&#34;&gt;[&lt;/span&gt;stm32f3x.cpu&lt;span style=&#34;color:#ff6ac1&#34;&gt;]&lt;/span&gt; halted due to debug-request, current mode: Thread 
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;xPSR: 0x01000000 pc: 0x080001e0 msp: 0x20010000
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Info : Unable to match requested speed &lt;span style=&#34;color:#ff9f43&#34;&gt;8000&lt;/span&gt; kHz, using &lt;span style=&#34;color:#ff9f43&#34;&gt;4000&lt;/span&gt; kHz
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Info : Unable to match requested speed &lt;span style=&#34;color:#ff9f43&#34;&gt;8000&lt;/span&gt; kHz, using &lt;span style=&#34;color:#ff9f43&#34;&gt;4000&lt;/span&gt; kHz
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ** Programming Started **
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Info : device &lt;span style=&#34;color:#ff5c57&#34;&gt;id&lt;/span&gt; &lt;span style=&#34;color:#ff6ac1&#34;&gt;=&lt;/span&gt; 0x10036446
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Info : flash &lt;span style=&#34;color:#ff5c57&#34;&gt;size&lt;/span&gt; &lt;span style=&#34;color:#ff6ac1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ff9f43&#34;&gt;512&lt;/span&gt; KiB
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Warn : no flash bank found &lt;span style=&#34;color:#ff6ac1&#34;&gt;for&lt;/span&gt; address 0x00000000
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ** Programming Finished **
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ** Verify Started **
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Error: checksum mismatch - attempting binary compare
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;embedded:startup.tcl:1516: Error: ** Verify Failed **
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;in procedure &lt;span style=&#34;color:#5af78e&#34;&gt;&amp;#39;program&amp;#39;&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;in procedure &lt;span style=&#34;color:#5af78e&#34;&gt;&amp;#39;program_error&amp;#39;&lt;/span&gt; called at file &lt;span style=&#34;color:#5af78e&#34;&gt;&amp;#34;embedded:startup.tcl&amp;#34;&lt;/span&gt;, line &lt;span style=&#34;color:#ff9f43&#34;&gt;1577&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;at file &lt;span style=&#34;color:#5af78e&#34;&gt;&amp;#34;embedded:startup.tcl&amp;#34;&lt;/span&gt;, line &lt;span style=&#34;color:#ff9f43&#34;&gt;1516&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-5&#34;&gt;
-Debugging with STMCubeIDE GDB 
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;
-There is no direct way to debug hence I created a dummy STM32 
-application. Then in debug configuration replace the binary with 
-Nuttx binary. &lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
+      <guid>http://prasadghole.github.io/posts/nuttxporting/</guid>
+      <description>Installation Nuttx Installation</description>
+      
     </item>
     
     <item>
       <title>Openocd</title>
-      <link>/posts/openocd/</link>
+      <link>http://prasadghole.github.io/posts/openocd/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>/posts/openocd/</guid>
-      <description>
-&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-1&#34;&gt;
-Build Openocd for STM32 
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-2&#34;&gt;
-Download openocd stm32
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;div class=&#34;src src-shell&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone https://github.com/STMicroelectronics/OpenOCD.git&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-3&#34;&gt;
-Build openocd 
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;
-As stlink is not supported by default we have to configure the &lt;/p&gt;
-&lt;p&gt;
-Compiling OpenOCD&lt;/p&gt;
-&lt;p&gt;
-To build OpenOCD, use the following sequence of commands:&lt;/p&gt;
-&lt;div class=&#34;src src-shell&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ./bootstrap 
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ./configure --enable-stlink
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  make
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  sudo make install&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
+      <guid>http://prasadghole.github.io/posts/openocd/</guid>
+      <description>Build Openocd for STM32 Download openocd stm32 git clone https://github.</description>
+      
     </item>
     
     <item>
       <title>PX4 tricks and tips</title>
-      <link>/posts/px4_trick/</link>
+      <link>http://prasadghole.github.io/posts/px4_trick/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>/posts/px4_trick/</guid>
-      <description>
-&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-1&#34;&gt;
-Upload new firmware from command line
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div class=&#34;src src-shell&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python3 Tools/px_uploader.py --port&lt;span style=&#34;color:#ff6ac1&#34;&gt;=&lt;/span&gt;/dev/ttyACM0 build/px4_fmu-v6c_default/px4_fmu-v6c_default.px4&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-2&#34;&gt;
-Use mavlink console without QGC
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div class=&#34;src src-shell&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python3 Tools/mavlink_shell.py
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Using port /dev/serial/by-id/usb-Auterion_PX4_FMU_v6C.x_0-if00
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Connecting to MAVLINK...
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;NuttShell &lt;span style=&#34;color:#ff6ac1&#34;&gt;(&lt;/span&gt;NSH&lt;span style=&#34;color:#ff6ac1&#34;&gt;)&lt;/span&gt; NuttX-11.0.0
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nsh&amp;gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nsh&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-3&#34;&gt;
-Hardware Debugging PX4 code using STM32Code IDE
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;Hardware level debugging of PX4 code using STM32 debug ports provide more
-inside into low level hardware debugging.&lt;/p&gt;
-&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-4&#34;&gt;
-Attach to target 
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;I tried to download and run the code from IDE but it always results in 
-exception. Hence its better to download the px4 code separately and then 
-attach during run time.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-5&#34;&gt;
-Debug configuration 
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-4&#34;&gt;
-&lt;h4 id=&#34;headline-6&#34;&gt;
-Debug Type
-&lt;/h4&gt;
-&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-4&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://localhost:1313/images/hugotricks/Debug_1.png&#34;&gt;Debug&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-4&#34;&gt;
-&lt;h4 id=&#34;headline-7&#34;&gt;
-Debugger setting 
-&lt;/h4&gt;
-&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-4&#34;&gt;
-&lt;p&gt;Debug settings&lt;/p&gt;
-&lt;p&gt;
-!&lt;a href=&#34;http://localhost:1313/images/hugotricks/Debbug_2.png&#34;&gt;Debug_Debugger&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-4&#34;&gt;
-&lt;h4 id=&#34;headline-8&#34;&gt;
-Startup
-&lt;/h4&gt;
-&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-4&#34;&gt;
-&lt;p&gt;Make sure to disable download and set to false&lt;/p&gt;
-&lt;p&gt;
-!&lt;a href=&#34;http://localhost:1313/images/hugotricks/Debug_3.png&#34;&gt;Startup&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
+      <guid>http://prasadghole.github.io/posts/px4_trick/</guid>
+      <description>Upload new firmware from command line python3 Tools/px_uploader.</description>
+      
     </item>
     
     <item>
       <title>Shakespeare&#39;s quotes</title>
-      <link>/posts/shakespear/</link>
+      <link>http://prasadghole.github.io/posts/shakespear/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>/posts/shakespear/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;
-Things without all remedy
-Should be without regard; what&amp;#39;s done is done. &lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <guid>http://prasadghole.github.io/posts/shakespear/</guid>
+      <description>Things without all remedy Should be without regard; what&amp;#39;s done is done.</description>
+      
     </item>
     
     <item>
       <title>Template</title>
-      <link>/posts/hugotemplate/</link>
+      <link>http://prasadghole.github.io/posts/git-tips/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>/posts/hugotemplate/</guid>
+      <guid>http://prasadghole.github.io/posts/git-tips/</guid>
       <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Template</title>
+      <link>http://prasadghole.github.io/posts/hugotemplate/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://prasadghole.github.io/posts/hugotemplate/</guid>
+      <description></description>
+      
     </item>
     
     <item>
       <title>My First Post</title>
-      <link>/posts/my-first-post/</link>
+      <link>http://prasadghole.github.io/posts/my-first-post/</link>
       <pubDate>Fri, 20 Dec 2024 21:39:25 +0530</pubDate>
       
-      <guid>/posts/my-first-post/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34; &gt;
-&lt;div&gt;
-    &lt;a href=&#34;#introduction&#34;&gt;
-        #
-    &lt;/a&gt;
-    Introduction
-&lt;/div&gt;
-&lt;/h2&gt;
-&lt;p&gt;This is &lt;strong&gt;bold&lt;/strong&gt; text, and this is &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;
-&lt;p&gt;Visit the &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; website!&lt;/p&gt;
-</description>
+      <guid>http://prasadghole.github.io/posts/my-first-post/</guid>
+      <description>Introduction # This is bold text, and this is emphasized text.</description>
+      
     </item>
     
     <item>
       <title>Porting SST on Nucleo F303</title>
-      <link>/posts/sst_nucleo_f303/</link>
+      <link>http://prasadghole.github.io/posts/sst_nucleo_f303/</link>
       <pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>/posts/sst_nucleo_f303/</guid>
-      <description>
-&lt;p&gt;The Quantum Framework, developed by Miro Samek, is a software framework designed for building event-driven, reactive embedded systems. It provides a structured approach to software development, emphasizing modularity, reusability, and scalability.&lt;/p&gt;
-&lt;p&gt;
-At the core of the Quantum Framework is the concept of hierarchical state machines (HSMs), which are used to model the behavior of the system. HSMs allow for the representation of complex system behaviors in a hierarchical and modular manner, making it easier to understand and maintain the software.&lt;/p&gt;
-&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-1&#34;&gt;
-Super Simple Tasker
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;Instead of moving to this full fledge framework from bare metal programs. Super simple tasker also known as hardware based RTOS.
-Using nested vectore controller features to simulate preemptive kernel, also saving overhead of private stack for each task.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-2&#34;&gt;
-Porting on Nucleo board F303
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;Example code provided in SST repository &lt;a href=&#34;https://github.com/QuantumLeaps/Super-Simple-Tasker&#34;&gt;SST&lt;/a&gt; for nucleo l053 controller. Below are steps I followed
-for porting blinky example F303.&lt;/p&gt;
-&lt;p&gt;
-After creating standard project in STM32CubeIDE using seperate INC/SRC structre.&lt;/p&gt;
-&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-3&#34;&gt;
-Imported kernel files from below folders to respective
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;INC/SRC folders.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;sst.c&lt;/li&gt;
-&lt;li&gt;sst_port.c from (ports/arm-cm)&lt;/li&gt;
-&lt;li&gt;sst_port.h from (ports/arm-cm)&lt;/li&gt;
-&lt;li&gt;sst.h&lt;/li&gt;
-&lt;li&gt;dbc_assert.h&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;6&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-4&#34;&gt;
-Import bsp files
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;ol&gt;
-&lt;li&gt;bsp_nucleo-l053r8.c&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;This file uses basic low level drivers. In order to make it HAL compatible and to
-map LED 2 on nucleo board made changes to device specific header file and called initialization
-from MX library.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-5&#34;&gt;
-Main.c
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;Finally copied the main.c from example folder.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
+      <guid>http://prasadghole.github.io/posts/sst_nucleo_f303/</guid>
+      <description>The Quantum Framework, developed by Miro Samek, is a software framework designed for building event-driven, reactive embedded systems.</description>
+      
     </item>
     
     <item>
       <title>Hugo with emacs org mode</title>
-      <link>/posts/hugoblog/</link>
+      <link>http://prasadghole.github.io/posts/hugoblog/</link>
       <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>/posts/hugoblog/</guid>
-      <description>
-&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-1&#34;&gt;
-Why
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;Exclusively using emacs for writing documentation. I can now write posts directly
-in org mode.&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://localhost:1313/images/org-mode-qt.png&#34;&gt;unicorn&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-2&#34;&gt;
-Advantages
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;Never leave emacs.&lt;/li&gt;
-&lt;li&gt;Template with all the hugo parameters&lt;/li&gt;
-&lt;li&gt;Override or customize front matter.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-3&#34;&gt;
-Basic Setup
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;For my hugo even theme when I create post using new command front matter is already
-inserted. Below are customization options&lt;/p&gt;
-&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-4&#34;&gt;
-Hugo project path
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;We need to specify hugo project path&lt;/p&gt;
-&lt;div class=&#34;src src-text&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;#+hugo_base_dir: ../../&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;This is relative path to my post where top level of hugo site located.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-5&#34;&gt;
-Front matter configuration
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;div class=&#34;src src-text&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;#+hugo_front_matter_format: toml&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-6&#34;&gt;
-Export path
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;div class=&#34;src src-text&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;#+hugo_section: post&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-7&#34;&gt;
-TOC
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;div class=&#34;src src-text&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;#+hugo_front_matter_format: toc false&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-8&#34;&gt;
-Image export hack
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;I am facing some issue when exporting images as markdown
-created do not use ! sign before the path. Hence I have
-to manually add exclaimation mark.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
+      <guid>http://prasadghole.github.io/posts/hugoblog/</guid>
+      <description>Why Exclusively using emacs for writing documentation.</description>
+      
     </item>
     
   </channel>
