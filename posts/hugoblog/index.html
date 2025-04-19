@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="light"
-  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  data-auto-appearance="true"><head>
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="en" />
@@ -15,7 +15,7 @@
   
   
   
-  <link rel="canonical" href="http://localhost:1313/posts/hugoblog/" />
+  <link rel="canonical" href="http://prasadghole.github.io/posts/hugoblog/" />
   
   
   
@@ -67,7 +67,7 @@
   <meta property="og:title" content="Hugo with emacs org mode" />
 <meta property="og:description" content="Why Exclusively using emacs for writing documentation." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/posts/hugoblog/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="http://prasadghole.github.io/posts/hugoblog/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-11-07T00:00:00+00:00" />
 <meta property="article:modified_time" content="2022-11-07T00:00:00+00:00" />
 
@@ -86,7 +86,7 @@
     
     "abstract": "Why Exclusively using emacs for writing documentation.",
     "inLanguage": "en",
-    "url" : "http:\/\/localhost:1313\/posts\/hugoblog\/",
+    "url" : "http:\/\/prasadghole.github.io\/posts\/hugoblog\/",
     "author" : {
       "@type": "Person",
       "name": ""
@@ -100,7 +100,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "124"
+    "wordCount": "175"
   }]
   </script>
 
@@ -449,7 +449,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2022-11-07T00:00:00&#43;00:00">7 November 2022</time><span class="px-2 text-primary-500">&middot;</span><span>124 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+  <time datetime="2022-11-07T00:00:00&#43;00:00">7 November 2022</time><span class="px-2 text-primary-500">&middot;</span><span>175 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
   
 
   
@@ -536,16 +536,31 @@ Advantages
 </div>
 <div id="outline-container-headline-3" class="outline-2">
 <h2 id="headline-3">
-Basic Setup
+Directory structure 
 </h2>
 <div id="outline-text-headline-3" class="outline-text-2">
+<p>Instead of default <code>content/post</code> We need to create new directory under the root 
+directory of hugo site as <code>content-org</code>.</p>
+<p>
+I face issue when migrating my existing site with mixed md files in original 
+directory only existing files were getting updated.</p>
+<p>
+Plus for blowfish theme front matter is TOML
+.</p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-2">
+<h2 id="headline-4">
+Basic Setup
+</h2>
+<div id="outline-text-headline-4" class="outline-text-2">
 <p>For my hugo even theme when I create post using new command front matter is already
 inserted. Below are customization options</p>
-<div id="outline-container-headline-4" class="outline-3">
-<h3 id="headline-4">
+<div id="outline-container-headline-5" class="outline-3">
+<h3 id="headline-5">
 Hugo project path
 </h3>
-<div id="outline-text-headline-4" class="outline-text-3">
+<div id="outline-text-headline-5" class="outline-text-3">
 <p>We need to specify hugo project path</p>
 <div class="src src-text">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">#+hugo_base_dir: ../../</span></span></code></pre></div>
@@ -553,41 +568,41 @@ Hugo project path
 <p>This is relative path to my post where top level of hugo site located.</p>
 </div>
 </div>
-<div id="outline-container-headline-5" class="outline-3">
-<h3 id="headline-5">
+<div id="outline-container-headline-6" class="outline-3">
+<h3 id="headline-6">
 Front matter configuration
 </h3>
-<div id="outline-text-headline-5" class="outline-text-3">
+<div id="outline-text-headline-6" class="outline-text-3">
 <div class="src src-text">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">#+hugo_front_matter_format: toml</span></span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-6" class="outline-3">
-<h3 id="headline-6">
+<div id="outline-container-headline-7" class="outline-3">
+<h3 id="headline-7">
 Export path
 </h3>
-<div id="outline-text-headline-6" class="outline-text-3">
+<div id="outline-text-headline-7" class="outline-text-3">
 <div class="src src-text">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">#+hugo_section: post</span></span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-7" class="outline-3">
-<h3 id="headline-7">
+<div id="outline-container-headline-8" class="outline-3">
+<h3 id="headline-8">
 TOC
 </h3>
-<div id="outline-text-headline-7" class="outline-text-3">
+<div id="outline-text-headline-8" class="outline-text-3">
 <div class="src src-text">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">#+hugo_front_matter_format: toc false</span></span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-8" class="outline-3">
-<h3 id="headline-8">
+<div id="outline-container-headline-9" class="outline-3">
+<h3 id="headline-9">
 Image export hack
 </h3>
-<div id="outline-text-headline-8" class="outline-text-3">
+<div id="outline-text-headline-9" class="outline-text-3">
 <p>I am facing some issue when exporting images as markdown
 created do not use ! sign before the path. Hence I have
 to manually add exclaimation mark.</p>
@@ -726,7 +741,7 @@ to manually add exclaimation mark.</p>
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:1313/"
+  data-url="http://prasadghole.github.io/"
   style="z-index:500"
 >
   <div

@@ -2,129 +2,129 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Contemplative Chronicles</title>
-    <link>http://localhost:1313/</link>
+    <link>http://prasadghole.github.io/</link>
     <description>Recent content on Contemplative Chronicles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Thu, 04 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://prasadghole.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Tools</title>
-      <link>http://localhost:1313/posts/tools/</link>
+      <link>http://prasadghole.github.io/posts/tools/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/tools/</guid>
+      <guid>http://prasadghole.github.io/posts/tools/</guid>
       <description>FZF For zsh we need version more than 0.</description>
       
     </item>
     
     <item>
       <title>Emacs</title>
-      <link>http://localhost:1313/posts/emacs/</link>
+      <link>http://prasadghole.github.io/posts/emacs/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/emacs/</guid>
+      <guid>http://prasadghole.github.io/posts/emacs/</guid>
       <description>After going through journey of 10 years with diffrent config as spacemacs.</description>
       
     </item>
     
     <item>
       <title>Martin Luther King Quotes</title>
-      <link>http://localhost:1313/posts/martinlking/</link>
+      <link>http://prasadghole.github.io/posts/martinlking/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/martinlking/</guid>
+      <guid>http://prasadghole.github.io/posts/martinlking/</guid>
       <description>Tool Late We are now faced with the fact that tomorrow is today.</description>
       
     </item>
     
     <item>
       <title>Minicom</title>
-      <link>http://localhost:1313/posts/minicom/</link>
+      <link>http://prasadghole.github.io/posts/minicom/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/minicom/</guid>
+      <guid>http://prasadghole.github.io/posts/minicom/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>NUTTX Porting</title>
-      <link>http://localhost:1313/posts/nuttxporting/</link>
+      <link>http://prasadghole.github.io/posts/nuttxporting/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/nuttxporting/</guid>
+      <guid>http://prasadghole.github.io/posts/nuttxporting/</guid>
       <description>Installation Nuttx Installation</description>
       
     </item>
     
     <item>
       <title>Openocd</title>
-      <link>http://localhost:1313/posts/openocd/</link>
+      <link>http://prasadghole.github.io/posts/openocd/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/openocd/</guid>
+      <guid>http://prasadghole.github.io/posts/openocd/</guid>
       <description>Build Openocd for STM32 Download openocd stm32 git clone https://github.</description>
       
     </item>
     
     <item>
-      <title>PX4 tricks and tips</title>
-      <link>http://localhost:1313/posts/px4_trick/</link>
-      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/px4_trick/</guid>
-      <description>Upload new firmware from command line python3 Tools/px_uploader.</description>
-      
-    </item>
-    
-    <item>
       <title>Shakespeare&#39;s quotes</title>
-      <link>http://localhost:1313/posts/shakespear/</link>
+      <link>http://prasadghole.github.io/posts/shakespear/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/shakespear/</guid>
+      <guid>http://prasadghole.github.io/posts/shakespear/</guid>
       <description>Things without all remedy Should be without regard; what&amp;#39;s done is done.</description>
       
     </item>
     
     <item>
       <title>Template</title>
-      <link>http://localhost:1313/posts/hugotemplate/</link>
+      <link>http://prasadghole.github.io/posts/hugotemplate/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/hugotemplate/</guid>
+      <guid>http://prasadghole.github.io/posts/hugotemplate/</guid>
       <description></description>
       
     </item>
     
     <item>
+      <title>PX4 tricks and tips</title>
+      <link>http://prasadghole.github.io/posts/px4_tricks/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0530</pubDate>
+      
+      <guid>http://prasadghole.github.io/posts/px4_tricks/</guid>
+      <description>Upload new firmware from command line # python3 Tools/px_uploader.</description>
+      
+    </item>
+    
+    <item>
       <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>http://prasadghole.github.io/posts/my-first-post/</link>
       <pubDate>Fri, 20 Dec 2024 21:39:25 +0530</pubDate>
       
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>http://prasadghole.github.io/posts/my-first-post/</guid>
       <description>Introduction # This is bold text, and this is emphasized text.</description>
       
     </item>
     
     <item>
       <title>Porting SST on Nucleo F303</title>
-      <link>http://localhost:1313/posts/sst_nucleo_f303/</link>
+      <link>http://prasadghole.github.io/posts/sst_nucleo_f303/</link>
       <pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/sst_nucleo_f303/</guid>
+      <guid>http://prasadghole.github.io/posts/sst_nucleo_f303/</guid>
       <description>The Quantum Framework, developed by Miro Samek, is a software framework designed for building event-driven, reactive embedded systems.</description>
       
     </item>
     
     <item>
       <title>Hugo with emacs org mode</title>
-      <link>http://localhost:1313/posts/hugoblog/</link>
+      <link>http://prasadghole.github.io/posts/hugoblog/</link>
       <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/hugoblog/</guid>
+      <guid>http://prasadghole.github.io/posts/hugoblog/</guid>
       <description>Why Exclusively using emacs for writing documentation.</description>
       
     </item>

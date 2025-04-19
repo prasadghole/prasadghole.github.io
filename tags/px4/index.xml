@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Px4 on Contemplative Chronicles</title>
+    <link>http://prasadghole.github.io/tags/px4/</link>
+    <description>Recent content in Px4 on Contemplative Chronicles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2025 </copyright>
+    <lastBuildDate>Sun, 22 Dec 2024 00:00:00 +0530</lastBuildDate><atom:link href="http://prasadghole.github.io/tags/px4/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PX4 tricks and tips</title>
+      <link>http://prasadghole.github.io/posts/px4_tricks/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0530</pubDate>
+      
+      <guid>http://prasadghole.github.io/posts/px4_tricks/</guid>
+      <description>Upload new firmware from command line # python3 Tools/px_uploader.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

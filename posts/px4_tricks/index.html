@@ -8,16 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Categories &middot; Contemplative Chronicles</title>
-  <meta name="title" content="Categories &middot; Contemplative Chronicles" />
+  <title>PX4 tricks and tips &middot; Contemplative Chronicles</title>
+  <meta name="title" content="PX4 tricks and tips &middot; Contemplative Chronicles" />
   
   
+  <meta name="keywords" content="px4, " />
   
   
-  
-  <link rel="canonical" href="http://prasadghole.github.io/categories/" />
-  
-  <link rel="alternate" type="application/rss+xml" href="/categories/index.xml" title="Contemplative Chronicles" />
+  <link rel="canonical" href="http://prasadghole.github.io/posts/px4_tricks/" />
   
   
   
@@ -66,17 +64,46 @@
   
   
   
-  <meta property="og:title" content="Categories" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://prasadghole.github.io/categories/" />
+  <meta property="og:title" content="PX4 tricks and tips" />
+<meta property="og:description" content="Upload new firmware from command line # python3 Tools/px_uploader." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://prasadghole.github.io/posts/px4_tricks/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-12-22T00:00:00+05:30" />
+<meta property="article:modified_time" content="2024-12-22T00:00:00+05:30" />
 
 
-  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Categories"/>
-<meta name="twitter:description" content=""/>
+  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="PX4 tricks and tips"/>
+<meta name="twitter:description" content="Upload new firmware from command line # python3 Tools/px_uploader."/>
 
   
-  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "PX4 tricks and tips",
+    "headline": "PX4 tricks and tips",
+    
+    "abstract": "Upload new firmware from command line # python3 Tools\/px_uploader.",
+    "inLanguage": "en",
+    "url" : "http:\/\/prasadghole.github.io\/posts\/px4_tricks\/",
+    "author" : {
+      "@type": "Person",
+      "name": ""
+    },
+    "copyrightYear": "2024",
+    "dateCreated": "2024-12-22T00:00:00\u002b05:30",
+    "datePublished": "2024-12-22T00:00:00\u002b05:30",
+    
+    "dateModified": "2024-12-22T00:00:00\u002b05:30",
+    
+    "keywords": ["px4"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "113"
+  }]
+  </script>
+
 
   
   
@@ -371,21 +398,41 @@
       
 
 
- 
+<article>
+  
 
-  <header>
+  <header id="single_header" class="mt-5 max-w-prose">
     
-    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">Categories</h1>
-    <div class="mt-1 mb-2 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      PX4 tricks and tips
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
 
 
 
 
 
+  
+  
 
 
 
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
 
 
 
@@ -402,24 +449,300 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
+  <time datetime="2024-12-22T00:00:00&#43;05:30">22 December 2024</time><span class="px-2 text-primary-500">&middot;</span><span>113 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+  
+
+  
+  
 </div>
 
 
+
+
+
+
+
+
     </div>
-  </header>
-  
 
-  
-
-  <section class="flex flex-wrap max-w-prose -mx-2 overflow-hidden">
     
-  </section>
+    
+    
+    
+    
 
+    
+
+    
+      
+      
+        
+        
+<div class="flex author">
   
-
-
+  <div class="place-self-center">
+    
+    
+    <div class="text-2xl sm:text-lg">
+</div>
+  </div>
+</div>
 
       
+
+      
+
+      
+      <div class="mb-5"></div>
+      
+
+    
+
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+    
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
+
+
+        <div class="article-content max-w-prose mb-20">
+          
+
+<h2 class="relative group">Upload new firmware from command line 
+    <div id="upload-new-firmware-from-command-line" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#upload-new-firmware-from-command-line" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">python3 Tools/px_uploader.py --port<span class="o">=</span>/dev/ttyACM0 build/px4_fmu-v6c_default/px4_fmu-v6c_default.px4</span></span></code></pre></div>
+
+
+<h2 class="relative group">Use mavlink console without QGC 
+    <div id="use-mavlink-console-without-qgc" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#use-mavlink-console-without-qgc" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">python3 Tools/mavlink_shell.py
+</span></span><span class="line"><span class="cl">Using port /dev/serial/by-id/usb-Auterion_PX4_FMU_v6C.x_0-if00
+</span></span><span class="line"><span class="cl">Connecting to MAVLINK...
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">NuttShell <span class="o">(</span>NSH<span class="o">)</span> NuttX-11.0.0
+</span></span><span class="line"><span class="cl">nsh&gt; 
+</span></span><span class="line"><span class="cl">nsh&gt; </span></span></code></pre></div>
+
+
+<h2 class="relative group">Hardware Debugging PX4 code using STM32Code IDE 
+    <div id="hardware-debugging-px4-code-using-stm32code-ide" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#hardware-debugging-px4-code-using-stm32code-ide" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Hardware level debugging of PX4 code using STM32 debug ports provide more inside into low level hardware debugging.</p>
+
+
+<h3 class="relative group">Attach to target 
+    <div id="attach-to-target" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#attach-to-target" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>I tried to download and run the code from IDE but it always results in exception. Hence its better to download the px4 code separately and then attach during run time.</p>
+
+
+<h3 class="relative group">Debug configuration 
+    <div id="debug-configuration" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#debug-configuration" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+
+<h4 class="relative group">Debug Type 
+    <div id="debug-type" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#debug-type" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+
+<figure>
+      <img class="my-0 rounded-md" src="/images/hugotricks/Debug_1.png" alt="" />
+  
+  
+  </figure>
+
+
+<h4 class="relative group">Debugger setting 
+    <div id="debugger-setting" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#debugger-setting" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Debug settings</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="/images/hugotricks/Debbug_2.png" alt="Debug_Debugger" />
+      
+    </figure>
+</p>
+
+
+<h4 class="relative group">Startup 
+    <div id="startup" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#startup" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Make sure to disable download and set to false</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="/images/hugotricks/Debug_3.png" alt="Startup" />
+      
+    </figure>
+</p>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+        
+
+          
+      </div>
+     
+      
+      
+        
+        
+          
+          
+        
+      <script>
+        var oid = "views_posts\/PX4_Tricks.md"
+        var oid_likes = "likes_posts\/PX4_Tricks.md"
+      </script>
+      
+      
+      <script type="text/javascript" src="/js/page.min.b06a29d42a4ed16787978e2eee1e8c797b7698db2bc14ccee78f5c80ac566fc996190a73ad80a5e987558474b20b96fa38f7d85b405f165ff72b7b163c5ad11b.js" integrity="sha512-sGop1CpO0WeHl44u7h6MeXt2mNsrwUzO549cgKxWb8mWGQpzrYCl6YdVhHSyC5b6OPfYW0BfFl/3K3sWPFrRGw=="></script>
+      
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/posts/my-first-post/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >My First Post</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-12-20T21:39:25&#43;05:30">20 December 2024</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/posts/hugotemplate/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Template</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-12-22T00:00:00&#43;00:00">22 December 2024</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
     </main><footer id="site-footer" class="py-10 print:hidden">
   
   

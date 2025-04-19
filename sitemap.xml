@@ -3,85 +3,85 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://prasadghole.github.io/</loc>
     <lastmod>2025-12-04T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://prasadghole.github.io/posts/</loc>
     <lastmod>2025-12-04T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/tools/</loc>
+    <loc>http://prasadghole.github.io/posts/tools/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/emacs/</loc>
+    <loc>http://prasadghole.github.io/posts/emacs/</loc>
     <lastmod>2024-12-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/martinlking/</loc>
+    <loc>http://prasadghole.github.io/posts/martinlking/</loc>
     <lastmod>2024-12-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/minicom/</loc>
+    <loc>http://prasadghole.github.io/posts/minicom/</loc>
     <lastmod>2024-12-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/nuttxporting/</loc>
+    <loc>http://prasadghole.github.io/posts/nuttxporting/</loc>
     <lastmod>2024-12-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/openocd/</loc>
+    <loc>http://prasadghole.github.io/posts/openocd/</loc>
     <lastmod>2024-12-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/px4_trick/</loc>
+    <loc>http://prasadghole.github.io/posts/shakespear/</loc>
     <lastmod>2024-12-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/shakespear/</loc>
+    <loc>http://prasadghole.github.io/posts/hugotemplate/</loc>
     <lastmod>2024-12-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/hugotemplate/</loc>
-    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
+    <loc>http://prasadghole.github.io/posts/px4_tricks/</loc>
+    <lastmod>2024-12-22T00:00:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/my-first-post/</loc>
+    <loc>http://prasadghole.github.io/posts/my-first-post/</loc>
     <lastmod>2024-12-20T21:39:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/sst_nucleo_f303/</loc>
+    <loc>http://prasadghole.github.io/posts/sst_nucleo_f303/</loc>
     <lastmod>2023-05-29T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/hugoblog/</loc>
+    <loc>http://prasadghole.github.io/posts/hugoblog/</loc>
     <lastmod>2022-11-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
