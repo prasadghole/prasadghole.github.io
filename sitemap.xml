@@ -15,6 +15,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://prasadghole.github.io/posts/nushell/</loc>
+    <lastmod>2025-04-20T00:00:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://prasadghole.github.io/posts/tools/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
