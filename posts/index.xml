@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My Blog</title>
-    <link>http://localhost:58694/posts/</link>
+    <link>https://prasadghole.github.io/posts/</link>
     <description>Recent content in Posts on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Sun, 20 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:58694/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://prasadghole.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>GitTips</title>
-      <link>http://localhost:58694/posts/git-tips/</link>
+      <link>https://prasadghole.github.io/posts/git-tips/</link>
       <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:58694/posts/git-tips/</guid>
+      <guid>https://prasadghole.github.io/posts/git-tips/</guid>
       <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 Working with Forked repos
