@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on My Blog</title>
+    <link>http://localhost:58694/tags/</link>
+    <description>Recent content in Tags on My Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2025 </copyright>
+    <lastBuildDate>Sun, 20 Apr 2025 00:00:00 +0530</lastBuildDate><atom:link href="http://localhost:58694/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Git</title>
+      <link>http://localhost:58694/tags/git/</link>
+      <pubDate>Sun, 20 Apr 2025 00:00:00 +0530</pubDate>
+      
+      <guid>http://localhost:58694/tags/git/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
